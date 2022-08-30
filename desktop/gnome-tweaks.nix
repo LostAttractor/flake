@@ -12,6 +12,7 @@
 		gnomeExtensions.clipboard-history
 		gnomeExtensions.blur-my-shell
 		gnomeExtensions.dock-from-dash
+		gnomeExtensions.openweather
 
 		papirus-icon-theme
         orchis-theme

@@ -8,33 +8,33 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "ntfs" ];
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/3BD2-7F1B";
-      fsType = "vfat";
-    };
-
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4030f145-c58e-4247-a095-06194401fd67";
+    { device = "/dev/disk/by-uuid/5d500186-3115-448a-b8df-79c1a53641b9";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/4030f145-c58e-4247-a095-06194401fd67";
+    { device = "/dev/disk/by-uuid/5d500186-3115-448a-b8df-79c1a53641b9";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/4030f145-c58e-4247-a095-06194401fd67";
+    { device = "/dev/disk/by-uuid/5d500186-3115-448a-b8df-79c1a53641b9";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
+    };
+
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/C4E6-B929";
+      fsType = "vfat";
     };
 
   fileSystems."/run/media/chaosattractor/Files" =
@@ -43,7 +43,9 @@
       options = [ "rw" "uid=1000"];
     };
 
-  swapDevices = [ ];
+  swapDevices =
+    [ { device = "/dev/disk/by-uuid/1cbac728-10f2-48b4-addf-4ad504313516"; }
+    ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
