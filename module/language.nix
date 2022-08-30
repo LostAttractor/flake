@@ -14,6 +14,7 @@
       source-han-serif
 			jetbrains-mono
       wqy_zenhei
+      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
 		];
 
     fontDir.enable = true;

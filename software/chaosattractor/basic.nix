@@ -7,6 +7,7 @@
             chromium
             tdesktop
             keeweb
+            wpsoffice-cn
         ];
     };
     environment.sessionVariables = {
