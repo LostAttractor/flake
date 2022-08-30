@@ -14,7 +14,6 @@
       ./driver/nvidia-prime.nix
       ./driver/r9000p.nix
       ./desktop/gnome.nix
-      ./desktop/gnome-wayland.nix
       ./desktop/gnome-tweaks.nix
       ./module/basic.nix
       ./module/language.nix
