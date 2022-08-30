@@ -11,7 +11,7 @@
       ./platform/desktop.nix
       ./driver/amd.nix
       ./driver/nvidia.nix
-      ./driver/nvidia-prime.nix
+      ./driver/nvidia-offload.nix
       ./driver/r9000p.nix
       ./desktop/gnome.nix
       ./desktop/gnome-tweaks.nix
