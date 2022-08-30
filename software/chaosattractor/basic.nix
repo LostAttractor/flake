@@ -4,6 +4,7 @@
     users.users.chaosattractor = {
         packages = with pkgs; [
             firefox-wayland #firefox
+            chromium
             tdesktop
             keeweb
         ];
