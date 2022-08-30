@@ -24,6 +24,7 @@
       ./module/docker.nix
       ./module/user.nix
       ./module/flatpak.nix
+      # ./module/timeshift.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -53,9 +54,6 @@
   #   keyMap = "us";
   #   useXkbConfig = true; # use xkbOptions in tty.
   # };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

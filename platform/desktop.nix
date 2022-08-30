@@ -22,6 +22,9 @@
 
 	hardware.bluetooth.enable = true;
 
+	# Enable CUPS to print documents.
+	services.printing.enable = true;
+
 	environment.sessionVariables = rec {
 		XDG_CACHE_HOME  = "\${HOME}/.cache";
 		XDG_CONFIG_HOME = "\${HOME}/.config";
