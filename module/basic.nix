@@ -7,4 +7,7 @@
 		htop micro xsel
 		axel # Multi-Thread Downloader
 	];
+
+	# Set your time zone.
+	time.timeZone = "Asia/Shanghai";
 }
