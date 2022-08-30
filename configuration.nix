@@ -24,7 +24,6 @@
       ./module/docker.nix
       ./module/user.nix
       ./module/flatpak.nix
-      # ./module/timeshift.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
