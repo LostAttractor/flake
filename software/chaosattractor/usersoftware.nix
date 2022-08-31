@@ -2,8 +2,8 @@
 {
     imports = [
         ./basic.nix
-        ./tools.nix
-        ./develop.nix
-        ./steam.nix
+        ./tools/tools.nix
+        ./develop/develop.nix
+        ./games/steam.nix
     ];
 }

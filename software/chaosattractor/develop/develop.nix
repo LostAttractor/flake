@@ -2,8 +2,9 @@
 {
     users.users.chaosattractor = {
         packages = with pkgs; [
-            neofetch
-            v2ray
+            github-desktop
+            jetbrains.idea-ultimate
+            jetbrains.clion
         ];
     };
 }

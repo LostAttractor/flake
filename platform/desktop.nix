@@ -36,5 +36,8 @@
 		];
 	};
 
+	boot.resumeDevice = "/dev/disk/by-uuid/1cbac728-10f2-48b4-addf-4ad504313516";
+
 	nixpkgs.config.allowUnfree = true;
+	imports = [ ../software/default/software.nix ];
 }
