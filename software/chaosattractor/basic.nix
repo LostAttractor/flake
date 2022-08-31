@@ -1,13 +1,12 @@
 { config, pkgs, ... }:
 {
-    # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.chaosattractor = {
         packages = with pkgs; [
             firefox-wayland #firefox
             chromium
+            microsoft-edge
             tdesktop
             keeweb
-            wpsoffice-cn
         ];
     };
     environment.sessionVariables = {
