@@ -11,5 +11,6 @@
 
     imports = [
         ./obs-studio/obs-studio.nix
+        ./kuro/kuro.nix
     ];
 }

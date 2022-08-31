@@ -5,9 +5,4 @@
             inherit pkgs;
         };
     };
-
-    environment.systemPackages = with pkgs; [
-        nur.repos.xddxdd.wechat-uos-bin
-        nur.repos.linyinfeng.icalingua-plus-plus
-    ];
 }

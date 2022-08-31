@@ -7,6 +7,8 @@
             microsoft-edge
             tdesktop
             keeweb
+            nur.repos.xddxdd.wechat-uos-bin
+            nur.repos.linyinfeng.icalingua-plus-plus
         ];
     };
     environment.sessionVariables = {
