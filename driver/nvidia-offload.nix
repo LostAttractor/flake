@@ -12,4 +12,16 @@ in
 {
 	environment.systemPackages = [ nvidia-offload ];
 	hardware.nvidia.modesetting.enable = true;
+  hardware.nvidia.powerManagement.enable = true;
+
+  hardware.nvidia.prime = {
+    offload.enable = true;
+    sync.enable = false; # 类似显卡直通
+
+    # Bus ID of the AMD GPU. You can find it using lspci, either under 3D or VGA
+    amdgpuBusId = "PCI:6:0:0";
+
+    # Bus ID of the NVIDIA GPU. You can find it using lspci, either under 3D or VGA
+    nvidiaBusId = "PCI:1:0:0";
+  };
 }
