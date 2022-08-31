@@ -5,6 +5,6 @@
         ./tools/tools.nix
         ./work/work.nix
         ./develop/develop.nix
-        ./games/steam.nix
+        ./games/games.nix
     ];
 }
