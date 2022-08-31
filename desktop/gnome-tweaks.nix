@@ -13,6 +13,7 @@
 		gnomeExtensions.blur-my-shell
 		gnomeExtensions.dock-from-dash
 		gnomeExtensions.openweather
+		gnomeExtensions.hibernate-status-button
 
 		papirus-icon-theme
         orchis-theme
