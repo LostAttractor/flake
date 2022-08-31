@@ -8,5 +8,5 @@
       ''
     )
   ];
-  boot.kernelParams = [ "drm.edid_firmware=eDP-1:edid/r9000p-edid.bin" ];
+  boot.kernelParams = [ "drm.edid_firmware=edid/r9000p-edid.bin" ];
 }
