@@ -7,6 +7,8 @@
         vscodeExtensions = with vscode-extensions; [
             bbenoist.nix
             redhat.java
+            matklad.rust-analyzer
+            bungcip.better-toml
             ms-vscode.cpptools
             ms-python.python
             ms-python.vscode-pylance

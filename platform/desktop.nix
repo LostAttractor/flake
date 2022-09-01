@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
 	services.xserver = {
 		enable = true; 	# Enable the X11 windowing system.

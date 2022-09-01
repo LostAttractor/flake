@@ -6,7 +6,7 @@
             screenfetch
             cmatrix
             v2ray
-            ffmpeg
+            ffmpeg-full
             appimage-run
             nur.repos.YisuiMilena.hyfetch
             nur.repos.rewine.landrop

@@ -2,10 +2,10 @@
 {
     users.users.chaosattractor = {
         packages = with pkgs; [
-            # osu-lazer #体验很差
+            kdenlive
+            ffmpeg-full
+            frei0r
+            mediainfo
         ];
     };
-    imports = [
-        ./steam.nix
-    ];
 }

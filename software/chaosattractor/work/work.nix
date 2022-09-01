@@ -5,12 +5,11 @@
             logseq
             obsidian
             wpsoffice-cn
-            gimp
         ];
     };
 
     imports = [
-        ./obs-studio/obs-studio.nix
+        ./mediaediting/mediaediting.nix
         ./kuro/kuro.nix
     ];
 }
