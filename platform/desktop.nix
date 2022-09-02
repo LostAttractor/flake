@@ -27,4 +27,8 @@
 	imports = [ 
 		./module/pipewire.nix 
 	];
+
+	environment.variables = rec {
+		LC_ALL = "C";
+	};
 }
