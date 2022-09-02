@@ -20,7 +20,8 @@
       source-han-serif
 			jetbrains-mono
       wqy_zenhei
-      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+      hack-font
+      (nerdfonts.override { fonts = [ "JetBrainsMono" "Hack" ]; })
 		];
 
     fontDir.enable = true;
