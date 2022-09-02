@@ -3,7 +3,7 @@
     home-manager.users.chaosattractor = { pkgs, ... }: 
     {        
         home.packages = with pkgs; [
-            (pkgs.callPackage ./pkg.nix { })
+            (pkgs.callPackage ./kuro/default.nix { })
         ];
     };
 }
