@@ -1,5 +1,7 @@
 { config, pkgs, ... }: 
 {
+	nixpkgs.config.allowUnfree = true;
+
     environment.systemPackages = with pkgs; [
         vscode 
         (vscode-with-extensions.override {

@@ -21,9 +21,9 @@
       ./module/wayland.nix
       ./module/develop.nix
       ./module/docker.nix
-      ./module/nur.nix
+      ./module/libvirt.nix
       ./module/flatpak.nix
-      ./module/user.nix
+      ./users/chaosattractor/user.nix
     ];
 
   # Use the systemd-boot EFI boot loader.

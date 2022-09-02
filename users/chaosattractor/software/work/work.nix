@@ -1,7 +1,8 @@
 { config, pkgs, ... }:
 {
-    users.users.chaosattractor = {
-        packages = with pkgs; [
+    home-manager.users.chaosattractor = { pkgs, ... }: 
+    {
+        home.packages = with pkgs; [
             logseq
             obsidian
             wpsoffice-cn

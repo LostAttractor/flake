@@ -1,7 +1,8 @@
 { config, pkgs, ... }:
 {
-    users.users.chaosattractor = {
-        packages = with pkgs; [
+    home-manager.users.chaosattractor = { pkgs, ... }: 
+    {        
+        home.packages = with pkgs; [
             firefox-wayland #firefox
             chromium
             microsoft-edge
@@ -10,8 +11,8 @@
             nur.repos.xddxdd.wechat-uos-bin
             nur.repos.linyinfeng.icalingua-plus-plus
         ];
-    };
-    environment.sessionVariables = {
-        MOZ_DISABLE_RDD_SANDBOX = "1";
+        home.sessionVariables = {
+            MOZ_DISABLE_RDD_SANDBOX = "1";
+        };
     };
 }
