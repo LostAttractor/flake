@@ -16,6 +16,7 @@
       ./desktop/gnome.nix
       ./desktop/gnome-tweaks.nix
       ./module/basic.nix
+      ./module/fish.nix
       ./module/language.nix
       ./module/tuna-mirror.nix
       ./module/wayland.nix

@@ -2,6 +2,6 @@
 {
     imports = [
         ./steam.nix
-        ./vscode/vscode.nix
+        #./vscode/vscode.nix
     ];
 }

@@ -15,19 +15,19 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/5d500186-3115-448a-b8df-79c1a53641b9";
+    { device = "/dev/disk/by-uuid/d10be526-8959-4112-be45-1885be0d6ebb";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/5d500186-3115-448a-b8df-79c1a53641b9";
+    { device = "/dev/disk/by-uuid/d10be526-8959-4112-be45-1885be0d6ebb";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/5d500186-3115-448a-b8df-79c1a53641b9";
+    { device = "/dev/disk/by-uuid/d10be526-8959-4112-be45-1885be0d6ebb";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
@@ -36,7 +36,7 @@
     { device = "/dev/disk/by-uuid/C4E6-B929";
       fsType = "vfat";
     };
-
+    
   fileSystems."/run/media/chaosattractor/Files" =
     { device = "/dev/disk/by-uuid/D246F12146F1074F";
       fsType = "ntfs"; 

@@ -22,9 +22,28 @@
             firefox-devtools.vscode-firefox-debug
             ms-vscode.PowerShell
             pkief.material-icon-theme
+            yzhang.markdown-all-in-one
+            zhuangtongfa.material-theme
+            ms-vsliveshare.vsliveshare
+            github.vscode-pull-request-github
+            eamodio.gitlens
+            dbaeumer.vscode-eslint
+            davidanson.vscode-markdownlint
         ]
         # Concise version from the vscode market place when not available in the default set.
         ++ vscode-utils.extensionsFromVscodeMarketplace [
+            {
+                name = "vscode-snazzy-operator";
+                publisher = "aaronthomas";
+                version = "1.1.3";
+                sha256 = "105rc3ixpq6hqzxyzsp0zhvzxgqx1p9bxck8mpn7xkkd1pwim281";
+            }
+            {
+                name = "npm-intellisense";
+                publisher = "christian-kohler";
+                version = "1.4.2";
+                sha256 = "0bkgc9fkfpk2mnmr4f7f7c458i1cniy940s5nxap029ysnp6c0yw";
+            }
             {
                 name = "doxdocgen";
                 publisher = "cschlosser";
@@ -44,16 +63,16 @@
                 sha256 = "0v1hkv8smwp64c0danrln39h0lgqa2dwiiy45rx29s9qmq3j9am4";
             }
             {
-                name = "vscode-pull-request-github";
-                publisher = "GitHub";
-                version = "0.49.2022083109";
-                sha256 = "029q58klz5574va6wr3nqs70al37rzyl0xdd9y6ks5qa3d9xvj98";
-            }
-            {
                 name = "cmake-language-support-vscode";
                 publisher = "josetr";
                 version = "0.0.4";
                 sha256 = "02z297823whvz1wnwx6pbcygv4cjddlkcdysln5sss109x8pgarq";
+            }
+            {
+                name = "noctis";
+                publisher = "liviuschera";
+                version = "10.40.0";
+                sha256 = "1ry0vkyb92c6p6i8dpjq7sihvbpl45gngb8fym22nylmnfi9dcai";
             }
             {
                 name = "vscode-dotnet-runtime";
@@ -70,8 +89,8 @@
             {
                 name = "remote-containers";
                 publisher = "ms-vscode-remote";
-                version = "0.250.0";
-                sha256 = "1izc7vyz02an3m91w53ayr8lgwd3qrg233idlmy42vdhwgws2bzz";
+                version = "0.252.0";
+                sha256 = "1yrjfxccvg7j64l47ixzc7r1234r7nqk0j3500a8ihfi6qi7cxx5";
             }
             {
                 name = "remote-ssh-edit";
@@ -88,20 +107,14 @@
             {
                 name = "cmake-tools";
                 publisher = "ms-vscode";
-                version = "1.12.24";
-                sha256 = "1dlg9yyvcf70k6ykvz0s7zlhm7qjvj6mv34bnl3gdwc1282rs42c";
+                version = "1.13.1";
+                sha256 = "0p4ldcf8jy6wr74nsx2x126ik77isgirgswc3d7sdr04436fcj2f";
             }
             {
                 name = "cpptools-extension-pack";
                 publisher = "ms-vscode";
-                version = "1.2.0";
-                sha256 = "155id1ln4nd14a5myw0b5qil4zprcwwplaxw8z7s6z24k7jqni9h";
-            }
-            {
-                name = "vsliveshare";
-                publisher = "ms-vsliveshare";
-                version = "1.0.5696";
-                sha256 = "1qxskqxfdwi4m6zn3bw2jxx4zbbci66v11dq13jl2sgbf5sfqpnk";
+                version = "1.3.0";
+                sha256 = "11fk26siccnfxhbb92z6r20mfbl9b3hhp5zsvpn2jmh24vn96x5c";
             }
             {
                 name = "vsliveshare-audio";
@@ -116,10 +129,22 @@
                 sha256 = "0s2ds3rrk9ynppaaka8pq1aa0bkpp5bmm2sv9ddnvcw8yjz2scqa";
             }
             {
+                name = "synthwave-vscode";
+                publisher = "RobbOwen";
+                version = "0.1.14";
+                sha256 = "0d9c18ci1pgj1qxm8xhdw6rp5gn135l1rvmd591gr3bsrmcf5wj7";
+            }
+            {
                 name = "cmake";
                 publisher = "twxs";
                 version = "0.0.17";
                 sha256 = "11hzjd0gxkq37689rrr2aszxng5l9fwpgs9nnglq3zhfa1msyn08";
+            }
+            {
+                name = "intellicode-api-usage-examples";
+                publisher = "VisualStudioExptTeam";
+                version = "0.2.2";
+                sha256 = "1wfn4mg4vcv2jyhhr0b525k7xa3hkhb7m47xrqm7cqav641vzagz";
             }
             {
                 name = "vscodeintellicode";
@@ -130,14 +155,14 @@
             {
                 name = "vscode-java-debug";
                 publisher = "vscjava";
-                version = "0.43.2022082909";
-                sha256 = "1hk591jvaxgbxjbybwgzxbiw1w2sdhbx0gwk2ddn639xlvwh9cv7";
+                version = "0.44.2022090107";
+                sha256 = "16vzm803v6wwr1p8p4rf9xqhz5kz64ssbhakm9pw93nva9dv64i9";
             }
             {
                 name = "vscode-java-dependency";
                 publisher = "vscjava";
-                version = "0.21.2022080500";
-                sha256 = "1p66lm3yn2jjv1yiy1d06p3icrac17gqgfzgpgi38krvdzakf04g";
+                version = "0.21.2022090100";
+                sha256 = "0vsiavi76pib47gwkp1n50d1c4ivqamz86fyliw9h12pn3i60wgr";
             }
             {
                 name = "vscode-java-pack";
@@ -148,8 +173,8 @@
             {
                 name = "vscode-java-test";
                 publisher = "vscjava";
-                version = "0.37.2022083002";
-                sha256 = "1jvxy6ihrw0rlvg6fk52ln9b8fbcjl77prz0a8d2hysdnnis6xnk";
+                version = "0.37.2022090202";
+                sha256 = "1yzlh6nl2cx8mp35z5bvipsmn8f35956n7s8sp8ij5vxdx50bigb";
             }
             {
                 name = "vscode-maven";

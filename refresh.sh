@@ -3,8 +3,5 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
-
-rm -rf /etc/nixos/*
-cp -rf ./ /etc/nixos/
-rm -r /etc/nixos/.git
+rsync -a --exclude={'refresh.sh','.git'} /home/chaosattractor/nixos/* /etc/nixos/ -v
 nixos-rebuild switch
