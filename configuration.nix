@@ -23,6 +23,7 @@
       ./module/docker.nix
       ./module/libvirt.nix
       ./module/flatpak.nix
+      ./users/software/software.nix
       ./users/chaosattractor/user.nix
     ];
 

@@ -8,8 +8,8 @@
         ffmpeg-full
         appimage-run
         virt-manager
-        nur.repos.YisuiMilena.hyfetch
-        nur.repos.rewine.landrop
+        #nur.repos.YisuiMilena.hyfetch
+        #nur.repos.rewine.landrop
     ];
 
     imports = [
