@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-{ 
+{
     home.packages = with pkgs; [
         neofetch
         screenfetch
@@ -17,6 +17,7 @@
     ];
 
     imports = [
+        ./rime.nix
         ./alacritty/alacritty.nix
     ];
 }
