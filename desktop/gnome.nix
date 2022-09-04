@@ -11,7 +11,7 @@
 		gnome-tour
 	]) ++ (with pkgs.gnome; [
 		epiphany # web browser
-		geary # email reader
+		# geary # email reader
 		evince # document viewer
 		gnome-characters
 		tali # poker game

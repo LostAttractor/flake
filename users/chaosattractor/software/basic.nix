@@ -5,6 +5,7 @@
         chromium
         microsoft-edge
         tdesktop
+        signal-desktop
         keeweb
     ];
     home.sessionVariables = {

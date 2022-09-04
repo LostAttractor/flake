@@ -36,6 +36,7 @@
     networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
     system.autoUpgrade.enable = true; # 自动更新
+    nix.settings.auto-optimise-store = true;
 
     nix.extraOptions = ''
         experimental-features = nix-command flakes

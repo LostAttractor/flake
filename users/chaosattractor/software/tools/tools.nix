@@ -9,7 +9,9 @@
         appimage-run
         virt-manager
         rsync
-        
+        fsearch
+        qjournalctl
+
         handlr
         #xdg-launch
         #nur.repos.YisuiMilena.hyfetch
