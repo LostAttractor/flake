@@ -10,6 +10,14 @@
 
 	# Enable CUPS to print documents.
 	services.printing.enable = true;
+	services.avahi = {
+		enable = true;
+		nssmdns = true;
+		publish.enable = true;
+		publish.addresses = true;
+		publish.workstation = true;
+		publish.userServices = true;
+	};
 
 	environment.sessionVariables = rec {
 		XDG_CACHE_HOME  = "\${HOME}/.cache";
@@ -22,7 +30,7 @@
 		];
 	};
 
-	# boot.resumeDevice = "/dev/disk/by-uuid/1cbac728-10f2-48b4-addf-4ad504313516";
+	boot.resumeDevice = "/dev/disk/by-uuid/1cbac728-10f2-48b4-addf-4ad504313516";
 
 	imports = [ 
 		./module/pipewire.nix 

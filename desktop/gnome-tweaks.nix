@@ -28,14 +28,6 @@
 		package = pkgs.gnomeExtensions.gsconnect;
 	}; #开放网络端口
 
-	services.avahi = {
-		enable = true;
-		nssmdns = true;
-		publish.enable = true;
-		publish.addresses = true;
-		publish.workstation = true;
-	};
-
 	services.xserver.desktopManager.gnome.extraGSettingsOverrides = ''
 		[org.gnome.desktop.interface]
 		gtk-theme='Orchis-Purple-Dark'
