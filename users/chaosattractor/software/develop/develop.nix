@@ -7,8 +7,4 @@
         jetbrains.clion
         hugo
     ];
-
-    imports = [
-        #./vscode.nix
-    ];
 }

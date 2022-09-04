@@ -4,7 +4,6 @@
 		enable = true;
 		desktopManager.gnome.enable = true;
 		displayManager.gdm.enable = true;
-		displayManager.gdm.wayland = true;
 	};
 	
 	environment.gnome.excludePackages = (with pkgs; [
