@@ -3,6 +3,7 @@
 	environment.systemPackages = (with pkgs; [ 
 		papirus-icon-theme
         orchis-theme
+		(pkgs.callPackage ./layan-cursors { })
 	]) ++ (with pkgs.gnome; [
 		gnome-tweaks
 		gnome-todo

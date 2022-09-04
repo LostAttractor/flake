@@ -10,9 +10,9 @@
         virt-manager
         rsync
         fsearch
-        qjournalctl
 
         handlr
+        xdotool
         #xdg-launch
         #nur.repos.YisuiMilena.hyfetch
         #nur.repos.rewine.landrop
