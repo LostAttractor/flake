@@ -19,16 +19,16 @@
 		publish.userServices = true;
 	};
 
-	environment.sessionVariables = rec {
-		XDG_CACHE_HOME  = "\${HOME}/.cache";
-		XDG_CONFIG_HOME = "\${HOME}/.config";
-		XDG_BIN_HOME    = "\${HOME}/.local/bin";
-		XDG_DATA_HOME   = "\${HOME}/.local/share";
+	# environment.sessionVariables = rec {
+	# 	XDG_CACHE_HOME  = "\${HOME}/.cache";
+	# 	XDG_CONFIG_HOME = "\${HOME}/.config";
+	# 	XDG_BIN_HOME    = "\${HOME}/.local/bin";
+	# 	XDG_DATA_HOME   = "\${HOME}/.local/share";
 
-		PATH = [ 
-		"\${XDG_BIN_HOME}"
-		];
-	};
+	# 	PATH = [ 
+	# 	"\${XDG_BIN_HOME}"
+	# 	];
+	# };
 
 	boot.resumeDevice = "/dev/disk/by-uuid/1cbac728-10f2-48b4-addf-4ad504313516";
 

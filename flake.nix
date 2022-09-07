@@ -18,9 +18,11 @@
     };
 
     # 输出配置，即 NixOS 系统配置
-    outputs = inputs@{ nixpkgs, home-manager, nixos-cn, nur, ... }: {
+    outputs = inputs@{ nixpkgs, home-manager, nixos-cn, nur, ... }:
+    let system = "x86_64-linux";
+    in {
         nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
-            system = "x86_64-linux";
+            inherit system;
             modules = [
                 ./configuration.nix
                 # 启用 NUR
@@ -54,6 +56,7 @@
                             config.nur.repos.rewine.landrop
                             config.nur.repos.xddxdd.wechat-uos-bin
                             config.nur.repos.linyinfeng.icalingua-plus-plus
+                            nixos-cn.legacyPackages.${system}.opendrop
                         ];
                     };
                 })

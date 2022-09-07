@@ -10,6 +10,8 @@
         virt-manager
         rsync
         fsearch
+        fragments
+        you-get
 
         handlr
         xdotool
