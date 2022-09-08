@@ -2,6 +2,7 @@
 {
     home.packages = with pkgs; [
         vscode
+        lapce
         github-desktop
         jetbrains.idea-ultimate
         jetbrains.clion
