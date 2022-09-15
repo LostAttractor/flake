@@ -17,7 +17,7 @@
         ./module/basic.nix
         ./module/fish.nix
         ./module/language.nix
-        ./module/tuna-mirror.nix
+        ./module/substituters.nix
         ./module/wayland.nix
         ./module/develop.nix
         ./module/docker.nix
