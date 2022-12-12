@@ -17,10 +17,12 @@
       ./platform/desktop.nix
       ./desktop/gnome.nix
       ./desktop/gnome-tweaks.nix
+      ./desktop/wayland.nix
       # modules
       ./module/i18n.nix
       ./module/fonts.nix
-      ./module/fish.nix
+      # ./module/shell.nix
+      ./module/flatpak.nix
       ./module/substituters.nix
       # package
       ./package/basic.nix

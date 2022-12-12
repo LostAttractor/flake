@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
 {
-    xdg.configFile."fish/fish_variables".source = ./fish_variables;
+    programs.fish.enable = true;
+    # xdg.configFile."fish/fish_variables".source = ./fish_variables;
 }

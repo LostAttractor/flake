@@ -2,7 +2,7 @@
 {
 	environment.systemPackages = (with pkgs; [ 
 		papirus-icon-theme
-        orchis-theme
+        adw-gtk3
 		(pkgs.callPackage ./layan-cursors { })
 	]) ++ (with pkgs.gnome; [
 		gnome-tweaks
@@ -33,9 +33,9 @@
 
 	services.xserver.desktopManager.gnome.extraGSettingsOverrides = ''
 		[org.gnome.desktop.interface]
-		gtk-theme='Orchis-Purple-Dark'
+		gtk-theme='adw-gtk3-dark'
 	'';
-	environment.sessionVariables = {
-        GTK_THEME = "Orchis-Purple-Dark";
-    };
+	# environment.sessionVariables = {
+    #     GTK_THEME = "adw-gtk3-dark";
+    # };
 }
