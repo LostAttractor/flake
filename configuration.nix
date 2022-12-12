@@ -15,9 +15,9 @@
       ./driver/r9000p-edid/r9000p-edid.nix
       # desktop platform
       ./platform/desktop.nix
-      ./desktop/gnome.nix
-      ./desktop/gnome-tweaks.nix
-      ./desktop/wayland.nix
+      ./desktop/gnome/gnome.nix
+      ./desktop/gnome/gnome-tweaks.nix
+      ./desktop/gnome/gnome-wayland.nix
       # modules
       ./module/i18n.nix
       ./module/fonts.nix
