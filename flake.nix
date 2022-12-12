@@ -32,7 +32,7 @@
                 {
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
-                    home-manager.users.chaosattractor = import ./users/chaosattractor/home.nix;
+                    home-manager.users.lostattractor = import ./users/lostattractor/home.nix;
                 }
                 # Config
                 ({ config, ... }: {
@@ -50,11 +50,11 @@
                     ];
 
                     # 使用 nur & nixos-cn flake 提供的包
-                    home-manager.users.chaosattractor = { ... }: {
+                    home-manager.users.lostattractor = { ... }: {
                         home.packages = [
                             config.nur.repos.YisuiMilena.hyfetch
                             config.nur.repos.rewine.landrop
-                            config.nur.repos.xddxdd.wechat-uos-bin
+                            # config.nur.repos.xddxdd.wechat-uos-bin
                             config.nur.repos.linyinfeng.icalingua-plus-plus
                         ];
                     };

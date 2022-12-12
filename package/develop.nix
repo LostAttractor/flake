@@ -2,6 +2,5 @@
 {
 	environment.systemPackages = with pkgs; [
 		clang go deno docker nodejs yarn rustup go
-		#rustc cargo
 	];
 }

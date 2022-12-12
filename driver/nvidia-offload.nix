@@ -7,7 +7,6 @@ let
 in
 {
   environment.systemPackages = [ nvidia-offload ];
-  # hardware.nvidia.powerManagement.enable = true;
 
   hardware.nvidia.prime = {
     offload.enable = true;
