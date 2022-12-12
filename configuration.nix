@@ -11,7 +11,7 @@
       # harware drivers
       ./driver/amdgpu.nix
       ./driver/nvidia.nix
-      ./driver/nvidia-offload.nix
+      # ./driver/nvidia-offload.nix
       ./driver/r9000p-edid/r9000p-edid.nix
       # desktop platform
       ./platform/desktop.nix
@@ -21,7 +21,6 @@
       # modules
       ./module/i18n.nix
       ./module/fonts.nix
-      # ./module/shell.nix
       ./module/flatpak.nix
       ./module/substituters.nix
       # package
