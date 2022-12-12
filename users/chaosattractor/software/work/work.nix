@@ -8,6 +8,6 @@
 
     imports = [
         ./mediaediting/mediaediting.nix
-        ./kuro/kuro.nix
+        # ./kuro/kuro.nix
     ];
 }
