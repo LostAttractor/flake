@@ -33,7 +33,7 @@
 		[org.gnome.desktop.interface]
 		gtk-theme='adw-gtk3-dark'
 	'';
-	# environment.sessionVariables = {
+	# environment.sessionVariables = { //GTK2
     #     GTK_THEME = "adw-gtk3-dark";
     # };
 }
