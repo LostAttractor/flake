@@ -1,29 +1,21 @@
 { config, pkgs, ... }:
 {
-	i18n.defaultLocale = "zh_CN.UTF-8";
-
-  console = {
-    font = "Lat2-Terminus16";
-    # keyMap = "us";
-    useXkbConfig = true; # use xkbOptions in tty.
-  };
-
-	fonts = {
-		fonts = with pkgs; [
+  fonts = {
+	  fonts = with pkgs; [
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
-			sarasa-gothic  #更纱黑体
+	    sarasa-gothic  #更纱黑体
       source-code-pro
       source-han-mono
       source-han-sans
       source-han-serif
-			jetbrains-mono
+	    jetbrains-mono
       wqy_zenhei
       hack-font
+      fira-code
       (nerdfonts.override { fonts = [ "JetBrainsMono" "Hack" ]; })
-		];
-
+	  ];
     fontDir.enable = true;
     fontconfig.enable = true;
 
@@ -34,13 +26,5 @@
     #  sansSerif = [ "Noto Sans CJK SC" ];
     #  serif = [ "Source Han Serif" ];
     #};
-	};
-
-  i18n.inputMethod = {
-    enabled = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      libpinyin
-      rime
-    ];
   };
 }
