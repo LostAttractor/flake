@@ -20,9 +20,7 @@
 		hibernate-status-button
 		ibus-tweaker
 	]);
-
-	services.xserver.displayManager.gdm.wayland = true;
-
+	
 	services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 	services.packagekit.enable = true;
 
