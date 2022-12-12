@@ -12,7 +12,6 @@
         fsearch
         fragments
         you-get
-
         handlr
         xdotool
         #xdg-launch
