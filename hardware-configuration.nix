@@ -15,25 +15,25 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   fileSystems."/" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/swap" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=swap" "noatime" ];
     };
