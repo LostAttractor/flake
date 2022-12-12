@@ -2,11 +2,11 @@
 {
   hardware.firmware = [
     (
-      pkgs.runCommandNoCC "r9000p-edid" { } ''
+      pkgs.runCommandNoCC "edid" { } ''
         mkdir -p $out/lib/firmware/edid
-        cp ${./r9000p-edid.bin} $out/lib/firmware/edid/r9000p-edid.bin
+        cp ${./edid.bin} $out/lib/firmware/edid/edid.bin
       ''
     )
   ];
-  boot.kernelParams = [ "drm.edid_firmware=edid/r9000p-edid.bin" ];
+  boot.kernelParams = [ "drm.edid_firmware=edid/edid.bin" ];
 }
