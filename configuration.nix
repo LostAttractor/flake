@@ -27,7 +27,6 @@
       ./package/basic.nix
       ./package/develop.nix
       ./package/steam.nix
-      ./package/v2raya/v2raya.nix
       # user config
       ./users/lostattractor/user.nix
     ];
