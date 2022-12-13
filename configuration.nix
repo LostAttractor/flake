@@ -9,26 +9,22 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # harware drivers
-      ./driver/amdgpu.nix
-      ./driver/nvidia.nix
-      # ./driver/nvidia-offload.nix
-      ./driver/r9000p-edid/r9000p-edid.nix
+      ./drivers/amdgpu.nix
+      ./drivers/nvidia.nix
+      # ./drivers/nvidia-offload.nix
+      ./drivers/r9000p-edid/r9000p-edid.nix
       # desktop platform
       ./platform/desktop.nix
-      ./desktop/gnome/gnome.nix
-      ./desktop/gnome/gnome-tweaks.nix
-      ./desktop/gnome/gnome-wayland.nix
+      ./desktop/gnome
       # modules
-      ./module/i18n.nix
-      ./module/fonts.nix
-      ./module/flatpak.nix
-      ./module/substituters.nix
+      ./modules/i18n.nix
+      ./modules/fonts.nix
+      ./modules/flatpak.nix
+      ./modules/substituters.nix
       # package
-      ./package/basic.nix
-      ./package/develop.nix
-      ./package/steam.nix
+      ./packages
       # user config
-      ./users/lostattractor/user.nix
+      ./users/lostattractor
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -49,9 +45,6 @@
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
-
-  # Enable V2rayA
-  services.v2raya.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
