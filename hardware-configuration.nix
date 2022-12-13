@@ -17,25 +17,25 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   fileSystems."/" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/swap" =
-    { device = "/dev/nvme1n1p2";
+    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
       fsType = "btrfs";
       options = [ "subvol=swap" "noatime" ];
     };
@@ -47,7 +47,7 @@
 
   # https://nixos.org/manual/nixos/stable/options.html#opt-boot.resumeDevice
   swapDevices = [ { device = "/swap/swapfile"; size = 16384; } ];
-  boot.resumeDevice = "/dev/nvme1n1p2";
+  boot.resumeDevice = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
