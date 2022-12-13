@@ -1,8 +1,10 @@
 { config, pkgs, ... }:
 {
   imports = [ 
-	./gnome.nix
-    ./gnome-tweaks.nix
-    ./gnome-wayland.nix
+	  ./gnome.nix
+    ./wayland.nix
   ];
+
+  services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
+	services.packagekit.enable = true;
 }

@@ -11,7 +11,7 @@
       # harware drivers
       ./drivers/amdgpu.nix
       ./drivers/nvidia.nix
-      # ./drivers/nvidia-offload.nix
+      ./drivers/nvidia-offload.nix
       ./drivers/r9000p-edid/r9000p-edid.nix
       # desktop platform
       ./platform/desktop.nix
@@ -19,6 +19,7 @@
       # modules
       ./modules/i18n.nix
       ./modules/fonts.nix
+      ./modules/network.nix
       ./modules/flatpak.nix
       ./modules/substituters.nix
       # package
@@ -33,7 +34,6 @@
   boot.kernelPackages = pkgs.linuxPackages_zen; #Linux-zen
 
   networking.hostName = "CALaptop"; # Define hostname.
-  networking.networkmanager.enable = true;  # Enable NetworkManager
 
   system.autoUpgrade.enable = true; # 自动更新
   nix.settings.auto-optimise-store = true; # 使用硬链接优化store
