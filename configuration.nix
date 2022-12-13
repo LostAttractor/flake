@@ -11,15 +11,16 @@
       # harware drivers
       ./drivers/amdgpu.nix
       ./drivers/nvidia.nix
-      ./drivers/nvidia-offload.nix
+      # Enable nvidia prime offload may cause x11 crash (wayland is ok)
+      # ./drivers/nvidia-offload.nix 
       ./drivers/r9000p-edid/r9000p-edid.nix
       # desktop platform
       ./platform/desktop.nix
       ./desktop/gnome
       # modules
       ./modules/i18n.nix
-      ./modules/fonts.nix
       ./modules/network.nix
+      ./modules/fonts.nix
       ./modules/flatpak.nix
       ./modules/substituters.nix
       # package

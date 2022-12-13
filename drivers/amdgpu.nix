@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
-{
-  boot.initrd.kernelModules = [ "amdgpu" ];
+{ 
+  # May cause Edid Firmware loading to fail
+  # [drm:drm_load_edid_firmware [drm]] *ERROR* Requesting EDID firmware "edid/edid.bin" failed (err=-2)
+  # boot.initrd.kernelModules = [ "amdgpu" ];
   services.xserver.videoDrivers = [ "amdgpu" ];
 
   hardware.opengl = {

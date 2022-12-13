@@ -9,11 +9,14 @@
 
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement = {
-      enable = true;
-      finegrained = true;
-    };
+    powerManagement.enable = true;
   };
+
+  # environment.sessionVariables = {
+  #   __NV_PRIME_RENDER_OFFLOAD = "1";
+  #   __VK_LAYER_NV_optimus = "NVIDIA_only"; 
+  #   __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  # };
 
   # Optionally, you may need to select the appropriate driver version for your specific GPU.
   # hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
