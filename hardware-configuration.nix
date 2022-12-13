@@ -11,6 +11,8 @@
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
+  # https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file_on_Btrfs
+  boot.kernelParams = [ "resume=/swap/swapfile" "resume_offset=1320192" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "ntfs" ];
 
@@ -43,7 +45,9 @@
       fsType = "vfat";
     };
 
-  swapDevices = [ { device = "/swap/swapfile"; } ]; 
+  # https://nixos.org/manual/nixos/stable/options.html#opt-boot.resumeDevice
+  swapDevices = [ { device = "/swap/swapfile"; size = 16384; } ];
+  boot.resumeDevice = "/dev/nvme1n1p2";
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
