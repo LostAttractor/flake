@@ -14,9 +14,8 @@
     you-get
     handlr
     xdotool
+    you-get
     #xdg-launch
-    #nur.repos.YisuiMilena.hyfetch
-    #nur.repos.rewine.landrop
   ];
 
   imports = [

@@ -18,6 +18,7 @@
       ./modules/flatpak.nix
       ./modules/substituters.nix
       ./modules/power-management.nix
+      ./modules/libvirt.nix
       # package
       ./packages
       # user config

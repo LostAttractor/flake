@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  programs.dconf.enable = true;
+  # programs.dconf.enable = true;
   virtualisation.libvirtd.enable = true;
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModprobeConfig = "options kvm_amd nested=1"; # 启用 KVM
