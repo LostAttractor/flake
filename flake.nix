@@ -24,7 +24,9 @@
       nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit nur; };
         modules = [
-          ./configuration.nix          
+          #./hosts/r9000p
+          ./hosts/r9000p/ddg.nix
+          ./configuration.nix
           # Enable NUR
           nur.nixosModules.nur
           # Home-Manager
