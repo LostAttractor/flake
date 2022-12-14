@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-	environment.systemPackages = with pkgs; [
-		clang go deno docker nodejs yarn rustup go
-	];
+  environment.systemPackages = with pkgs; [
+    clang go deno docker nodejs yarn rustup go
+  ];
 }
