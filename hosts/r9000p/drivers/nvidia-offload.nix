@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
+
 {
   hardware.nvidia = {
     prime = {

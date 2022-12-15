@@ -1,10 +1,11 @@
-{ config, pkgs, ... }:
-{
-  # NVIDIA drivers are unfree.
-  nixpkgs.config.allowUnfree = true;
+{ lib, pkgs, ... }:
 
-  services.xserver.videoDrivers = [ "nvidia" ];
-  
+{
+  services.xserver.videoDrivers = lib.mkDefault [ "nvidia" ];
+  hardware.opengl.extraPackages = with pkgs; [
+    vaapiVdpau
+  ];
+
   hardware.opengl.enable = true;
 
   hardware.nvidia = {
@@ -17,7 +18,4 @@
   #   __VK_LAYER_NV_optimus = "NVIDIA_only"; 
   #   __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   # };
-
-  # Optionally, you may need to select the appropriate driver version for your specific GPU.
-  # hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 }
