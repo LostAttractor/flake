@@ -5,7 +5,7 @@
   home.stateVersion = "22.11";
   
   imports = [
-    ./modules/fish
+    ./modules/shell
     ./modules/gnome-tweaks
     ./packages
   ];
