@@ -14,19 +14,22 @@
         url = "github:nix-community/NUR";
         inputs.nixpkgs.follows = "nixpkgs";
       };
+      # Nix Hardware
+      nixos-hardware.url = "github:LostAttractor/nixos-hardware/usable";
     };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, nur, ... }: # Function that tells my flake which to use and what do what to do with the dependencies.
+  outputs = inputs @ { self, nixpkgs, home-manager, nur, nixos-hardware, ... }: # Function that tells my flake which to use and what do what to do with the dependencies.
     let
       user = "lostattractor";
     in
     {
       nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit nur; };
+        specialArgs = { inherit inputs; };
         modules = [
-          #./hosts/r9000p
-          ./hosts/r9000p/ddg.nix
+          # ./hosts/r9000p
+          # ./hosts/r9000p/ddg.nix
           ./configuration.nix
+          nixos-hardware.nixosModules.lenovo-legion-16ach6h
           # Enable NUR
           nur.nixosModules.nur
           # Home-Manager
