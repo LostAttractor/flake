@@ -26,10 +26,9 @@
       nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          # ./hosts/r9000p
-          # ./hosts/r9000p/ddg.nix
           ./configuration.nix
-          nixos-hardware.nixosModules.lenovo-legion-16ach6h
+          # nixos-hardware.nixosModules.lenovo-legion-16ach6h
+          nixos-hardware.nixosModules.lenovo-legion-16ach6h-nvidia
           # Enable NUR
           nur.nixosModules.nur
           # Home-Manager
