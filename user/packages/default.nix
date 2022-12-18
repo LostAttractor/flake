@@ -3,9 +3,9 @@
   # Package
   imports = [
     ./basic.nix
-    ./tools/tools.nix
-    ./work/work.nix
-    ./develop/develop.nix
+    ./tools
+    ./work
+    ./develop
     ./gaming
   ];
 }
