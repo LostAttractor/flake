@@ -1,7 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, user, ... }:
 {
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.lostattractor = {
+  users.users.${user} = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "docker" "libvirtd" ];  # Enable ‘sudo’ for the user.
     shell = pkgs.fish;

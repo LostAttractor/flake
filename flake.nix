@@ -24,7 +24,7 @@
     in
     {
       nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
           # nixos-hardware.nixosModules.lenovo-legion-16ach6h
@@ -37,12 +37,12 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit user; };
-            home-manager.users.lostattractor = import ./users/lostattractor/home.nix;
+            home-manager.users.${user} = import ./users/lostattractor/home.nix;
           }
           # Config
           ({ config, ... }: {
             # Packages form NUR
-            home-manager.users.lostattractor = { ... }: {
+            home-manager.users.${user} = { ... }: {
               home.packages = [
                 config.nur.repos.YisuiMilena.hyfetch
                 config.nur.repos.rewine.landrop
