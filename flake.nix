@@ -36,8 +36,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit user; };
-            home-manager.users.${user} = import ./users/lostattractor/home.nix;
+            home-manager.extraSpecialArgs = { inherit inputs user; };
+            home-manager.users.${user} = import ./user/home.nix;
           }
           # Config
           ({ config, ... }: {
@@ -46,7 +46,7 @@
               home.packages = [
                 config.nur.repos.YisuiMilena.hyfetch
                 config.nur.repos.rewine.landrop
-                # config.nur.repos.xddxdd.wechat-uos-bin
+                config.nur.repos.xddxdd.wechat-uos-bin
                 config.nur.repos.linyinfeng.icalingua-plus-plus
               ];
             };
