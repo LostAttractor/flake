@@ -14,7 +14,6 @@
   # https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file_on_Btrfs
   boot.kernelParams = [ "resume=/swap/swapfile" "resume_offset=1320192" ];
   boot.extraModulePackages = [ ];
-  boot.supportedFilesystems = [ "ntfs" ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
