@@ -3,6 +3,6 @@
   imports = [ 
 	  ./basic.nix
     ./develop.nix
-    ./steam.nix
+    ./gaming.nix
   ];
 }
