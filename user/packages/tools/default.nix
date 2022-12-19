@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     neofetch
+    hyfetch
     screenfetch
     cmatrix
     v2ray
