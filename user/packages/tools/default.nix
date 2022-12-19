@@ -16,7 +16,6 @@
     handlr
     xdotool
     you-get
-    #xdg-launch
   ];
 
   imports = [
