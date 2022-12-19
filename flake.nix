@@ -27,8 +27,7 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
-          # nixos-hardware.nixosModules.lenovo-legion-16ach6h
-          nixos-hardware.nixosModules.lenovo-legion-16ach6h-nvidia
+          nixos-hardware.nixosModules.lenovo-legion-16ach6h
           # Enable NUR
           nur.nixosModules.nur
           # Home-Manager
