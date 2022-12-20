@@ -15,7 +15,7 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
       # Nix Hardware
-      nixos-hardware.url = "github:LostAttractor/nixos-hardware/usable";
+      nixos-hardware.url = "github:nixos/nixos-hardware";
     };
 
   outputs = inputs @ { self, nixpkgs, home-manager, nur, nixos-hardware, ... }: # Function that tells my flake which to use and what do what to do with the dependencies.
