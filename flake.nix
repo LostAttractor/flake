@@ -5,15 +5,9 @@
       # Nix Packages
       nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
       # User Packages
-      home-manager = {
-        url = "github:nix-community/home-manager";
-        inputs.nixpkgs.follows = "nixpkgs";
-      };
+      home-manager.url = "github:nix-community/home-manager";
       # NUR Packages
-      nur = {
-        url = "github:nix-community/NUR";
-        inputs.nixpkgs.follows = "nixpkgs";
-      };
+      nur.url = "github:nix-community/NUR";
       # Nix Hardware
       nixos-hardware.url = "github:nixos/nixos-hardware";
     };
@@ -27,6 +21,7 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
+          # Hardware
           nixos-hardware.nixosModules.lenovo-legion-16ach6h
           # Enable NUR
           nur.nixosModules.nur
