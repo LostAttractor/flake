@@ -2,17 +2,17 @@
   description = "ChaosAttractor's NixOS Flake";
 
   inputs = {
-      # Nix Packages
-      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-      # User Packages
-      home-manager.url = "github:nix-community/home-manager";
-      # NUR Packages
-      nur.url = "github:nix-community/NUR";
-      # Nix Hardware
-      nixos-hardware.url = "github:nixos/nixos-hardware";
-    };
+    # Nix Packages
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # Nix Hardware
+    nixos-hardware.url = "github:nixos/nixos-hardware";
+    # User Packages
+    home-manager.url = "github:nix-community/home-manager";
+    # NUR Packages
+    nur.url = "github:nix-community/NUR";
+  };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, nur, nixos-hardware, ... }: # Function that tells my flake which to use and what do what to do with the dependencies.
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, home-manager, nur, ... }:
     let
       user = "lostattractor";
     in
@@ -33,7 +33,6 @@
             home-manager.extraSpecialArgs = { inherit inputs user; };
             home-manager.users.${user} = import ./user/home.nix;
           }
-          # Config
           ({ config, ... }: {
             # Packages form NUR
             home-manager.users.${user} = { ... }: {
