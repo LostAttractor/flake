@@ -22,6 +22,7 @@
         modules = [
           ./configuration.nix
           # Hardware
+          # hardware.nvidia.prime.offload.enable may cause xorg crash
           nixos-hardware.nixosModules.lenovo-legion-16ach6h
           # Enable NUR
           nur.nixosModules.nur
