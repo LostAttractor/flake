@@ -20,6 +20,6 @@
 
   imports = [
     ./rime.nix
-    ./alacritty/alacritty.nix
+    ./alacritty
   ];
 }
