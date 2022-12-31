@@ -12,6 +12,7 @@
     # microsoft-edge
     tdesktop
     signal-desktop
+    # qq
     keeweb
   ];
 

@@ -4,7 +4,7 @@
   programs.mangohud.enableSessionWide = true;
   
   home.packages = with pkgs; [
-    # osu-lazer #体验很差 建议使用flatpak版
+    osu-lazer-bin
     # lunar-client
     protonup-ng
   ];

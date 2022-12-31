@@ -40,7 +40,7 @@
               home.packages = [
                 config.nur.repos.rewine.landrop
                 config.nur.repos.xddxdd.wechat-uos-bin
-                config.nur.repos.linyinfeng.icalingua-plus-plus
+                # config.nur.repos.linyinfeng.icalingua-plus-plus
               ];
             };
           })
