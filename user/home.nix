@@ -11,11 +11,11 @@
     ./packages
   ];
 
-  home.file.".pam_environment".text = ''
-    # -*- mode: sh -*-
+  # home.file.".profile".text = ''
+  #   # -*- mode: sh -*-
     
-    . "${config.home.profileDirectory}/etc/profile.d/hm-session-vars.sh"
-  '';
+  #   . "${config.home.profileDirectory}/etc/profile.d/hm-session-vars.sh"
+  # '';
 
   nixpkgs.config.allowUnfree = true;
 }
