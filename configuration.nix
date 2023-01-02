@@ -17,8 +17,8 @@
       ./modules/fonts.nix
       ./modules/flatpak.nix
       ./modules/substituters.nix
-      ./modules/power-management.nix
       ./modules/libvirt.nix
+      # ./modules/power-management.nix
       # package
       ./packages
       # user config
@@ -29,6 +29,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_zen; #Linux-zen
+  # boot.plymouth.enable = true;
 
   networking.hostName = "CALaptop"; # Define hostname.
 
