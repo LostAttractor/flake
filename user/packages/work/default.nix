@@ -4,6 +4,8 @@
     logseq
     obsidian
     wpsoffice-cn
+    # xmind
+    marktext
   ];
 
   imports = [
