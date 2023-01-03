@@ -3,7 +3,7 @@
   home.packages = (with pkgs; [ 
     papirus-icon-theme
     adw-gtk3
-    (pkgs.callPackage ./layan-cursors { })
+    # (pkgs.callPackage ./layan-cursors { })
   ]) ++ (with pkgs.gnome; [
     gnome-tweaks
     gnome-todo
