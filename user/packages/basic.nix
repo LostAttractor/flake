@@ -15,11 +15,4 @@
     # qq
     keeweb
   ];
-
-  home.sessionVariables = {
-    MOZ_DISABLE_RDD_SANDBOX = "1";
-  };
-  systemd.user.sessionVariables = {
-    MOZ_DISABLE_RDD_SANDBOX = "1";
-  };
 }
