@@ -1,10 +1,6 @@
 { config, pkgs, ... }:
 {
-  home.packages = (with pkgs; [ 
-    papirus-icon-theme
-    adw-gtk3
-    # (pkgs.callPackage ./layan-cursors { })
-  ]) ++ (with pkgs.gnome; [
+  home.packages = (with pkgs.gnome; [
     gnome-tweaks
     gnome-todo
     dconf-editor

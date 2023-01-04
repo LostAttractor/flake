@@ -4,5 +4,6 @@
 	  ./basic.nix
     ./develop.nix
     ./gaming.nix
+    ./theme.nix
   ];
 }
