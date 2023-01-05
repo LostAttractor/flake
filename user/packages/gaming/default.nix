@@ -4,6 +4,7 @@
     osu-lazer-bin
     # lunar-client
     protonup-ng
+    lutris
   ];
 
   programs.mangohud.enable = true;
