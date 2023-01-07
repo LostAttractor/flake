@@ -4,5 +4,5 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 sudo rm -R /etc/nixos/*
-rsync -a --exclude={'deploy.sh','flake.sh','refresh.sh','.git'} /home/lostattractor/nixos/* /etc/nixos/ # -v
+rsync -a --exclude={'deploy.sh','flake.sh','refresh.sh','.git'} ./* /etc/nixos/ # -v
 nixos-rebuild switch -v
