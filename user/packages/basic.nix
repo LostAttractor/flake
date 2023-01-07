@@ -13,6 +13,7 @@
     tdesktop
     signal-desktop
     # qq
+    discord
     keeweb
   ];
 }
