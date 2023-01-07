@@ -8,6 +8,6 @@ let
   };
 in {
   home.packages = with pkgs; [
-    (pkgs.callPackage "${kuro-package}/default.nix" { })
+    (pkgs.callPackage "${kuro-package}" { })
   ];
 }

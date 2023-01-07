@@ -4,6 +4,7 @@
     logseq
     obsidian
     wpsoffice-cn
+    libreoffice
     # xmind
     marktext
   ];
