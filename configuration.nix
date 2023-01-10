@@ -18,6 +18,7 @@
       ./modules/flatpak.nix
       ./modules/substituters.nix
       ./modules/libvirt.nix
+      ./modules/mobiledevice.nix
       # ./modules/power-management.nix
       # package
       ./packages
@@ -78,7 +79,7 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 15234 ]; #landrop
+  networking.firewall.allowedTCPPorts = [ 15234 ]; # landrop
   networking.firewall.allowedUDPPorts = [ 15234 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
