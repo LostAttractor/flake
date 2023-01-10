@@ -45,7 +45,7 @@
     };
 
   # https://nixos.org/manual/nixos/stable/options.html#opt-boot.resumeDevice
-  swapDevices = [ { device = "/swap/swapfile"; size = 16384; } ];
+  swapDevices = [ { device = "/swap/swapfile"; } ];
   boot.resumeDevice = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
