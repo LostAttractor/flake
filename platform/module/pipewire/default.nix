@@ -1,11 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
-  # PulseAudio
-  #sound.enable = true; #Enable sound.
-  #hardware.pulseaudio.enable = true;
-
   # Pipewire
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = lib.mkForce false;
+  
+  # rtkit is optional but recommended
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
