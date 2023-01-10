@@ -1,4 +1,7 @@
-{ lib, buildNpmPackage, fetchFromGitHub }:
+{ buildNpmPackage
+, fetchFromGitHub
+, lib
+}:
 
 buildNpmPackage rec {
   pname = "sharing";
@@ -21,9 +24,9 @@ buildNpmPackage rec {
   NODE_OPTIONS = "--openssl-legacy-provider";
 
   meta = with lib; {
-    description = "Sharing is a command-line tool to share directories and files from the CLI to iOS and Android devices without the need of an extra client app ";
+    description = "Command-line tool to share directories and files to mobile devices";
     homepage = "https://github.com/parvardegr/sharing";
     license = licenses.mit;
-    maintainers = with maintainers; [ Seven-Y-Q-Guo ];
+    maintainers = with maintainers; [ ChaosAttractor ];
   };
 }

@@ -16,7 +16,6 @@
     handlr
     xdotool
     you-get
-    (pkgs.callPackage ./sharing { })
   ];
 
   imports = [
