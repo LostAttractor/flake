@@ -19,6 +19,7 @@
       ./modules/substituters.nix
       ./modules/libvirt.nix
       ./modules/mobiledevice.nix
+      ./modules/filesystems.nix
       # ./modules/power-management.nix
       # package
       ./packages
