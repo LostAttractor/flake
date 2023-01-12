@@ -19,7 +19,7 @@
   ];
 
   imports = [
-    ./rime.nix
+    ./rime
     ./alacritty
   ];
 }
