@@ -16,6 +16,7 @@
     handlr
     xdotool
     you-get
+    rustdesk
   ];
 
   imports = [
