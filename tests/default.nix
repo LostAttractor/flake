@@ -7,6 +7,6 @@
   programs.sharing.enable = true;
 
   environment.systemPackages = with pkgs; [
-    ((pkgs.callPackage ./keeweb { }).override { nss = nss_latest; })
+    (pkgs.callPackage ./keeweb { nss = nss_latest; })
   ];
 }
