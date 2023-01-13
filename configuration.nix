@@ -20,6 +20,7 @@
       ./modules/libvirt.nix
       ./modules/mobiledevice.nix
       ./modules/filesystems.nix
+      ./modules/ssh.nix
       # ./modules/power-management.nix
       # package
       ./packages
