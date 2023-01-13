@@ -11,8 +11,11 @@
     # })
     # microsoft-edge
     tdesktop
+    # qq
+    # (makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; })
+    # (makeAutostartItem { name = "qq"; package = qq; })
+    (pkgs.callPackage ../../userrepo/makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; commandLineArgs = "-startintray"; })
     signal-desktop
-    qq
     discord
     # keeweb
   ];

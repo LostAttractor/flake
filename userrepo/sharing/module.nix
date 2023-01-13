@@ -12,7 +12,7 @@ with lib;
       cfg = config.programs.sharing;
     in
       mkIf cfg.enable {
-        environment.systemPackages = [ (pkgs.callPackage ./sharing { }) ];
+        environment.systemPackages = [ (pkgs.callPackage ../sharing { }) ];
         networking.firewall.allowedTCPPorts = [ 7478 ];
       };
 }

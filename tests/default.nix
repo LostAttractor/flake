@@ -1,12 +1,12 @@
 { config, pkgs, ... }:
 {
   imports = [ 
-	  ./sharing.nix
+	  ../userrepo/sharing/module.nix
   ];
 
   programs.sharing.enable = true;
 
   environment.systemPackages = with pkgs; [
-    (pkgs.callPackage ./keeweb { nss = nss_latest; })
+    (pkgs.callPackage ../userrepo/keeweb { nss = nss_latest; })
   ];
 }
