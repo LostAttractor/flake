@@ -12,8 +12,8 @@
     # microsoft-edge
     tdesktop
     signal-desktop
-    # qq
+    qq
     discord
-    keeweb
+    # keeweb
   ];
 }
