@@ -20,6 +20,7 @@
       ./modules/libvirt.nix
       ./modules/mobiledevice.nix
       ./modules/filesystems.nix
+      ./modules/optimise-store.nix
       ./modules/ssh.nix
       # ./modules/power-management.nix
       # package
@@ -38,7 +39,6 @@
   networking.hostName = "CALaptop"; # Define hostname.
 
   system.autoUpgrade.enable = true; # 自动更新
-  nix.settings.auto-optimise-store = true; # 使用硬链接优化store
 
 	# Set your time zone.
 	time.timeZone = "Asia/Shanghai";
@@ -47,12 +47,6 @@
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
-
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 7d";
-  };
 
   nixpkgs.config.allowUnfree = true;
 
