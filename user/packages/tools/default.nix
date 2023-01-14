@@ -15,7 +15,6 @@
     you-get
     handlr
     xdotool
-    you-get
     rustdesk
   ];
 

@@ -22,6 +22,7 @@
       ./modules/filesystems.nix
       ./modules/optimise-store.nix
       ./modules/ssh.nix
+      ./modules/sharing.nix
       # ./modules/power-management.nix
       # package
       ./packages
