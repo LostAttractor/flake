@@ -14,6 +14,7 @@
       # modules
       # basic
       ./modules/i18n.nix
+      ./modules/time.nix
       ./modules/network.nix
       ./modules/fonts.nix
       ./modules/filesystems.nix
@@ -40,12 +41,6 @@
   # boot.plymouth.enable = true;
 
   networking.hostName = "CALaptop"; # Define hostname.
-
-  system.autoUpgrade.enable = true; # 自动更新
-
-	# Set your time zone.
-	time.timeZone = "Asia/Shanghai";
-	time.hardwareClockInLocalTime = true;
 
   nix.extraOptions = ''
     experimental-features = nix-command flakes
