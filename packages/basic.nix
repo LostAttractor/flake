@@ -7,4 +7,6 @@
     htop micro xsel
     axel # Multi-Thread Downloader
   ];
+
+  programs.sharing.enable = true;
 }

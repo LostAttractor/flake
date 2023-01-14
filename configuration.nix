@@ -12,18 +12,20 @@
       ./platform/desktop.nix
       ./desktop/gnome
       # modules
+      # basic
       ./modules/i18n.nix
       ./modules/network.nix
       ./modules/fonts.nix
-      ./modules/flatpak.nix
-      ./modules/substituters.nix
-      ./modules/libvirt.nix
-      ./modules/mobiledevice.nix
       ./modules/filesystems.nix
-      ./modules/optimise-store.nix
-      ./modules/ssh.nix
-      ./modules/sharing.nix
-      # ./modules/power-management.nix
+      # nix
+      ./modules/nix/optimise-store.nix
+      ./modules/nix/substituters.nix
+      # features/system
+      ./modules/features/system/mobiledevice.nix
+      ./modules/features/system/ssh.nix
+      # features
+      ./modules/features/flatpak.nix
+      ./modules/features/libvirt.nix
       # package
       ./packages
       ./tests
