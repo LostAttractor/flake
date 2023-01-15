@@ -6,7 +6,7 @@
     screenfetch
     cmatrix
     v2ray
-    ffmpeg-full
+    ffmpeg_5-full
     appimage-run
     virt-manager
     rsync
