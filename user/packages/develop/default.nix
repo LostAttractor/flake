@@ -4,7 +4,7 @@
     # Tools / IDE
     vscode
     lapce
-    # github-desktop
+    github-desktop
     jetbrains.idea-ultimate
     jetbrains.clion
     jetbrains.pycharm-professional
