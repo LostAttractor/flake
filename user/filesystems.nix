@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }:
+_:
 {
   fileSystems."/mnt/Windows" =
    { device = "/dev/disk/by-uuid/40E6AD00E6ACF6F6";

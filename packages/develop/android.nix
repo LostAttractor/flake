@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+_:
 {
   programs.adb.enable = true;
 }

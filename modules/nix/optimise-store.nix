@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+_:
 {
   nix.settings.auto-optimise-store = true; # 使用硬链接优化store
   

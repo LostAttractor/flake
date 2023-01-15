@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 let
   kuro-package = pkgs.fetchFromGitHub {
     owner = "LostAttractor";

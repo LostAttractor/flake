@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ lib, ... }:
 {
   # Pipewire
   hardware.pulseaudio.enable = lib.mkForce false;

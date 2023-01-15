@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 let
   fromYAML = yaml:
   builtins.fromJSON (builtins.readFile (pkgs.stdenv.mkDerivation {

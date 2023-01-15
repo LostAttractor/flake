@@ -1,4 +1,4 @@
-{ config, ... }:
+_:
 {
   xdg.portal = { 
     enable = true;

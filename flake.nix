@@ -12,7 +12,7 @@
     nur.url = "github:nix-community/NUR";
   };
 
-  outputs = inputs @ { self, nixpkgs, nixos-hardware, home-manager, nur, ... }:
+  outputs = inputs @ { nixpkgs, nixos-hardware, home-manager, nur, ... }:
     let
       user = "lostattractor";
     in
@@ -36,7 +36,7 @@
           }
           ({ config, ... }: {
             # Packages form NUR
-            home-manager.users.${user} = { ... }: {
+            home-manager.users.${user} = {
               home.packages = [
                 config.nur.repos.rewine.landrop
                 config.nur.repos.xddxdd.wechat-uos

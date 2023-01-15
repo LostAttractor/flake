@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }:
+{ pkgs, user, ... }:
 {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${user} = {

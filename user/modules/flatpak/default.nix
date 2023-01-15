@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+_:
 {
   home.file.".local/share/flatpak/overrides/global".text = ''
     [Context]

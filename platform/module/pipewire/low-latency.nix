@@ -1,4 +1,4 @@
-{ config, pkgs,  ... }:
+{ config,  ... }:
 {
   services.pipewire = {
     config.pipewire = {

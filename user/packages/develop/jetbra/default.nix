@@ -1,11 +1,11 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 let
-  jetbra = pkgs.fetchFromGitHub ({
+  jetbra = pkgs.fetchFromGitHub {
     owner = "LostAttractor";
     repo = "jetbra";
     rev = "94585581c360862eab1843bf7edd8082fdf22542";
     sha256 = "sha256-9jeiF9QS4MCogIowu43l7Bqf7dhs40+7KKZML/k1oWo=";
-  });
+  };
 
   vmoptions = ''
   --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED

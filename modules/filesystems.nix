@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+_:
 {
   boot.supportedFilesystems = [ "ntfs" ]; # ntfs-3g
   # services.udev.extraRules = ''
