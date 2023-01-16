@@ -15,6 +15,7 @@
     openweather
     hibernate-status-button
     ibus-tweaker
+    (pkgs.callPackage ../../../userrepo/caffeine { })
   ]);
 
   dconf = {
