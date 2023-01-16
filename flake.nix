@@ -3,7 +3,9 @@
 
   inputs = {
     # Nix Packages
-    nixpkgs.url = "github:lostattractor/nixpkgs/nixos-unstable-custom";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
+    # nixpkgs.url = "github:lostattractor/nixpkgs/nixos-unstable-small-custom";
+    # nixpkgs.url = "github:lostattractor/nixpkgs/master-custom";
     # Nix Hardware
     nixos-hardware.url = "github:nixos/nixos-hardware";
     # User Packages
@@ -21,10 +23,9 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
-          # Hardware
-          # hardware.nvidia.prime.offload.enable may cause xorg crash
           nixos-hardware.nixosModules.lenovo-legion-16ach6h
-          # Enable NUR
+          # hardware.nvidia.prime.offload.enable may cause xorg crash
+          # NUR
           nur.nixosModules.nur
           # Home-Manager
           home-manager.nixosModules.home-manager
