@@ -6,11 +6,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1673737886,
-        "narHash": "sha256-hNTqD0uIgpbtTI2Nuj/Q1lEFOOdZqqXpxoc8rMno2F0=",
+        "lastModified": 1673815682,
+        "narHash": "sha256-zG7Rroki+89poCTr1D8BM/wTCl+DZJvU4IUE+5hxG7U=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "2827b5306462d91edec16a3d069b2d6e54c3079f",
+        "rev": "3e42035fc013ed4d8af6ee8dc0079c0c551c45a5",
         "type": "github"
       },
       "original": {
@@ -52,27 +52,27 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1673803748,
-        "narHash": "sha256-8W/4dYHg+xKcuel3csGTe3NMfil3zVYHHC/GLPUHG8c=",
+        "lastModified": 1673892807,
+        "narHash": "sha256-mGDj0BpU0Um5wXqJE/1+48fF6pgkDxJvPLLKB4kGvCs=",
         "owner": "lostattractor",
         "repo": "nixpkgs",
-        "rev": "36f95ca0832a91d79f669067839d599505d67193",
+        "rev": "0fdcd5ce178f39ed99748901f55075606ec5c830",
         "type": "github"
       },
       "original": {
         "owner": "lostattractor",
-        "ref": "nixos-unstable-custom",
+        "ref": "master-custom",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "nur": {
       "locked": {
-        "lastModified": 1673775971,
-        "narHash": "sha256-McSKY6kDbUbLfAQD+bDhBUx5qH6aZSWs0ZKCLkEu8ec=",
+        "lastModified": 1673894764,
+        "narHash": "sha256-xMX2SuX44WNK2rg6r9rVUjXyNHymOg8UaPrYWggUsoI=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "6d83652c7277244cd36db35b07a79bd773e79a88",
+        "rev": "ebbbb37c475a65d623b9a997636dd3879c9530cc",
         "type": "github"
       },
       "original": {
