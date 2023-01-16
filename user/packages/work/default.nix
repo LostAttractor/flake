@@ -7,10 +7,10 @@
     libreoffice
     # xmind
     marktext
+    kuro
   ];
 
   imports = [
-    ./mediaediting/mediaediting.nix
-    # ./kuro/kuro.nix
+    ./mediaediting
   ];
 }
