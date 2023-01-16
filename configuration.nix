@@ -27,6 +27,7 @@
       # features
       ./modules/features/flatpak.nix
       ./modules/features/libvirt.nix
+      ./modules/features/rathole
       # package
       ./packages
       ./tests
