@@ -37,7 +37,10 @@
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.consoleMode = "auto";
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.timeout = 180; # 5min
+  boot.bootspec.enable = true;
   boot.kernelPackages = pkgs.linuxPackages_zen; #Linux-zen
   # boot.plymouth.enable = true;
 
