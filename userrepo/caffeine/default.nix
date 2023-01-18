@@ -21,34 +21,27 @@ stdenv.mkDerivation {
     sha256 = "sha256-F4kjygu5yi//sLKnFnzwMpkdRaI4C4O+JRGMNjvUhzM=";
   };
 
+  patches = [
+    ./caffeine.patch
+  ];
+
   nativeBuildInputs = [
     glib
     gettext
   ];
-
-  buildPhase = ''
-    runHook preBuild
-    sh ./update-locale.sh
-    glib-compile-schemas --strict --targetdir=caffeine@patapon.info/schemas/ caffeine@patapon.info/schemas
-    runHook postBuild
-  '';
   
-  installPhase = ''
-    runHook preInstall
-    mkdir -p $out/share/gnome-shell/extensions/
-    cp -r -T ${uuid} $out/share/gnome-shell/extensions/${uuid}
-    runHook postInstall
-  '';
+  makeFlags = [ "INSTALLBASE=$(out)/share/gnome-shell/extensions" ];
+
+  passthru = {
+    extensionPortalSlug = name;
+    # Store the extension's UUID, because we might need it at some places
+    extensionUuid = uuid;
+  };
 
   meta = {
     description = "A tools to disable screensaver and auto suspend";
     homepage = https://github.com/eonpatapon/gnome-shell-extension-caffeine/;
     license = lib.licenses.gpl2Plus; # https://wiki.gnome.org/Projects/GnomeShell/Extensions/Review#Licensing
     maintainers = with lib.maintainers; [ piegames ];
-  };
-  passthru = {
-    extensionPortalSlug = name;
-    # Store the extension's UUID, because we might need it at some places
-    extensionUuid = uuid;
   };
 }
