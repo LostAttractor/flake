@@ -8,7 +8,7 @@
   ];
 
   imports = [
-    ./obs-studio/obs-studio.nix
-    ./kdenlive/kdenlive.nix
+    ./obs-studio
+    ./kdenlive
   ];
 }
