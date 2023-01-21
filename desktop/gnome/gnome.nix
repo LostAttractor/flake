@@ -1,8 +1,12 @@
 { pkgs, ... }:
 {
-  services.xserver = {
-    desktopManager.gnome.enable = true;
-    displayManager.gdm.enable = true;
+  services = {
+    xserver = {
+      desktopManager.gnome.enable = true;
+      displayManager.gdm.enable = true;
+    };
+	  packagekit.enable = true;
+    udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   };
 
   environment.gnome.excludePackages = (with pkgs; [
