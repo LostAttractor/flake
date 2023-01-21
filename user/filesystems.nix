@@ -1,7 +1,7 @@
 _:
 {
   fileSystems."/mnt/Windows" =
-   { device = "/dev/disk/by-uuid/40E6AD00E6ACF6F6";
+   { device = "/dev/disk/by-uuid/88103C73103C69F8";
      fsType = "ntfs"; #ntfs(ntfs-3g) ntfs3
      options = [ "rw" "uid=1000" ];
      noCheck = true;
