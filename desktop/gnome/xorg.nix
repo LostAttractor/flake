@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+_:
 {
   services.xserver.libinput.enable = true;
 }

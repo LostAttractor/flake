@@ -40,7 +40,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "A tools to disable screensaver and auto suspend";
-    homepage = https://github.com/eonpatapon/gnome-shell-extension-caffeine/;
+    homepage = "https://github.com/eonpatapon/gnome-shell-extension-caffeine/";
     license = lib.licenses.gpl2Plus; # https://wiki.gnome.org/Projects/GnomeShell/Extensions/Review#Licensing
     maintainers = with lib.maintainers; [ piegames ];
   };
