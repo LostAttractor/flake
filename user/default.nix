@@ -8,6 +8,6 @@
   };
 
   imports = [
-    ./filesystems.nix
+    ./modules/filesystems
   ];
 }
