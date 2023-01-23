@@ -3,9 +3,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    openssl wget git vim
+    # Basic Tools
+    openssl wget axel # Downloader
+    git vim nano # Develop
     htop micro xsel
-    axel # Multi-Thread Downloader
+    pciutils usbutils # Utils
   ];
 
   programs.sharing.enable = true;
