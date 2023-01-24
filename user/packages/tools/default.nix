@@ -16,6 +16,7 @@
     handlr
     xdotool
     rustdesk
+    parsec-bin
   ];
 
   imports = [
