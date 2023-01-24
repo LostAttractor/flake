@@ -1,8 +1,6 @@
 { config, ... }:
 {
   programs.home-manager.enable = true;
-
-  home.stateVersion = "22.11";
   
   imports = [
     ./modules/shell
@@ -11,11 +9,7 @@
     ./packages
   ];
 
-  # home.file.".profile".text = ''
-  #   # -*- mode: sh -*-
-    
-  #   . "${config.home.profileDirectory}/etc/profile.d/hm-session-vars.sh"
-  # '';
+  home.stateVersion = "22.11";
 
   nixpkgs.config.allowUnfree = true;
 }
