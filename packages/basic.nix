@@ -7,7 +7,7 @@
     openssl wget axel # Downloader
     git vim nano # Develop
     htop micro xsel
-    pciutils usbutils # Utils
+    pciutils usbutils bridge-utils # Utils
   ];
 
   programs.sharing.enable = true;
