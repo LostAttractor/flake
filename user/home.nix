@@ -3,9 +3,9 @@
   programs.home-manager.enable = true;
   
   imports = [
-    ./modules/shell
-    ./modules/gnome-tweaks
-    ./modules/flatpak
+    ./settings/shell
+    ./settings/gnome-tweaks
+    ./settings/flatpak
     ./packages
   ];
 

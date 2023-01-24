@@ -7,5 +7,6 @@
     ./work
     ./develop
     ./gaming
+    ./gnome-tweaks
   ];
 }

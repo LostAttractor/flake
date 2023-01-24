@@ -17,20 +17,4 @@
     ibus-tweaker
     (pkgs.callPackage ../../../userrepo/caffeine { })
   ]);
-
-  dconf = {
-    enable = true;
-    settings = {
-      "org.gnome.desktop.interface" = {
-        gtk-theme = "adw-gtk3-dark";
-      };
-      "org/gnome/desktop/peripherals/touchpad" = {
-        tap-to-click = true;
-      };
-    };
-  };
-
-  # environment.sessionVariables = { //GTK4
-  #     GTK_THEME = "adw-gtk3-dark";
-  # };
 }
