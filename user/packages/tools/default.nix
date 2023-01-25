@@ -17,6 +17,7 @@
     xdotool
     rustdesk
     parsec-bin
+    looking-glass-client
   ];
 
   imports = [
