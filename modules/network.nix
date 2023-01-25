@@ -9,11 +9,15 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  # Enable V2rayA
-  services.v2raya.enable = true;
-
   programs.kdeconnect = {
 	  enable = true;
     package = pkgs.gnomeExtensions.gsconnect;
   }; # Open Kde Connect Port
+
+  # Enable V2rayA
+  services.v2raya.enable = true;
+
+  # Network Proxy
+  # networking.proxy.default = "http://user:password@proxy:port/";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 }
