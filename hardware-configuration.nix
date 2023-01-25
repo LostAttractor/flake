@@ -12,29 +12,29 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   # https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file_on_Btrfs
-  boot.kernelParams = [ "resume=/swap/swapfile" "resume_offset=1320192" ];
+  boot.kernelParams = [ "resume=/swap/swapfile" "resume_offset=269568" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
+    { device = "/dev/disk/by-uuid/fdf2e6a0-df54-4aea-b5b4-f0b31a818d18";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
+    { device = "/dev/disk/by-uuid/fdf2e6a0-df54-4aea-b5b4-f0b31a818d18";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
+    { device = "/dev/disk/by-uuid/fdf2e6a0-df54-4aea-b5b4-f0b31a818d18";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/swap" =
-    { device = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
+    { device = "/dev/disk/by-uuid/fdf2e6a0-df54-4aea-b5b4-f0b31a818d18";
       fsType = "btrfs";
       options = [ "subvol=swap" "noatime" ];
     };
@@ -46,7 +46,7 @@
 
   # https://nixos.org/manual/nixos/stable/options.html#opt-boot.resumeDevice
   swapDevices = [ { device = "/swap/swapfile"; } ];
-  boot.resumeDevice = "/dev/disk/by-uuid/4e469dbc-5108-4b0d-8298-a9972e395bb8";
+  boot.resumeDevice = "/dev/disk/by-uuid/fdf2e6a0-df54-4aea-b5b4-f0b31a818d18";
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
