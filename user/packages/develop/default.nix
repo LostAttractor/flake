@@ -1,14 +1,15 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    # Tools / IDE
+    # Tools
+    gh
+    # IDE
     vscode
     lapce
     github-desktop
     jetbrains.idea-ultimate
     jetbrains.clion
     jetbrains.pycharm-professional
-    # jetbrains.pycharm-community
     # Tools-Chain
     hugo
     openjdk8
