@@ -11,8 +11,8 @@ let
 in 
 { pkgs, lib, config, ... }:
 {
-  specialisation."VFIO".configuration = {
-    system.nixos.tags = [ "Nvidia-GPU-vfio" ];
+  specialisation."GPUPaththrough".configuration = {
+    system.nixos.tags = [ "NoXpad" "Nvidia-GPU-vfio" ];
     boot.initrd.kernelModules = [
       # vifo
       "vfio_pci"
@@ -28,5 +28,6 @@ in
     boot.kernelParams = [ 
       ("vfio-pci.ids=" + lib.concatStringsSep "," gpuIDs) # vfio-pci
     ];
+    boot.blacklistedKernelModules = [ "xpad" ];
   };
 }
