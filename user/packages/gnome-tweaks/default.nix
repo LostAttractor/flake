@@ -15,6 +15,7 @@
     openweather
     hibernate-status-button
     ibus-tweaker
+    wifi-qrcode
     (pkgs.callPackage ../../../userrepo/caffeine { })
   ]);
 }
