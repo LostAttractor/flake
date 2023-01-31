@@ -26,8 +26,7 @@
       ./modules/features/system/ssh.nix
       # features
       ./modules/features/flatpak.nix
-      ./modules/features/virtualisation.nix
-      ./modules/features/vfio.nix
+      ./modules/features/virtualisation
       ./modules/features/rathole
       # package
       ./packages

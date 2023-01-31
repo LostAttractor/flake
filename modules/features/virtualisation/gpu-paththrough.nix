@@ -12,7 +12,7 @@ in
 { pkgs, lib, config, ... }:
 {
   specialisation."GPUPaththrough".configuration = {
-    system.nixos.tags = [ "NoXpad" "Nvidia-GPU-vfio" ];
+    system.nixos.tags = [ "Nvidia-GPU-vfio" "NoXpad" ];
     boot.initrd.kernelModules = [
       # vifo
       "vfio_pci"
