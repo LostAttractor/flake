@@ -5,7 +5,6 @@
     obsidian
     wpsoffice-cn
     libreoffice
-    # xmind
     marktext
     kuro
   ];
