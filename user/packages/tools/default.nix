@@ -18,6 +18,7 @@
     rustdesk
     parsec-bin
     looking-glass-client
+    bitwarden
   ];
 
   imports = [
