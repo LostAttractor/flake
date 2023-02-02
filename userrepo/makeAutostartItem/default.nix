@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     cp ${package}/share/applications/${srcPrefix}${name}.desktop $target
     chmod +rw $target
     substituteInPlace $target \
-      --replace "%u" "${commandLineArgs} %u"
+      --replace "-- %u" "${commandLineArgs} -- %u"
     echo "X-KDE-autostart-phase=${phase}" >> $target
     ${lib.optionalString (after != null) ''echo "${after}" >> $target''}
     ${lib.optionalString (condition != null) ''echo "${condition}" >> $target''}
