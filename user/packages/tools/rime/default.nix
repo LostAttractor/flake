@@ -4,7 +4,7 @@
   xdg.configFile."ibus/rime".source = pkgs.fetchFromGitHub {
     owner = "LostAttractor";
     repo = "ca-rime-config";
-    rev = "3485e477f0217c5ff1daacfe993ac929883f3545";
-    sha256 = "sha256-8AmQW2/TfTl8CULMxA25/IADDd8iGdxv5WeRr2cNnHQ=";
+    rev = "6d95e48bcfdb289597fdf91156b8e3b68c841c5c";
+    sha256 = "sha256-1H6cSe7jgvXQxfdPqwZCki0DAbNIcwfY2C1y6VXVl7U=";
   };
 }
