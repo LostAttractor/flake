@@ -9,7 +9,7 @@ let
     "10de:228b" # Audio
   ];
 in 
-{ pkgs, lib, config, ... }:
+{ lib, ... }:
 {
   specialisation."GPUPaththrough".configuration = {
     system.nixos.tags = [ "Nvidia-GPU-vfio" "NoXpad" ];
