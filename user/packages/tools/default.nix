@@ -9,7 +9,6 @@
     ffmpeg_5-full
     appimage-run
     virt-manager
-    rsync
     fsearch
     fragments
     you-get
@@ -18,7 +17,6 @@
     rustdesk
     parsec-bin
     looking-glass-client
-    bitwarden
   ];
 
   imports = [

@@ -8,6 +8,7 @@
     git vim nano # Develop
     htop micro xsel
     pciutils usbutils bridge-utils # Utils
+    rsync
   ];
 
   programs.sharing.enable = true;

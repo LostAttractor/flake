@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    # Web Browser
     firefox-wayland #firefox
     chromium
     # (chromium.override {
@@ -10,14 +11,19 @@
     #   ];
     # })
     # microsoft-edge
+    # Social Apps
     tdesktop
-    qq
     signal-desktop
+    element-desktop
+    fractal
+    qq
     (discord.override { nss = nss_latest; })
+    # Password Manager
     (keeweb.override { nss = nss_latest; })
+    bitwarden
+    # Music Apps
     yesplaymusic
-    # (makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; })
-    # (makeAutostartItem { name = "qq"; package = qq; })
+    # Telegram Autostart
     (pkgs.callPackage ../../userrepo/makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; commandLineArgs = "-startintray"; })
   ];
 }
