@@ -44,6 +44,7 @@
   boot.bootspec.enable = true;
   boot.kernelPackages = pkgs.linuxPackages_zen; #Linux-zen
   # boot.plymouth.enable = true;
+  # boot.cleanTmpDir = false;
 
   networking.hostName = "CALaptop"; # Define hostname.
 
