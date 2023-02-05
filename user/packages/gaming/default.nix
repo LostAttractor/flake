@@ -2,7 +2,7 @@
 { 
   home.packages = with pkgs; [
     osu-lazer-bin
-    # lunar-client
+    lunar-client
     protonup-ng
     lutris
   ];
