@@ -14,6 +14,7 @@
     you-get
     handlr
     xdotool
+    nmap
     rustdesk
     parsec-bin
     looking-glass-client
