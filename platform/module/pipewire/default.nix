@@ -1,8 +1,9 @@
 { lib, ... }:
 {
+  # Enable sound.
+  sound.enable = true;
+
   # Pipewire
-  hardware.pulseaudio.enable = lib.mkForce false;
-  
   # rtkit is optional but recommended
   security.rtkit.enable = true;
   services.pipewire = {
@@ -13,4 +14,6 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
+
+  hardware.pulseaudio.enable = lib.mkForce false;
 }
