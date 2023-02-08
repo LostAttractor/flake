@@ -5,6 +5,7 @@
     lunar-client
     protonup-ng
     lutris
+    gwe
   ];
 
   programs.mangohud.enable = true;
