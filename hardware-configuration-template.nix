@@ -44,8 +44,8 @@
       fsType = "vfat";
     };
 
-  # https://nixos.org/manual/nixos/stable/options.html#opt-boot.resumeDevice
   swapDevices = [ { device = "/swap/swapfile"; } ];
+  # https://nixos.org/manual/nixos/stable/options.html#opt-boot.resumeDevice
   boot.resumeDevice = "/dev/disk/by-uuid/fdf2e6a0-df54-4aea-b5b4-f0b31a818d18";
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
