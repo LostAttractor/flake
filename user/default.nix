@@ -8,7 +8,6 @@
   };
 
   imports = [
-    ./modules/filesystems
     ./modules/looking-glass
   ];
 }
