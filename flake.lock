@@ -139,11 +139,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1675637696,
-        "narHash": "sha256-tilJS8zCS3PaDfVOfsBZ4zspuam8tc7IMZxtGa/K/uo=",
+        "lastModified": 1675855108,
+        "narHash": "sha256-KSiF7aTXTLlocFjMj+61USedaaiscD1ek6f/anFqr3Q=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "c43d4a3d6d9ef8ddbe2438362f5c775b4186000b",
+        "rev": "e631d78ddfbf808fd1cfc4d79039a1b3acda5bed",
         "type": "github"
       },
       "original": {
@@ -164,11 +164,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1675420463,
-        "narHash": "sha256-0ZYb17JHhQYCqM7ZRq4Qls6RpieiYH4W5vblFZ2RENI=",
+        "lastModified": 1675847941,
+        "narHash": "sha256-Dx10+k5DvRmdn8jOdFQbNBdpbk3UsnONhYhT9xOTwg4=",
         "owner": "nix-community",
         "repo": "lanzaboote",
-        "rev": "cb315d543cd831a56002953fbe88b59dfb184001",
+        "rev": "5f5b04a6f562c7975844dc56a42ec1e33afadb89",
         "type": "github"
       },
       "original": {
@@ -179,15 +179,16 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1675063391,
-        "narHash": "sha256-BTS7EagQatbXG+LM2ZYMzj+oED1MDzhZTNaoSOVwUZk=",
+        "lastModified": 1675866860,
+        "narHash": "sha256-3+iAAdD8UjUIGZtwbmJ5MUkrKbvaF+/9n6iP7FIXa+I=",
         "owner": "lostattractor",
         "repo": "nixos-hardware",
-        "rev": "be60a34c1a6c3aa3e878fb5030e44c6d0f316af9",
+        "rev": "f7756bd38c57a0bed5dd90722d0413b8fdfb385f",
         "type": "github"
       },
       "original": {
         "owner": "lostattractor",
+        "ref": "custom",
         "repo": "nixos-hardware",
         "type": "github"
       }
@@ -276,11 +277,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1675762627,
-        "narHash": "sha256-tqsr2CUAwyanXGnuF33uRHQDuuhLM+ih4swqkqKFvKM=",
+        "lastModified": 1675867880,
+        "narHash": "sha256-bKX7X/tJEg5yyQ8hEkTiSokCL5B8ZQmTrE6MS0f1kBk=",
         "owner": "lostattractor",
         "repo": "nixpkgs",
-        "rev": "2b702472e585dba3fd815cbee64f60f027319ddd",
+        "rev": "bd181b6caad6c4235874ba41739d7fe5f1b77099",
         "type": "github"
       },
       "original": {
@@ -292,11 +293,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1675762417,
-        "narHash": "sha256-AZxmakT8tPLyuimIw0g+ZXM0GV7rn3FzGNFhZqPjnKc=",
+        "lastModified": 1675867548,
+        "narHash": "sha256-ohwhoPKK1Srp8J7QqiGJD0tZhft2R7yze/oKlBB/yE0=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "77f1a5bfe756a3a864d4cc24d5c5aa154285d291",
+        "rev": "21444b14f5d62279719185f21f1fe4807e1f8931",
         "type": "github"
       },
       "original": {
