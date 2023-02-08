@@ -21,6 +21,7 @@
       user = "lostattractor";
     in
     {
+      # R900P
       nixosConfigurations."CALaptopR9000P" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs user; };
         modules = [
@@ -42,6 +43,40 @@
           }
           ({ config, ... }: {
             networking.hostName = "CALaptopR9000P"; # Define hostname.
+
+            # Packages form NUR
+            home-manager.users.${user} = {
+              home.packages = [
+                config.nur.repos.rewine.landrop
+                config.nur.repos.xddxdd.wechat-uos
+                # config.nur.repos.linyinfeng.icalingua-plus-plus
+              ];
+            };
+          })
+        ];
+      };
+      # Zephyrus G14
+      nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs user; };
+        modules = [
+          ./configuration.nix
+          nixos-hardware.nixosModules.asus-zephyrus-ga401   
+          # hardware.nvidia.prime.offload.enable may cause xorg cras
+          # Secure boot
+          ./lanzaboote.nix
+          lanzaboote.nixosModules.lanzaboote
+          # NUR
+          nur.nixosModules.nur
+          # Home-Manager
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs user; };
+            home-manager.users.${user} = import ./user/home.nix;
+          }
+          ({ config, ... }: {
+            networking.hostName = "CALaptop"; # Define hostname.
 
             # Packages form NUR
             home-manager.users.${user} = {
