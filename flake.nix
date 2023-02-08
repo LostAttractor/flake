@@ -25,7 +25,8 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
-          nixos-hardware.nixosModules.lenovo-legion-16ach6h   # hardware.nvidia.prime.offload.enable may cause xorg crash
+          nixos-hardware.nixosModules.lenovo-legion-16ach6h   
+          # hardware.nvidia.prime.offload.enable may cause xorg crash
           # Secure boot
           ./lanzaboote.nix
           lanzaboote.nixosModules.lanzaboote
