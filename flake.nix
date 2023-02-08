@@ -21,7 +21,7 @@
       user = "lostattractor";
     in
     {
-      nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."CALaptopR9000P" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
@@ -41,6 +41,8 @@
             home-manager.users.${user} = import ./user/home.nix;
           }
           ({ config, ... }: {
+            networking.hostName = "CALaptopR9000P"; # Define hostname.
+
             # Packages form NUR
             home-manager.users.${user} = {
               home.packages = [

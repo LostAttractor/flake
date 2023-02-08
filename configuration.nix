@@ -46,8 +46,6 @@
   # boot.plymouth.enable = true;
   # boot.cleanTmpDir = false;
 
-  networking.hostName = "CALaptop"; # Define hostname.
-
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
