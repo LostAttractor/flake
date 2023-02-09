@@ -27,8 +27,7 @@
       # features
       ./modules/features/flatpak.nix
       ./modules/features/xone.nix
-      ./modules/features/virtualisation
-      ./modules/features/rathole
+      ./modules/features/virtualisation.nix
       # package
       ./packages
       ./tests

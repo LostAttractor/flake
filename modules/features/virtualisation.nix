@@ -25,6 +25,4 @@
       user = "libvirtd";
     };
   };
-
-  imports = [ ./gpu-paththrough.nix ];
 }
