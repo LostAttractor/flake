@@ -7,7 +7,7 @@
     openssl wget axel # Downloader
     git vim nano # Develop
     htop micro xsel
-    pciutils usbutils bridge-utils # Utils
+    pciutils usbutils bridge-utils dnsutils # Utils
     rsync
   ];
 
