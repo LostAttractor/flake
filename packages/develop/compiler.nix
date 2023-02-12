@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    clang go rustup
+    clang go rustup gcc
   ];
 }
