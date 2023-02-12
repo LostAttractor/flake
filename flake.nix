@@ -43,8 +43,6 @@
             home-manager.users.${user} = {
               home.packages = [
                 config.nur.repos.rewine.landrop
-                config.nur.repos.xddxdd.wechat-uos
-                # config.nur.repos.linyinfeng.icalingua-plus-plus
               ];
             };
           })
@@ -72,8 +70,6 @@
             home-manager.users.${user} = {
               home.packages = [
                 config.nur.repos.rewine.landrop
-                config.nur.repos.xddxdd.wechat-uos
-                # config.nur.repos.linyinfeng.icalingua-plus-plus
               ];
             };
           })
