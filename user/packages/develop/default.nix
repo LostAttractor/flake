@@ -4,7 +4,7 @@
     # Tools
     gh
     # IDE
-    vscode
+    # vscode
     lapce
     github-desktop
     jetbrains.idea-ultimate
@@ -16,6 +16,11 @@
     # zulu8
     # conda
   ];
+
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode.fhsWithPackages (ps: with ps; [ rustup zlib openssl.dev pkg-config ]);
+  };
 
   imports = [
     ./jetbra
