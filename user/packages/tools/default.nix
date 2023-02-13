@@ -5,9 +5,7 @@
     hyfetch
     screenfetch
     cmatrix
-    v2ray
     ffmpeg_5-full
-    appimage-run
     virt-manager
     fsearch
     fragments

@@ -8,7 +8,9 @@
     git vim nano # Develop
     htop micro xsel
     pciutils usbutils bridge-utils dnsutils # Utils
-    rsync
+    v2ray # Proxy
+    appimage-run # Run Appimage 
+    rsync # Rsync
   ];
 
   programs.sharing.enable = true;
