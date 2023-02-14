@@ -6,6 +6,7 @@
     ./settings/shell
     ./settings/gnome-tweaks
     ./settings/flatpak
+    ./settings/hidpi
     ./packages
   ];
 
