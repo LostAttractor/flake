@@ -13,6 +13,7 @@
     # Tools-Chain
     hugo
     openjdk8
+    devbox
     # zulu8
     # conda
   ];
