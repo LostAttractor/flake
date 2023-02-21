@@ -13,7 +13,6 @@
     blur-my-shell
     dock-from-dash
     openweather
-    hibernate-status-button
     ibus-tweaker
     wifi-qrcode
     caffeine
