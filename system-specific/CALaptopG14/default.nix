@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  networking.hostName = "CALaptop"; # Define hostname.
+  networking.hostName = "CALaptopG14"; # Define hostname.
 
   programs.rog-control-center.enable = true;
   programs.rog-control-center.autoStart = true;
@@ -10,4 +10,8 @@
   boot.extraModprobeConfig = ''
     options hid_apple fnmode=0
   '';
+
+  imports = [
+    ./modules/features/wireguard
+  ];
 }

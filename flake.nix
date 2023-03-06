@@ -49,7 +49,7 @@
         ];
       };
       # Zephyrus G14
-      nixosConfigurations."CALaptop" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."CALaptopG14" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
