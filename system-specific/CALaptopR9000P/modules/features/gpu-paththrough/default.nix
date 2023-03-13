@@ -18,7 +18,8 @@ in
       "vfio_pci"
       "vfio"
       "vfio_iommu_type1"
-      "vfio_virqfd"
+      # Built into kernel at linux 6.2
+      # "vfio_virqfd"
       # If you load nvidia driver in initrd, you need specific vfio load before nvidia driver
       # "nvidia"
       # "nvidia_modeset"
