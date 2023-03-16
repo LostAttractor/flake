@@ -4,6 +4,7 @@
 
   imports = [
     # ./modules/features/rathole
+    ./modules/features/virtualisation
     ./modules/features/gpu-paththrough
   ];
 

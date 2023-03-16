@@ -1,12 +1,12 @@
 # https://astrid.tech/2022/09/22/0/nixos-gpu-vfio/
 let
-  # RTX 3070 Laptop
-  # IOMMU Group 12:
-	# 01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA104M [GeForce RTX 3070 Mobile / Max-Q] [10de:24dd] (rev a1)
-	# 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
+  # RTX 3060 Laptop
+  # IOMMU Group 8:
+  # 01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA106M [GeForce RTX 3060 Mobile / Max-Q] [10de:2520] (rev a1)
+  # 01:00.1 Audio device [0403]: NVIDIA Corporation GA106 High Definition Audio Controller [10de:228e] (rev a1)
   gpuIDs = [
-    "10de:24dd" # Graphics
-    "10de:228b" # Audio
+    "10de:2520" # Graphics
+    "10de:228e" # Audio
   ];
 in 
 { lib, ... }:
