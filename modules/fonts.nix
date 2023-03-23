@@ -29,8 +29,7 @@
       (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
 	  ];
     fontDir.enable = true;
-    fontconfig.enable = true;
-
+    
     # enableDefaultFonts = true;
     # fontconfig.defaultFonts = {
     #   emoji = [ "Noto Color Emoji" ];
