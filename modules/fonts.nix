@@ -26,17 +26,17 @@
       wqy_zenhei
       #更纱黑体
       sarasa-gothic
-      (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" "Hack" ]; })
+      (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
 	  ];
     fontDir.enable = true;
     fontconfig.enable = true;
 
-    #enableDefaultFonts = true;
-    #fontconfig.defaultFonts = {
-    #  emoji = [ "Noto Color Emoji" ];
-    #  monospace = [ "Source Han Mono" ];
-    #  sansSerif = [ "Noto Sans CJK SC" ];
-    #  serif = [ "Source Han Serif" ];
-    #};
+    # enableDefaultFonts = true;
+    # fontconfig.defaultFonts = {
+    #   emoji = [ "Noto Color Emoji" ];
+    #   monospace = [ "Source Han Mono" ];
+    #   sansSerif = [ "Noto Sans CJK SC" ];
+    #   serif = [ "Source Han Serif" ];
+    # };
   };
 }
