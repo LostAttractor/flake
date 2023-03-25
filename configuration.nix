@@ -18,6 +18,7 @@
       ./modules/network.nix
       ./modules/fonts.nix
       ./modules/filesystems.nix
+      ./modules/shell.nix
       # nix
       ./modules/nix/optimise-store.nix
       ./modules/nix/substituters.nix
