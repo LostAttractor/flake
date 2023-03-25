@@ -1,4 +1,4 @@
-{ ... }:
+_:
 {
   # Enable sound.
   sound.enable = true;

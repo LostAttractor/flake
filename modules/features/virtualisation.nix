@@ -1,5 +1,5 @@
 # You need kvm-intel / kvm-amd kernel module for virtualisation
-{ pkgs, config, lib, ... }:
+{ pkgs, ... }:
 {
   virtualisation.libvirtd.enable = true;
   # virtualisation.libvirtd.qemu.ovmf.packages = lib.singleton (pkgs.OVMFFull.override { csmSupport = false; }).fd;

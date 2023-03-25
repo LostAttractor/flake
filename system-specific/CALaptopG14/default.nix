@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   networking.hostName = "CALaptopG14"; # Define hostname.
 
