@@ -14,7 +14,6 @@
     dock-from-dash
     openweather
     ibus-tweaker
-    wifi-qrcode
     caffeine
   ]);
 }
