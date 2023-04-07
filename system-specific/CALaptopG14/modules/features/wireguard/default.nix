@@ -18,7 +18,8 @@
         {
           presharedKeyFile = "/etc/wireguard-keys/preshared";
           publicKey = "bdGvsxgXLQ7If+Ay7DxVMHRHBnMlKKZPAh6An5jQ3Eg=";
-          allowedIPs = [ "0.0.0.0/0" "::/0" ];
+          allowedIPs = [ "192.168.0.0/16" "10.100.0.0/24" "fdfe:be36:2f43::/48" "fd42:208c:df86::1/60" ];
+          # allowedIPs = [ "0.0.0.0/0" "::/0" ];
           endpoint = "openwrt.lostattractor.net:51820";
         }
       ];
@@ -35,7 +36,8 @@
   #       {
   #         presharedKeyFile = "/etc/wireguard-keys/preshared";
   #         publicKey = "bdGvsxgXLQ7If+Ay7DxVMHRHBnMlKKZPAh6An5jQ3Eg=";
-  #         allowedIPs = [ "0.0.0.0/0" "::/0" ];
+  #         allowedIPs = [ "192.168.0.0/16" "10.100.0.0/24" "fdfe:be36:2f43::/48" "fd42:208c:df86::1/60" ];
+  ##        allowedIPs = [ "0.0.0.0/0" "::/0" ];
   #         endpoint = "openwrt.lostattractor.net:51820";
   #         dynamicEndpointRefreshSeconds = 5;
   #       }
