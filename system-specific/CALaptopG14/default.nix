@@ -13,6 +13,7 @@
 
   imports = [
     ./modules/nix/access-tokens
+    ./modules/features/rathole
     ./modules/features/wireguard
     ./modules/features/virtualisation
     ./modules/features/gpu-paththrough
