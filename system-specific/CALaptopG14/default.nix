@@ -12,6 +12,7 @@
   '';
 
   imports = [
+    ./modules/nix/access-tokens
     ./modules/features/wireguard
     ./modules/features/virtualisation
     ./modules/features/gpu-paththrough
