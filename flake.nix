@@ -24,7 +24,12 @@
       # Lneovo Legion R9000P
       nixosConfigurations."CALaptopR9000P" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs user; };
-        modules = [
+        modules = let
+          nur-modules = import nur {
+            nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
+            pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          };
+        in [
           ./configuration.nix
           ./system-specific/CALaptopR9000P
           ./lanzaboote.nix
@@ -35,23 +40,20 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit inputs user; };
+            home-manager.extraSpecialArgs = { inherit inputs user nur-modules; };
             home-manager.users.${user} = import ./user/home.nix;
           }
-          ({ config, ... }: {
-            # Packages form NUR
-            home-manager.users.${user} = {
-              home.packages = [
-                config.nur.repos.rewine.landrop
-              ];
-            };
-          })
         ];
       };
       # Zephyrus G14
       nixosConfigurations."CALaptopG14" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs user; };
-        modules = [
+        modules = let
+          nur-modules = import nur {
+            nurpkgs = nixpkgs.legacyPackages.x86_64-linux;
+            pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          };
+        in [
           ./configuration.nix
           ./system-specific/CALaptopG14
           ./lanzaboote.nix
@@ -62,17 +64,9 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit inputs user; };
+            home-manager.extraSpecialArgs = { inherit inputs user nur-modules; };
             home-manager.users.${user} = import ./user/home.nix;
           }
-          ({ config, ... }: {
-            # Packages form NUR
-            home-manager.users.${user} = {
-              home.packages = [
-                config.nur.repos.rewine.landrop
-              ];
-            };
-          })
         ];
       };
     };

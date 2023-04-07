@@ -22,5 +22,6 @@
   imports = [
     ./rime
     ./alacritty
+    ./landrop
   ];
 }
