@@ -1,4 +1,4 @@
-{ ... }:
+{ user, ... }:
 {
   networking.hostName = "CALaptopG14"; # Define hostname.
 
@@ -10,6 +10,12 @@
   boot.extraModprobeConfig = ''
     options hid_apple fnmode=0
   '';
+
+  home-manager.users.${user}.dconf.settings = {
+    "org/gnome/desktop/peripherals/touchpad" = {
+      speed = 0.2;
+    };
+  };
 
   imports = [
     ./modules/nix/access-tokens
