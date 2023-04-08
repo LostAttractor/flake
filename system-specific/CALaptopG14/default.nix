@@ -13,6 +13,7 @@
 
   imports = [
     ./modules/nix/access-tokens
+    ./modules/nix/remote-build
     ./modules/features/rathole
     ./modules/features/wireguard
     ./modules/features/virtualisation
