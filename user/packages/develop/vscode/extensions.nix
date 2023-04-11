@@ -2,14 +2,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.4.705";
-    sha256 = "17xq29c81s93h2ylp3bbnj2hmyd343i3blwylqsvjg45mhsh6qk1";
+    version = "2023.4.1005";
+    sha256 = "08vj2jldv4g50z1y5zdrlhj9jyhfv4887az8nk5q4pcalw08z5l3";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.63.2023040609";
-    sha256 = "1iahn136djgwipb8r24bdzcmgw78xfl6gvlqbvl5h4scyiifq98z";
+    version = "0.63.2023041009";
+    sha256 = "1nqsd8qjafah075sz3ff313xr1zjhzva2xn7rhp82a0spr3qpxa8";
   }
   {
     name = "vscode-docker";
@@ -26,8 +26,8 @@
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.14.24";
-    sha256 = "1m352xlbn2hvqwl11njz1c3dci8lqphrgmx9jwsxfpgil9p07ypp";
+    version = "1.14.25";
+    sha256 = "1ymbk3f6gl12b4xmaslvkbhfchfy2y1dfg8j8d9bvvs1xx2jga96";
   }
   {
     name = "cpptools-extension-pack";
@@ -56,8 +56,8 @@
   {
     name = "material-icon-theme";
     publisher = "PKief";
-    version = "4.25.0";
-    sha256 = "0abk642gdf3d4n7nynr835gcb091qwnvjpdlig7ga5sxns5zfl7y";
+    version = "4.26.0";
+    sha256 = "03jqsdl3d5wrfkhiya7ilqhihahjxf8pqmd9bdhvkymxpqiyffgb";
   }
   {
     name = "cmake";
