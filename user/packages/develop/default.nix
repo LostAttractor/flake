@@ -14,6 +14,8 @@
     hugo
     openjdk8
     devbox
+    # Language Server
+    nil
     # zulu8
     # conda
   ];
