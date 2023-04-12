@@ -2,14 +2,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.4.1005";
-    sha256 = "08vj2jldv4g50z1y5zdrlhj9jyhfv4887az8nk5q4pcalw08z5l3";
+    version = "2023.4.1205";
+    sha256 = "0jp6pg15q2dynczq6s88q6ffffckji64bq881sp6y90hvvw5gdi3";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.63.2023041009";
-    sha256 = "1nqsd8qjafah075sz3ff313xr1zjhzva2xn7rhp82a0spr3qpxa8";
+    version = "0.63.2023041209";
+    sha256 = "1jqwdc6ah3zahjhpkzq6d0l2dw6r51lsdj1j7g4vai9bdpa4wqj7";
   }
   {
     name = "vscode-docker";
