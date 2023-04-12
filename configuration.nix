@@ -43,7 +43,6 @@
   boot.loader.timeout = 180; # 3min
   boot.bootspec.enable = true;
   boot.kernelPackages = pkgs.linuxPackages_zen; #Linux-zen
-  # boot.plymouth.enable = true;
   # boot.cleanTmpDir = false;
 
   nix.extraOptions = ''
