@@ -14,9 +14,11 @@
     home-manager.url = "github:nix-community/home-manager";
     # NUR Packages
     nur.url = "github:nix-community/NUR";
+    # Apple Silicon Support
+    apple-silicon-support.url = "github:tpwrules/nixos-apple-silicon";
   };
 
-  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, ... }:
+  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, ... }:
     let
       user = "lostattractor";
     in
@@ -49,6 +51,18 @@
           ./home-manager.nix
           nixos-hardware.nixosModules.asus-zephyrus-ga401
           lanzaboote.nixosModules.lanzaboote
+          nur.nixosModules.nur
+          home-manager.nixosModules.home-manager
+        ];
+      };
+      # CALaptopM2
+      nixosConfigurations."CALaptopM2" = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs user; };
+        modules = [
+          ./configuration.nix
+          ./specific/system-specific/CALaptopM2
+          ./specific/user-specific
+          apple-silicon-support.nixosModules.apple-silicon-support
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
         ];
