@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -40,7 +40,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 180; # 3min
   boot.bootspec.enable = true;
-  boot.kernelPackages = pkgs.linuxPackages_zen; #Linux-zen
+  boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen; #Linux-zen
   # boot.cleanTmpDir = false;
 
   nix.extraOptions = ''
