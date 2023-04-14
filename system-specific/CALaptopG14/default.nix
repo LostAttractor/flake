@@ -25,5 +25,6 @@
     ./modules/features/wireguard
     ./modules/features/virtualisation
     ./modules/features/gpu-paththrough
+    ./modules/features/libfprint-goodix-521d
   ];
 }
