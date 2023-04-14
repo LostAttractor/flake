@@ -6,9 +6,7 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      # desktop platform
+    [ # desktop platform
       ./platform/desktop.nix
       ./desktop/gnome
       # modules

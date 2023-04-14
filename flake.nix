@@ -26,7 +26,9 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
-          ./system-specific/CALaptopR9000P
+          ./specific/system-specific/CALaptopR9000P
+          ./specific/hardware-specific/lenovo-legion-16ach6h
+          ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
           nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
@@ -40,10 +42,12 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
-          ./system-specific/CALaptopG14
+          ./specific/system-specific/CALaptopG14
+          ./specific/hardware-specific/asus-zephyrus-ga401
+          ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
-          nixos-hardware.nixosModules.asus-zephyrus-ga401   
+          nixos-hardware.nixosModules.asus-zephyrus-ga401
           lanzaboote.nixosModules.lanzaboote
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager

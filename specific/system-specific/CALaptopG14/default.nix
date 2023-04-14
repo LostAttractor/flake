@@ -18,13 +18,10 @@
   };
 
   imports = [
-    ./modules/nix/access-tokens
-    ./modules/nix/remote-build
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
     ./modules/features/luks
     ./modules/features/rathole
     ./modules/features/wireguard
-    ./modules/features/virtualisation
-    ./modules/features/gpu-paththrough
-    ./modules/features/libfprint-goodix-521d
   ];
 }
