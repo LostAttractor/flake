@@ -2,7 +2,7 @@
 {
   imports = [
     ./modules/features/gpu-paththrough
-    ./modules/features/libfprint-goodix-521d
     ./modules/features/virtualisation
+    # ./modules/features/libfprint-goodix-521d
   ];
 }
