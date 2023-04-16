@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [ 
-	  ./gnome.nix
+    ./gnome.nix
     ./wayland.nix
     ./xdg.nix
   ];
