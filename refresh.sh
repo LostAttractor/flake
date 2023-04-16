@@ -4,4 +4,4 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 ./flake.sh
-./deploy.sh
+./deploy.sh $*
