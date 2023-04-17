@@ -3,14 +3,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # Basic Tools
     openssl wget axel # Downloader
     git vim nano # Develop
-    htop micro xsel
-    pciutils usbutils bridge-utils dnsutils # Utils
+    htop micro xsel # Basic Tools
+    pciutils usbutils bridge-utils dnsutils mtr # Utils / Tools
     v2ray # Proxy
     appimage-run # Run Appimage 
     rsync # Rsync
+    firefox # Browser
   ];
 
   programs.sharing.enable = true;
