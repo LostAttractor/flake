@@ -2,14 +2,8 @@
 {
   home.packages = with pkgs; [
     # Web Browser
-    firefox-wayland #firefox
+    firefox-wayland # firefox for wayland
     chromium
-    # (chromium.override {
-    #   commandLineArgs = [
-    #     "--use-angle=egl"
-    #     "--use-cmd-decoder=passthrough"
-    #   ];
-    # })
     # microsoft-edge
     # Social Apps
     tdesktop
