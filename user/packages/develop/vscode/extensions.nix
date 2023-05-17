@@ -2,20 +2,20 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.5.1313";
-    sha256 = "1kr4jc2i8a0grd69iyb0cf0fckr7r7vx6bm10gk8l0q3rdqa9zbc";
+    version = "2023.5.1702";
+    sha256 = "0k4s0an0abfhyyf0gxrxvmzf9add7syhh3d8yr5g6fi5p1xwrn4f";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.65.2023051109";
-    sha256 = "0b00f0wvldpc0z0yijq5gmsp4ry56kzakshvlr50cl429vc6016n";
+    version = "0.65.2023051609";
+    sha256 = "0jq541rzg5n338zs0zbzdnvd8is4hi5hkjp8cws31159hlblgi2z";
   }
   {
     name = "vscode-docker";
     publisher = "ms-azuretools";
-    version = "1.25.0";
-    sha256 = "1hif7f2323v1lkhzqi7n50psh5bw2jbc6h736fhv61jlfvb2z8bk";
+    version = "1.25.1";
+    sha256 = "1r0h6mi339gbczz3rrr1k2hfxk6w9f1pvpf4lrclp670nldfch5w";
   }
   {
     name = "vscode-language-pack-zh-hans";
