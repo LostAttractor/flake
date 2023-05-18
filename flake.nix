@@ -55,12 +55,12 @@
           home-manager.nixosModules.home-manager
         ];
       };
-      # CALaptopM2
-      nixosConfigurations."CALaptopM2" = nixpkgs.lib.nixosSystem {
+      # CAAppleSilicon
+      nixosConfigurations."CAAppleSilicon" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs user; };
         modules = [
           ./configuration.nix
-          ./specific/system-specific/CALaptopM2
+          ./specific/system-specific/CAAppleSilicon
           ./specific/user-specific
           apple-silicon-support.nixosModules.apple-silicon-support
           nur.nixosModules.nur

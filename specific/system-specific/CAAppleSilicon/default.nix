@@ -1,6 +1,6 @@
 { ... }:
 { 
-  networking.hostName = "CALaptopM2"; # Define hostname.
+  networking.hostName = "CAAppleSilicon"; # Define hostname.
 
   imports = [
     ./hardware-configuration.nix
