@@ -61,6 +61,7 @@
         modules = [
           ./configuration.nix
           ./specific/system-specific/CAAppleSilicon
+          ./specific/hardware-specific/apple-silicon
           ./specific/user-specific
           apple-silicon-support.nixosModules.apple-silicon-support
           nur.nixosModules.nur
