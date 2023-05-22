@@ -5,4 +5,4 @@ if [ "$EUID" -ne 0 ]
 fi
 rm -R /etc/nixos/*
 rsync -a --exclude={'deploy.sh','flake.sh','refresh.sh','.git'} ./* /etc/nixos/ # -v
-nixos-rebuild switch -v $*
+nixos-rebuild switch $*
