@@ -2,8 +2,8 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.5.1805";
-    sha256 = "1ddlxcg4ab5praa5adfimzj1xk7jx9z119mfikkllinxdyazcpaj";
+    version = "2023.5.2205";
+    sha256 = "1vbgz53vy9wj89pwyvxw8mmh0c1ns03ghw57cl28id8m7qn6agyn";
   }
   {
     name = "vscode-pull-request-github";
@@ -26,8 +26,8 @@
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.15.9";
-    sha256 = "03q4zfpzv32gazhjhzpq3vkckskc7wc6fj2qq5ddwsvr5hdkkr12";
+    version = "1.15.10";
+    sha256 = "19babwsm9b2z6lwfzc6mmkgsm55ibv1z2y30cnrkkrlz2ppdc81m";
   }
   {
     name = "cpptools-extension-pack";
