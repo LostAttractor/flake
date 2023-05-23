@@ -5,7 +5,7 @@
     lunar-client
     protonup-ng
     lutris
-    yuzu
+    yuzu-early-access
     gwe
   ];
 
