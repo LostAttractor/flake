@@ -2,8 +2,8 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.5.2205";
-    sha256 = "1vbgz53vy9wj89pwyvxw8mmh0c1ns03ghw57cl28id8m7qn6agyn";
+    version = "2023.5.2405";
+    sha256 = "0my4xpi0mldfccc55k527p1y2gfcf0zxaf8fqpzlrgn4n57yvnx2";
   }
   {
     name = "vscode-pull-request-github";
@@ -68,8 +68,8 @@
   {
     name = "material-theme";
     publisher = "zhuangtongfa";
-    version = "3.15.13";
-    sha256 = "0gapamd6n280zlygfkdjyq1f3fdw3s44jj5bpq7i8k39q5c6cr24";
+    version = "3.15.14";
+    sha256 = "1rf8k6hrxkny8f9l3gd2sqsz7w4cqmx8ga5g7fpj3mdhc4bsmys7";
   }
 ];
 }
