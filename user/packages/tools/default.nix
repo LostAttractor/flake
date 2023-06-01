@@ -17,6 +17,7 @@
     parsec-bin
     looking-glass-client
     powertop
+    flameshot
   ];
 
   imports = [
