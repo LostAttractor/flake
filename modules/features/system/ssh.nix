@@ -4,8 +4,8 @@ _:
     enable = true;
     settings = {
       # require public key authentication for better security
-      passwordAuthentication = false;
-      kbdInteractiveAuthentication = false;
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
       #permitRootLogin = "yes";
     };
   };
