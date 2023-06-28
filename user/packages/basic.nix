@@ -17,6 +17,7 @@
     bitwarden
     # Music Apps
     yesplaymusic
+    (pkgs.callPackage ../../userrepo/spotify-adblocked { })
     # Telegram Autostart
     (pkgs.callPackage ../../userrepo/makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; commandLineArgs = "-startintray"; })
   ];
