@@ -9,5 +9,6 @@
 
   imports = [
     ./modules/looking-glass
+    ./modules/uxplay
   ];
 }
