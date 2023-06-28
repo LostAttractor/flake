@@ -19,6 +19,7 @@
     powertop
     flameshot
     wgcf
+    uxplay
   ];
 
   imports = [
