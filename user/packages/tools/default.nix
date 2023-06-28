@@ -18,6 +18,7 @@
     looking-glass-client
     powertop
     flameshot
+    wgcf
   ];
 
   imports = [
