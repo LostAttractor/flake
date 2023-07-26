@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   fonts = {
-	  fonts = with pkgs; [
+	  packages = with pkgs; [
       # noto
       noto-fonts
       noto-fonts-cjk-sans
@@ -28,6 +28,7 @@
       sarasa-gothic
       (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
 	  ];
+    
     fontDir.enable = true;
     
     # enableDefaultFonts = true;
