@@ -2,8 +2,8 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.8.110";
-    sha256 = "16cwjw15ygwmqkfnbg42ji5q9jsr73i4daan8swvjxkhxp50xn75";
+    version = "2023.8.205";
+    sha256 = "0x7kvyf9qi937pzjqa06g7h3v6c62jkndv0w2wvs4ad82q0v6qfh";
   }
   {
     name = "vscode-pull-request-github";
@@ -26,8 +26,8 @@
   {
     name = "vscode-language-pack-zh-hans";
     publisher = "MS-CEINTL";
-    version = "1.81.2023072609";
-    sha256 = "1i94r6myqd3j02wvw8zr11dxbcac98qag1j1isawx3jnyqyhpf1m";
+    version = "1.81.2023080209";
+    sha256 = "1gh2maha8mgfn8a3iw1hkcn3hgz04aw7haiw8x7c0shlbpdck4vc";
   }
   {
     name = "cmake-tools";
