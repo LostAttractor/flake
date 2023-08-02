@@ -9,7 +9,7 @@
     tdesktop
     signal-desktop
     element-desktop
-    fractal
+    fractal-next
     qq
     (discord.override { nss = nss_latest; })
     # Password Manager
