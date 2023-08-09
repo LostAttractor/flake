@@ -1,15 +1,21 @@
 { extensions = [
   {
+    name = "transformer";
+    publisher = "dakara";
+    version = "1.12.1";
+    sha256 = "1p4icqpsnq5v5a6vxk6p1pqp25wxsavnlffv231swp2a3pm4gxww";
+  }
+  {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.8.205";
-    sha256 = "0x7kvyf9qi937pzjqa06g7h3v6c62jkndv0w2wvs4ad82q0v6qfh";
+    version = "2023.8.905";
+    sha256 = "127lsir1my7y4pp01djhl16hhbdy77lxsyxmissc6sbxhcwb5mcv";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.69.2023072716";
-    sha256 = "0mdc4khc34v2gmx1qizj8clwb6b1fw47vf1dazhivki6jsk5zlpr";
+    version = "0.71.2023080909";
+    sha256 = "1rw8j3xazlcs6g6b2x0mg4vs8n4mwpxdp51sfdbg8y3736r62p0w";
   }
   {
     name = "go";
@@ -32,8 +38,8 @@
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.15.28";
-    sha256 = "1ia2x04ggl8dar38bcvp6q0zfi3a2m89k7ryk2g04bl9gpmhp4kz";
+    version = "1.15.30";
+    sha256 = "17bam5m5vbmahij936dfm0nf5wmjr2nl41dn1gxmylj0j30jk4qc";
   }
   {
     name = "cpptools-extension-pack";
