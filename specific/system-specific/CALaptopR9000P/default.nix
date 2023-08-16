@@ -1,4 +1,4 @@
-{ ... }:
+_:
 {
   networking.hostName = "CALaptopR9000P"; # Define hostname.
 

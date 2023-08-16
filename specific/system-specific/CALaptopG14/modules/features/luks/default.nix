@@ -1,4 +1,4 @@
-{ ... }:
+_:
 {
   boot.initrd.luks.devices = {
     lvm-encrypted = {

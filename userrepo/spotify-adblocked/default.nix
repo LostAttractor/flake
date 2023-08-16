@@ -37,7 +37,7 @@ let
     '';
   };
 in
-  spotify.overrideAttrs (prev: {
+  spotify.overrideAttrs (_prev: {
     postInstall = ''
       libdir=$out/lib/spotify
 
