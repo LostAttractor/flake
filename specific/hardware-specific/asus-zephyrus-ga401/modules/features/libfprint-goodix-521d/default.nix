@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   services.fprintd.enable = true;
-  services.fprintd.package = (pkgs.fprintd.override { 
+  services.fprintd.package = pkgs.fprintd.override { 
     libfprint = pkgs.libfprint.overrideAttrs (oldAttrs: rec {
       pname = "libfprint-goodix-521d";
       version = "unstable";
@@ -22,5 +22,5 @@
         pkgs.openssl
       ];
     });
-  });
+  };
 }

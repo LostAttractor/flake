@@ -1,4 +1,4 @@
-{ ... }:
+_:
 {
   # Wireguard IPv4 Segment: 10.100.0.1/24
   # Wireguard IPv6 ULA: fdfe:be36:2f43::/48
