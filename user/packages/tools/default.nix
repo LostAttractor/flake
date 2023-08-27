@@ -20,6 +20,7 @@
     flameshot
     wgcf
     uxplay
+    adoptopenjdk-icedtea-web
   ];
 
   imports = [
