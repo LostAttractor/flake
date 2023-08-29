@@ -4,27 +4,29 @@ _:
   nix.buildMachines = [
     {
       hostName = "nix@nixbuild.home.lostattractor.net";
-      system = "x86_64-linux";
-      # if the builder supports building for multiple architectures, 
-      # replace the previous line by, e.g.,
-      # systems = ["x86_64-linux" "aarch64-linux"];
+      systems = ["x86_64-linux" "i686-linux"];
       maxJobs = 8;
-      # speedFactor = 1;
+      speedFactor = 2;
+      supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
+      mandatoryFeatures = [ ];
+    }
+        {
+      hostName = "nix@nixbuild2.home.lostattractor.net";
+      systems = ["x86_64-linux" "i686-linux"];
+      maxJobs = 8;
+      speedFactor = 2;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
       mandatoryFeatures = [ ];
     }
     {
       hostName = "nix@nixbuild.home.net.men.ci";
-      system = "x86_64-linux";
-      # if the builder supports building for multiple architectures, 
-      # replace the previous line by, e.g.,
-      # systems = ["x86_64-linux" "aarch64-linux"];
-      maxJobs = 4;
-      # speedFactor = 1;
+      systems = ["x86_64-linux" "i686-linux"];
+      maxJobs = 8;
+      speedFactor = 1;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
       mandatoryFeatures = [ ];
     }
-  ] ;
+  ];
   nix.distributedBuilds = true;
   # optional, useful when the builder has a faster internet connection than yours
   nix.extraOptions = ''
