@@ -1,8 +1,4 @@
 { pkgs, lib, ... }: {
-  # This should already be here from switching to bootspec earlier.
-  # It's not required anymore, but also doesn't do any harm.
-  boot.bootspec.enable = true;
-
   environment.systemPackages = [
     # For debugging and troubleshooting Secure Boot.
     pkgs.sbctl
