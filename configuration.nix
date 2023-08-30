@@ -39,7 +39,6 @@
   boot.loader.systemd-boot.consoleMode = lib.mkDefault "auto";
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 180; # 3min
-  boot.bootspec.enable = true;
   boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen; #Linux-zen
   # boot.cleanTmpDir = false;
 
