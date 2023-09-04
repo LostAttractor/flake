@@ -1,6 +1,6 @@
-{ nur-modules, ... }:
+{ nur, ... }:
 {
   home.packages = [
-    nur-modules.repos.rewine.landrop
+    nur.repos.rewine.landrop
   ];
 }
