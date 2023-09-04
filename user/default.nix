@@ -8,7 +8,7 @@
   };
 
   imports = [
-    ./modules/looking-glass
+    ./modules/looking-glass/kvmfr
     ./modules/uxplay
   ];
 }
