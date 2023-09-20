@@ -8,14 +8,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.9.205";
-    sha256 = "1j041vbg3lpicv8kg8zpav29i08dc3fgw72bwc7hz0ijq0mccpii";
+    version = "2023.9.2005";
+    sha256 = "0hr68k6l4dg9bi4jc10q8zy3wwww7r49kav91qk8jk66nzzd7nrw";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.71.2023083109";
-    sha256 = "1yl7f2srmb9a855pfr8j8x9vmqm9spx6a54c4rkymzf5sq9r2iaw";
+    version = "0.73.2023092009";
+    sha256 = "1sj2hlib900zzx29lz1qnc2r0jrniabp67bzqgpkpmghnywwd5gr";
   }
   {
     name = "go";
@@ -26,20 +26,20 @@
   {
     name = "vscode-docker";
     publisher = "ms-azuretools";
-    version = "1.26.0";
-    sha256 = "0fsmyxi0iwr0qr9fl86hsfqw8qlj3s9dzp25smx778zcvqxwlha6";
+    version = "1.26.1";
+    sha256 = "1lg8asfdc0qm4ysqkxbwq5lf83cb62m1j1iw5fcyzqaz92v55ggq";
   }
   {
     name = "vscode-language-pack-zh-hans";
     publisher = "MS-CEINTL";
-    version = "1.82.2023083009";
-    sha256 = "1ll6p6h846fyiwpzn878zjg1dpm9iix2fbjlfwfyabf1w29sgvcv";
+    version = "1.83.2023092009";
+    sha256 = "0g8azzidz23pnzx377pj8jabx7zdmc41rwq3ah332yc30231556p";
   }
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.16.3";
-    sha256 = "1v2ricifr6hi62vlblcl8p469ss58shgnz3h42r4lka90988bjad";
+    version = "1.16.6";
+    sha256 = "0pfyg3br10v0r6izzsblhrcq5dhwkfy2iy2rygg5ghnvbb8sm6nw";
   }
   {
     name = "cpptools-extension-pack";
@@ -62,8 +62,8 @@
   {
     name = "remote-explorer";
     publisher = "ms-vscode";
-    version = "0.5.2023071709";
-    sha256 = "01k349ya7zym88d8xildbl3i03aviirpdv2k1dsrgm3ghzrda3kx";
+    version = "0.5.2023090609";
+    sha256 = "1rscpqkn1ls5m05vbiwgrx7m49w9l9xp10kxi7ggdzyipa2vbb1d";
   }
   {
     name = "material-icon-theme";
