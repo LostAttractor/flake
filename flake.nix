@@ -16,9 +16,12 @@
     nur.url = "github:nix-community/NUR";
     # Apple Silicon Support
     apple-silicon-support.url = "github:tpwrules/nixos-apple-silicon";
+    # AAGL
+    aagl.url = "github:ezKEa/aagl-gtk-on-nix";
+    aagl.inputs.nixpkgs.follows = "nixpkgs"; # Name of nixpkgs input you want to use
   };
 
-  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, ... }:
+  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, aagl,  ... }:
     let
       user = "lostattractor";
     in
@@ -37,6 +40,7 @@
           lanzaboote.nixosModules.lanzaboote
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
+          aagl.nixosModules.default
         ];
       };
       # Zephyrus G14
@@ -53,6 +57,7 @@
           lanzaboote.nixosModules.lanzaboote
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
+          aagl.nixosModules.default
         ];
       };
       # CAAppleSilicon
