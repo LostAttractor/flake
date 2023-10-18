@@ -5,7 +5,7 @@
 
   # Firewall Ports
   # 15234 Landrop    TCP/UDP
-  # 51820 Wireguard  UDP
+  # 51820 Wireguard  UDP (Configure via NetworkManager)
 
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [ 15234 ];
