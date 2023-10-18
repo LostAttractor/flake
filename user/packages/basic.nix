@@ -16,6 +16,7 @@
     (keeweb.override { nss = nss_latest; })
     bitwarden
     # Music Apps
+    g4music
     yesplaymusic
     (pkgs.callPackage ../../userrepo/spotify-adblocked { })
     # Telegram Autostart
