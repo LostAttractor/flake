@@ -22,6 +22,5 @@
     ./hardware-configuration.nix
     ./modules/features/luks
     ./modules/features/rathole
-    ./modules/features/wireguard
   ];
 }
