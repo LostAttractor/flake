@@ -3,7 +3,7 @@ _:
 {
   nix.buildMachines = [
     {
-      hostName = "nix@nixbuild.home.lostattractor.net";
+      hostName = "root@nixbuilder.home.lostattractor.net";
       systems = ["x86_64-linux" "i686-linux"];
       maxJobs = 8;
       speedFactor = 2;
@@ -11,7 +11,7 @@ _:
       mandatoryFeatures = [ ];
     }
         {
-      hostName = "nix@nixbuild2.home.lostattractor.net";
+      hostName = "root@nixbuilder2.home.lostattractor.net";
       systems = ["x86_64-linux" "i686-linux"];
       maxJobs = 8;
       speedFactor = 2;
