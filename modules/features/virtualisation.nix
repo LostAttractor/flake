@@ -3,7 +3,7 @@
 {
   virtualisation.libvirtd.enable = true;
   # virtualisation.libvirtd.qemu.ovmf.packages = lib.singleton (pkgs.OVMFFull.override { csmSupport = false; }).fd;
-  virtualisation.libvirtd.qemu.ovmf.packages = [ (pkgs.OVMFFull.override { csmSupport = false; }).fd ];
+  virtualisation.libvirtd.qemu.ovmf.packages = [ (pkgs.OVMFFull.override { csmSupport = false; }).fd ]; # CSM Support will BREAK PCIe Passthrough
   virtualisation.libvirtd.qemu.swtpm.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
 
