@@ -42,6 +42,11 @@
   boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen; #Linux-zen
   # boot.cleanTmpDir = false;
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-24.8.6"
+    "electron-22.3.27"
+  ];
+
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
