@@ -17,5 +17,6 @@
     caffeine
     tiling-assistant
     pano
+    burn-my-windows
   ]);
 }
