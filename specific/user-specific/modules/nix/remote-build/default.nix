@@ -5,15 +5,15 @@ _:
     {
       hostName = "root@nixbuilder.home.lostattractor.net";
       systems = ["x86_64-linux" "i686-linux"];
-      maxJobs = 8;
+      maxJobs = 1;
       speedFactor = 2;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
       mandatoryFeatures = [ ];
     }
-        {
+    {
       hostName = "root@nixbuilder2.home.lostattractor.net";
       systems = ["x86_64-linux" "i686-linux"];
-      maxJobs = 8;
+      maxJobs = 3;
       speedFactor = 2;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
       mandatoryFeatures = [ ];
@@ -21,8 +21,8 @@ _:
     {
       hostName = "nix@nixbuild.home.net.men.ci";
       systems = ["x86_64-linux" "i686-linux"];
-      maxJobs = 8;
-      speedFactor = 1;
+      maxJobs = 2;
+      speedFactor = 2;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
       mandatoryFeatures = [ ];
     }
