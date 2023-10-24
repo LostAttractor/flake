@@ -17,7 +17,7 @@
     apple-silicon-support.url = "github:tpwrules/nixos-apple-silicon";
     # AAGL
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
-    aagl.inputs.nixpkgs.follows = "nixpkgs"; # Name of nixpkgs input you want to use
+    aagl.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, aagl,  ... }:
@@ -26,9 +26,9 @@
     in
     {
       # Lneovo Legion R9000P
-      nixosConfigurations."CALaptopR9000P" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."CALaptopR9000P" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs user; };
+        specialArgs = { inherit inputs user system; };
         modules = [
           ./configuration.nix
           ./specific/system-specific/CALaptopR9000P
@@ -44,9 +44,9 @@
         ];
       };
       # Zephyrus G14
-      nixosConfigurations."CALaptopG14" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."CALaptopG14" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs user; };
+        specialArgs = { inherit inputs user system; };
         modules = [
           ./configuration.nix
           ./specific/system-specific/CALaptopG14
@@ -62,9 +62,9 @@
         ];
       };
       # CAAppleSilicon
-      nixosConfigurations."CAAppleSilicon" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."CAAppleSilicon" = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
-        specialArgs = { inherit inputs user; };
+        specialArgs = { inherit inputs user system; };
         modules = [
           ./configuration.nix
           ./specific/system-specific/CAAppleSilicon

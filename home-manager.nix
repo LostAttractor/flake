@@ -1,8 +1,8 @@
-{ inputs, user, ... }: 
+{ inputs, user, system, ... }: 
 let
   nur = import inputs.nur {
-    nurpkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
-    pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+    nurpkgs = inputs.nixpkgs.legacyPackages."${system}";
+    pkgs = inputs.nixpkgs.legacyPackages."${system}";
   };
 in {
   home-manager.useGlobalPkgs = true;
