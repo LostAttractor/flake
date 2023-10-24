@@ -46,10 +46,8 @@
     "electron-24.8.6"
     "electron-22.3.27"
   ];
-
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
+  
+  nix.settings.experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
 
   nixpkgs.config.allowUnfree = true;
 
