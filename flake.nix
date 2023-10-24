@@ -15,12 +15,14 @@
     nur.url = "github:nix-community/NUR";
     # Apple Silicon Support
     apple-silicon-support.url = "github:tpwrules/nixos-apple-silicon";
+    # Agenix
+    agenix.url = "github:ryantm/agenix";
     # AAGL
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, aagl,  ... }:
+  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl,  ... }:
     let
       user = "lostattractor";
     in
@@ -40,6 +42,7 @@
           lanzaboote.nixosModules.lanzaboote
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
+          agenix.nixosModules.default
           aagl.nixosModules.default
         ];
       };
@@ -58,6 +61,7 @@
           lanzaboote.nixosModules.lanzaboote
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
+          agenix.nixosModules.default
           aagl.nixosModules.default
         ];
       };
@@ -73,6 +77,7 @@
           apple-silicon-support.nixosModules.apple-silicon-support
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
+          agenix.nixosModules.default
         ];
       };
     };
