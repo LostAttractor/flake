@@ -6,7 +6,6 @@ _:
       # require public key authentication for better security
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;
-      #permitRootLogin = "yes";
     };
   };
 }
