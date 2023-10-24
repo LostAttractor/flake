@@ -27,6 +27,8 @@
       ./modules/features/flatpak.nix
       ./modules/features/xone.nix
       ./modules/features/virtualisation.nix
+      # secrets
+      ./secrets
       # package
       ./packages
       ./tests
