@@ -51,6 +51,8 @@
   
   nix.settings.experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
 
+  nix.settings.trusted-users = [ "@wheel" ];
+
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
