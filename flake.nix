@@ -83,9 +83,9 @@
       };
     };
     hydraJobs = {
-      CALaptopR9000P = self.nixosConfigurations."CALaptopR9000P".config.system.build.toplevel;
-      CALaptopG14 = self.nixosConfigurations."CALaptopG14".config.system.build.toplevel;
-      CAAppleSilicon = self.nixosConfigurations."CAAppleSilicon".config.system.build.toplevel;
+      nixosConfigurations = nixpkgs.lib.mapAttrs' (name: config:
+        nixpkgs.lib.nameValuePair name config.config.system.build.toplevel)
+        self.nixosConfigurations;
     };
   };
 }
