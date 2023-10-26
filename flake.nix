@@ -22,13 +22,14 @@
     aagl.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs @ { nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl,  ... }:
-    let
-      user = "lostattractor";
-    in
-    {
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl,  ... }:
+  let
+    user = "lostattractor";
+  in
+  {
+    nixosConfigurations = {
       # Lneovo Legion R9000P
-      nixosConfigurations."CALaptopR9000P" = nixpkgs.lib.nixosSystem rec {
+      "CALaptopR9000P" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit inputs user system; };
         modules = [
@@ -47,7 +48,7 @@
         ];
       };
       # Zephyrus G14
-      nixosConfigurations."CALaptopG14" = nixpkgs.lib.nixosSystem rec {
+      "CALaptopG14" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit inputs user system; };
         modules = [
@@ -66,7 +67,7 @@
         ];
       };
       # CAAppleSilicon
-      nixosConfigurations."CAAppleSilicon" = nixpkgs.lib.nixosSystem rec {
+      "CAAppleSilicon" = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
         specialArgs = { inherit inputs user system; };
         modules = [
@@ -81,4 +82,10 @@
         ];
       };
     };
+    hydraJobs = {
+      CALaptopR9000P = self.nixosConfigurations."CALaptopR9000P".config.system.build.toplevel;
+      CALaptopG14 = self.nixosConfigurations."CALaptopG14".config.system.build.toplevel;
+      CAAppleSilicon = self.nixosConfigurations."CAAppleSilicon".config.system.build.toplevel;
+    };
+  };
 }
