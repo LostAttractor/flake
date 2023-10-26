@@ -5,6 +5,7 @@
   imports = [
     ./settings/shell
     ./settings/gnome-tweaks
+    ./settings/firefox
     ./settings/flatpak
     ./settings/hidpi
     ./packages
