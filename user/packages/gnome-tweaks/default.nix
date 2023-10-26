@@ -2,10 +2,11 @@
 {
   home.packages = (with pkgs.gnome; [
     gnome-tweaks
-    gnome-todo
     dconf-editor
-    gnome-power-manager
+    gnome-todo
     gnome-sound-recorder
+    gnome-power-manager
+    polari
   ]) ++ (with pkgs.gnomeExtensions; [
     appindicator
     gsconnect

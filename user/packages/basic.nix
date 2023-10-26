@@ -12,7 +12,6 @@
     fractal-next
     qq
     (discord.override { nss = nss_latest; })
-    gnome.polari
     # Password Manager
     (keeweb.override { nss = nss_latest; })
     bitwarden
