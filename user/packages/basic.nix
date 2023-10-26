@@ -12,6 +12,7 @@
     fractal-next
     qq
     (discord.override { nss = nss_latest; })
+    gnome.polari
     # Password Manager
     (keeweb.override { nss = nss_latest; })
     bitwarden
@@ -19,6 +20,11 @@
     g4music
     yesplaymusic
     (pkgs.callPackage ../../userrepo/spotify-adblocked { })
+    # RSS
+    newsflash
+    # Media
+    komikku
+    shortwave
     # Telegram Autostart
     (pkgs.callPackage ../../userrepo/makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; commandLineArgs = "-startintray"; })
   ];

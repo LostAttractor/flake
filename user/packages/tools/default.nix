@@ -21,6 +21,13 @@
     wgcf
     uxplay
     adoptopenjdk-icedtea-web
+    metadata-cleaner
+    gnome-decoder
+    video-trimmer
+    raider
+    collision
+    dialect
+    eyedropper
   ];
 
   imports = [
