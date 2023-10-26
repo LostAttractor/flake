@@ -104,6 +104,22 @@
         "type": "github"
       }
     },
+    "firefox-gnome-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698329218,
+        "narHash": "sha256-OU6LyGeePS31pG7o10su7twDzDL5Z3a1sHtV68SzEwI=",
+        "owner": "rafaelmardojai",
+        "repo": "firefox-gnome-theme",
+        "rev": "3cb70833903a560ac22f49d278e7ce955bf8395e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rafaelmardojai",
+        "repo": "firefox-gnome-theme",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -374,11 +390,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1698348194,
-        "narHash": "sha256-eIoyQEZo42R3L1rahNwQ24GTHCzVvLf8FiAnoHn4ppQ=",
+        "lastModified": 1698349907,
+        "narHash": "sha256-osw0ai9NkafXjqXIEB0j2TZqs28Yq0ZTSp1yXYv60nc=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "cb0cefbb7af230cf8f6eb9d37b8caed114c065aa",
+        "rev": "284459b884135bdff18e8142b7644c40ee21ec05",
         "type": "github"
       },
       "original": {
@@ -423,6 +439,7 @@
         "aagl": "aagl",
         "agenix": "agenix",
         "apple-silicon-support": "apple-silicon-support",
+        "firefox-gnome-theme": "firefox-gnome-theme",
         "home-manager": "home-manager_2",
         "lanzaboote": "lanzaboote",
         "nixos-hardware": "nixos-hardware",
