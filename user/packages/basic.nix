@@ -20,7 +20,7 @@
     # Music Apps
     g4music
     yesplaymusic
-    (pkgs.callPackage ../../userrepo/spotify-adblocked { })
+    (pkgs.callPackage ../../userrepo/spotify { spotify-adblock = (pkgs.callPackage ../../userrepo/spotify-adblock { }); })
     # RSS
     newsflash
     # Media
