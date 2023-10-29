@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, nur, ... }:
 {
   home.packages = with pkgs; [
     neofetch
@@ -28,11 +28,12 @@
     collision
     dialect
     eyedropper
+  ] ++ [
+    nur.repos.rewine.landrop
   ];
 
   imports = [
     ./rime
     ./alacritty
-    ./landrop
   ];
 }
