@@ -4,7 +4,8 @@
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Firewall Ports
-  # 15234 Landrop    TCP/UDP
+  # 3389  RDP        TCP
+  # 15234 Landrop    TCP
   # 51820 Wireguard  UDP (Configure via NetworkManager)
 
   # Open ports in the firewall.

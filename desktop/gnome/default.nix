@@ -22,6 +22,6 @@
     xdgOpenUsePortal = true; 
   };
 
-  # Enable Gnome Remote Display
-  services.gnome.gnome-remote-desktop.enable = true;
+  # Enable Firewall for Gnome Remote Display
+  networking.firewall.allowedTCPPorts = [ 3389 ];
 }
