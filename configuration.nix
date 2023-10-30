@@ -42,7 +42,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 180; # 3min
   boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen; #Linux-zen
-  # boot.cleanTmpDir = false;
+  # boot.tmp.cleanOnBoot = false;
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-24.8.6"
@@ -51,7 +51,7 @@
   
   nix.settings.experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
 
-  nix.settings.trusted-users = [ "@wheel" ];
+  nix.settings.trusted-users = [ "root" "@wheel" ];
 
   nixpkgs.config.allowUnfree = true;
 
