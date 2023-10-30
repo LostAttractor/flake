@@ -374,11 +374,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1698690321,
-        "narHash": "sha256-nDLLrZ7cQLVR4jzl6fJ4wzb1f6YMuGM2ybpyRkm8UR4=",
+        "lastModified": 1698693817,
+        "narHash": "sha256-PNT2oLbcEQ12W4XE1bAQnCyAEroYmnBW3qN41zTHX1A=",
         "owner": "Lostattractor",
         "repo": "nixpkgs",
-        "rev": "5dd4b9738f66513f0b40c27bcd5cd91c97f54dc6",
+        "rev": "296b964c17941b492fc39dafd75d3c2c2872f9eb",
         "type": "github"
       },
       "original": {
