@@ -19,6 +19,9 @@
 
   nix.settings.cores = 15; # Reserve one core to prevent the system from freezing
 
+  # Enable ZRAM
+  zramSwap.enable = true;
+
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix

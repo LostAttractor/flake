@@ -7,4 +7,7 @@ _:
   '';
 
   nix.settings.cores = 15; # Reserve one core to prevent the system from freezing
+
+  # Enable ZRAM
+  zramSwap.enable = true;
 }
