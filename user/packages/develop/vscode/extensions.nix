@@ -8,14 +8,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.11.405";
-    sha256 = "0nf36gp8b27iscyln5hkbqq1rcwrf5r7lq85rpl7ma2a3imss7kd";
+    version = "2023.11.504";
+    sha256 = "1lr9p4vb24h9bpfdipzl9kc530z36z7w6ra9kwb6knp3jplji5w1";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.77.2023110209";
-    sha256 = "11w0k7icpjjpmjwlj51mxckq88qv3dk66ihr80drnvs41s1fn8fx";
+    version = "0.77.2023110609";
+    sha256 = "156npqs756madhz702n9zkwjmwasg14rk4drmwv2zlx4jjwpyspy";
   }
   {
     name = "go";
@@ -62,8 +62,8 @@
   {
     name = "remote-explorer";
     publisher = "ms-vscode";
-    version = "0.5.2023110209";
-    sha256 = "160v4gxib7g2mxwv9awak93hqd7xlaq38kvlnw16bj68h0hfljcc";
+    version = "0.5.2023110609";
+    sha256 = "0aqx3r7k3ik4cyxn5fad8c6a0rm68gncr7g08pygsfmmmnbwm3jp";
   }
   {
     name = "material-icon-theme";
