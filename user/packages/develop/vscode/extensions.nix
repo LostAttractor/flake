@@ -14,8 +14,8 @@
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.77.2023110609";
-    sha256 = "156npqs756madhz702n9zkwjmwasg14rk4drmwv2zlx4jjwpyspy";
+    version = "0.77.2023110615";
+    sha256 = "05b531f0c4vm2vyanl8zcnblmi4kjg08nncsqfaxml05rcalvrqc";
   }
   {
     name = "go";
@@ -38,8 +38,8 @@
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.16.22";
-    sha256 = "09nznbg8m8645420rmgk21m2p0xvqk0y8vbii8hgypgdr56ar9yx";
+    version = "1.16.23";
+    sha256 = "0bak0i5x9vn93f1p0rnmy56xrj4pml5vawdbfl9kd8mvdy7sxdvn";
   }
   {
     name = "cpptools-extension-pack";
