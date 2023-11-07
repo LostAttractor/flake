@@ -1,10 +1,5 @@
-{ pkgs, ... }:
+_:
 {
-  virtualisation.docker = {
-    enable = true;
-    enableOnBoot = true;
-  };
-  environment.systemPackages = with pkgs; [
-    docker-compose
-  ];
+  virtualisation.docker.enable = true;
+  virtualisation.docker.storageDriver = "btrfs";
 }
