@@ -14,8 +14,8 @@
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.77.2023110615";
-    sha256 = "05b531f0c4vm2vyanl8zcnblmi4kjg08nncsqfaxml05rcalvrqc";
+    version = "0.77.2023110709";
+    sha256 = "0p1n4iwy3j6kskskqs52mgdnjynq038axd6nwiplwqa6x4irpvyd";
   }
   {
     name = "go";
