@@ -27,6 +27,7 @@
       ./modules/features/flatpak.nix
       ./modules/features/xone.nix
       ./modules/features/virtualisation.nix
+      ./modules/features/docker.nix
       # secrets
       ./secrets
       # package
