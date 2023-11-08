@@ -20,5 +20,6 @@
     pano
     burn-my-windows
     vitals
+    kimpanel
   ]);
 }
