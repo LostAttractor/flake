@@ -17,15 +17,6 @@
     # Password Manager
     (keeweb.override { nss = nss_latest; })
     bitwarden
-    # Music Apps
-    g4music
-    yesplaymusic
-    (pkgs.callPackage ../../userrepo/spotify { spotify-adblock = (pkgs.callPackage ../../userrepo/spotify-adblock { }); })
-    # RSS
-    newsflash
-    # Media
-    komikku
-    shortwave
     # Telegram Autostart
     (pkgs.callPackage ../../userrepo/makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; commandLineArgs = "-startintray"; })
   ];
