@@ -11,7 +11,6 @@
       ./desktop/gnome
       # modules
       # basic
-      ./modules/i18n.nix
       ./modules/time.nix
       ./modules/network.nix
       ./modules/fonts.nix
