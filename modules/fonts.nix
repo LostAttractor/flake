@@ -2,10 +2,13 @@
 {
   fonts = {
 	  packages = with pkgs; [
-      # Noto Fonts (Variable Fonts)
+      # Inter
+      inter
+      # Noto Fonts
       noto-fonts
-      noto-fonts-emoji
-      noto-fonts-cjk
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-color-emoji
       # Source Fonts
       source-sans-pro
       source-serif-pro
@@ -25,36 +28,29 @@
       jetbrains-mono
       hack-font
       # NerdFonts
-      (nerdfonts.override { fonts = [ "FiraCode" ]; })
+      (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "DroidSansMono" ]; })
 	  ];
     fontconfig = {
       defaultFonts = {
+        serif = [ 
+          "Noto Serif" # Main Serif Font
+          "Noto Serif CJK SC" # CJK Fallback
+          "Source Han Serif SC" #  CJK Non-VF Fallback
+          "DejaVu Serif" # Unicode Fallback
+        ];
+        sansSerif = [ 
+          "Inter" # Main Sans-Serif Font
+          "Noto Sans CJK SC" # CJK Fallback
+          "Source Han Sans SC" #  CJK Non-VF Fallback
+          "DejaVu Sans" # Unicode Fallback
+        ];
+        monospace = [ 
+          "JetBrainsMono" # Main Mono Font
+          # "Noto Sans Mono CJK SC" # CJK Fallback
+          "Source Han Mono SC" # CJK Non-VF Fallback
+          "DejaVu Sans Mono" # Unicode Fallback
+        ];
         emoji = [ "Noto Color Emoji" ];
-        monospace = [ "FiraCode" ];
-        sansSerif = [
-          "Noto Sans"
-          "Source Han Sans SC" # This is a non-VF font, used to solve the problem of incorrect font weight in Qt applications (such as Tdesktop)
-          "Source Han Sans TC"
-          "Source Han Sans JP"
-          "Source Han Sans KR"
-          "Noto Sans CJK SC"
-          "Noto Sans CJK TC"
-          "Noto Sans CJK JP"
-          "Noto Sans CJK KR"
-          "DejaVu Sans"
-        ];
-        serif = [
-          "Noto Serif"
-          "Source Han Serif SC"
-          "Source Han Serif TC"
-          "Source Han Serif JR"
-          "Source Han Serif KR"
-          "Noto Serif CJK SC"
-          "Noto Serif CJK TC"
-          "Noto Serif CJK JP"
-          "Noto Serif CJK KR"
-          "DejaVu Serif"
-        ];
       };
 
       subpixel.rgba = "rgb";
