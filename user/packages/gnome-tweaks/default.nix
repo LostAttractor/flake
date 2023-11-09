@@ -14,7 +14,6 @@
     blur-my-shell
     dock-from-dash
     openweather
-    ibus-tweaker
     caffeine
     tiling-assistant
     pano
