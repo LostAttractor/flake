@@ -24,9 +24,11 @@
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     # firefox-gnome-theme
     firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
+    # rime-ice
+    rime-ice = { url = "github:iDvel/rime-ice"; flake = false; };
   };
 
-  outputs = inputs @ { self, nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl, spicetify-nix, firefox-gnome-theme, ... }:
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl, spicetify-nix, firefox-gnome-theme, rime-ice, ... }:
   let
     user = "lostattractor";
   in
