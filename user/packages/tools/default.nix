@@ -33,7 +33,6 @@
   ];
 
   imports = [
-    ./rime
     ./alacritty
   ];
 }

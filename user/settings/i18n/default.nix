@@ -11,4 +11,9 @@
       fcitx5-chinese-addons
     ];
   };
+
+  # xdg.dataFile."fcitx5/rime" = {
+  #   recursive = true;
+  #   source = inputs.rime-ice;
+  # };
 }
