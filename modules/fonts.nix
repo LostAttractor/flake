@@ -32,23 +32,38 @@
 	  ];
     fontconfig = {
       defaultFonts = {
+        sansSerif = [
+          # Main Sans-Serif Font 
+          "Cantarell"
+          #  CJK Non-VF Fallback
+          "Source Han Sans SC"
+          "Source Han Sans TC"
+          "Source Han Sans JP"
+          "Source Han Sans KR"
+          # Unicode Fallback
+          "DejaVu Sans"
+        ];
         serif = [ 
-          "Noto Serif" # Main Serif Font
-          "Noto Serif CJK SC" # CJK Fallback
-          "Source Han Serif SC" #  CJK Non-VF Fallback
-          "DejaVu Serif" # Unicode Fallback
+          # Main Serif Font
+          "Noto Serif"
+          # CJK Non-VF Fallback
+          "Source Han Serif SC"
+          "Source Han Serif TC"
+          "Source Han Serif JP"
+          "Source Han Serif KR"
+          # Unicode Fallback
+          "DejaVu Serif"
         ];
-        sansSerif = [ 
-          "Inter" # Main Sans-Serif Font
-          "Noto Sans CJK SC" # CJK Fallback
-          "Source Han Sans SC" #  CJK Non-VF Fallback
-          "DejaVu Sans" # Unicode Fallback
-        ];
-        monospace = [ 
-          "JetBrainsMono" # Main Mono Font
-          # "Noto Sans Mono CJK SC" # CJK Fallback
-          "Source Han Mono SC" # CJK Non-VF Fallback
-          "DejaVu Sans Mono" # Unicode Fallback
+        monospace = [
+          # Main Mono Font
+          "JetBrainsMono"
+          # CJK Non-VF Fallback
+          "Source Han Mono SC"
+          "Source Han Mono TC"
+          "Source Han Mono JP"
+          "Source Han Mono KR"
+          # Unicode Fallback
+          "DejaVu Sans Mono"
         ];
         emoji = [ "Noto Color Emoji" ];
       };
