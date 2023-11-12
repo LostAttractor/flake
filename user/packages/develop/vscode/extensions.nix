@@ -8,8 +8,8 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.11.1004";
-    sha256 = "0gk36g2mdb7sl9yxqfhvvrh7mqzbs980bs7ka4xms4jjclwlad73";
+    version = "2023.11.1204";
+    sha256 = "0mv577dlm15b7vcmi2m3jn2k7nsc83h3p2rcbz7y3nmw4pjwrhpf";
   }
   {
     name = "vscode-pull-request-github";
@@ -64,6 +64,12 @@
     publisher = "ms-vscode";
     version = "0.5.2023110609";
     sha256 = "0aqx3r7k3ik4cyxn5fad8c6a0rm68gncr7g08pygsfmmmnbwm3jp";
+  }
+  {
+    name = "vsliveshare";
+    publisher = "ms-vsliveshare";
+    version = "1.0.5892";
+    sha256 = "0c4xvs96ccih47l76r6l5bkjfhgiair90yy8syibdq3zshw0kxvv";
   }
   {
     name = "material-icon-theme";
