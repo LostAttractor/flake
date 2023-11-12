@@ -28,11 +28,13 @@
     collision
     dialect
     eyedropper
+    ranger
   ] ++ [
     nur.repos.rewine.landrop
   ];
 
   imports = [
     ./alacritty
+    ./fzf
   ];
 }
