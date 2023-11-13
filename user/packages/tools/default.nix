@@ -29,6 +29,7 @@
     dialect
     eyedropper
     ranger
+    bottom
   ] ++ [
     nur.repos.rewine.landrop
   ];
