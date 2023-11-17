@@ -15,9 +15,9 @@ let
   '';
 in
 {
-  xdg.configFile."JetBrains/IntelliJIdea2023.1/idea64.vmoptions".text = vmoptions;
-  xdg.configFile."JetBrains/PyCharm2023.1/pycharm64.vmoptions".text = vmoptions;
-  xdg.configFile."JetBrains/CLion2023.1/clion64.vmoptions".text = vmoptions;
+  xdg.configFile."JetBrains/IntelliJIdea${pkgs.jetbrains.idea-ultimate.version}/idea64.vmoptions".text = vmoptions;
+  xdg.configFile."JetBrains/PyCharm${pkgs.jetbrains.pycharm-professional.version}/pycharm64.vmoptions".text = vmoptions;
+  xdg.configFile."JetBrains/CLion${pkgs.jetbrains.clion.version}/clion64.vmoptions".text = vmoptions;
 
   # https://jetbra.in/5d84466e31722979266057664941a71893322460
 }
