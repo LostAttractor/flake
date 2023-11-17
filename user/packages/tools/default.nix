@@ -4,6 +4,7 @@
     neofetch
     hyfetch
     screenfetch
+    cpufetch
     cmatrix
     ffmpeg_5-full
     virt-manager
