@@ -31,6 +31,7 @@
     eyedropper
     ranger
     bottom
+    bat
   ] ++ [
     nur.repos.rewine.landrop
   ];
