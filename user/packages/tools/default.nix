@@ -32,6 +32,7 @@
     ranger
     bottom
     bat
+    lsd
   ] ++ [
     nur.repos.rewine.landrop
   ];
