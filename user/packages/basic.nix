@@ -17,7 +17,5 @@
     # Password Manager
     (keeweb.override { nss = nss_latest; })
     bitwarden
-    # Telegram Autostart
-    (pkgs.callPackage ../../userrepo/makeAutostartItem { name = "org.telegram.desktop"; package = tdesktop; commandLineArgs = "-startintray"; })
   ];
 }
