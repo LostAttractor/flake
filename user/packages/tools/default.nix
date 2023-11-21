@@ -33,6 +33,7 @@
     bottom
     bat
     lsd
+    localsend
   ] ++ [
     nur.repos.rewine.landrop
   ];
