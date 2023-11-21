@@ -107,11 +107,11 @@
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1700589039,
-        "narHash": "sha256-w5gV4iUhs3syWdbM2TcwL0AI8Ki1r2E8nidMTRobG0Y=",
+        "lastModified": 1700591188,
+        "narHash": "sha256-CBw2JMrQO5ymFVyR/Qtcn5iTp+Hp0sQe7v0DviH9zRY=",
         "owner": "rafaelmardojai",
         "repo": "firefox-gnome-theme",
-        "rev": "aec58df76368dda18dda5742f2c1eef74089cc4b",
+        "rev": "5e796d330d3765798d32b361638b048fda1a1450",
         "type": "github"
       },
       "original": {
@@ -314,11 +314,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1700559156,
-        "narHash": "sha256-gL4epO/qf+wo30JjC3g+b5Bs8UrpxzkhNBBsUYxpw2g=",
-        "owner": "nixos",
+        "lastModified": 1700597914,
+        "narHash": "sha256-H8lLPrBTAVEW/jeWuk+rNlj3KQ00aUptaGdwLK2kJ9s=",
+        "owner": "Lostattractor",
         "repo": "nixos-hardware",
-        "rev": "c3abafb01cd7045dba522af29b625bd1e170c2fb",
+        "rev": "06fab308154bfe9a322f900df106948c3ef05b88",
         "type": "github"
       },
       "original": {
@@ -425,11 +425,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1700578383,
-        "narHash": "sha256-ij/q6/GJc/z7hML30aAVHw+bTKSV+Qfx4iGLimrZ0lw=",
+        "lastModified": 1700595869,
+        "narHash": "sha256-W7LQXIU3EJpWH21KmqxA2NEPW4ONZ0s5syNayyZmIsk=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "ddbb03620f56d5e27fdb494a712f3735a97da448",
+        "rev": "126e6fccb34982d37f8afbd3f95245ae2874eec8",
         "type": "github"
       },
       "original": {
