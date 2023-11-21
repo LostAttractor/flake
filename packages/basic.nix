@@ -7,13 +7,15 @@
     git vim nano # Editor & VCS
     htop micro xsel tmux # Basic Tools
     pciutils usbutils bridge-utils # Utils
-    dnsutils ethtool iperf3 mtr # Network Tools
+    dnsutils ethtool iperf3 # Network Tools
     ipmitool # IPMI
     v2ray # Proxy
     appimage-run # Run Appimage 
     rsync # Rsync
     firefox # Browser
   ];
+
+  programs.mtr.enable = true;
 
   programs.sharing.enable = true;
 }
