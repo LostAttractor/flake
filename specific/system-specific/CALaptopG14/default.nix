@@ -5,19 +5,27 @@
   programs.rog-control-center.enable = true;
   programs.rog-control-center.autoStart = true;
 
-  services.asusd.enable = true;
+  # Btrfs stub
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "monthly";
+    fileSystems = [ "/" ];
+  };
 
+  # Vamillo Kerborad
   boot.extraModprobeConfig = ''
     options hid_apple fnmode=0
   '';
 
+  # Torchpad is so slow
   home-manager.users.${user}.dconf.settings = {
     "org/gnome/desktop/peripherals/touchpad" = {
       speed = 0.2;
     };
   };
 
-  nix.settings.cores = 15; # Reserve one core to prevent the system from freezing
+   # Reserve one core to prevent the system from freezing
+  nix.settings.cores = 15;
 
   # Enable ZRAM
   zramSwap.enable = true;
@@ -25,7 +33,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./modules/features/luks
+    # Featrues
     ./modules/features/rathole
   ];
 }
