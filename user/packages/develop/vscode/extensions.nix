@@ -8,8 +8,8 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.11.2104";
-    sha256 = "16dk8pkazagk0ravx2cafawp3kff2ki7j1wqih6qc99rd3j385sn";
+    version = "2023.11.2110";
+    sha256 = "0apwixi8ccb8jdyyqjbq5k0llfbgflaragxz026lajhb53ybnwsc";
   }
   {
     name = "vscode-pull-request-github";
