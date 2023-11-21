@@ -8,14 +8,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.11.2004";
-    sha256 = "1hbxlml350la51xmnm95zg6vcfgzf7gxgwgxq0mjy67vbpn8pyh4";
+    version = "2023.11.2104";
+    sha256 = "16dk8pkazagk0ravx2cafawp3kff2ki7j1wqih6qc99rd3j385sn";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.77.2023112009";
-    sha256 = "1cvpqhc5lfqc3fhc98vljblm1q9d5y4wp7gfk82ri88x433qdrmw";
+    version = "0.77.2023112109";
+    sha256 = "03layhf5n1lm4rkjd9w6blbm616bjm97b2792k39igq2s6fc1ggg";
   }
   {
     name = "go";
@@ -38,8 +38,8 @@
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.17.1";
-    sha256 = "0mlfc4wppn9ml3wsg7bg74cg73rshpnqarbv3x4p1k30z8qdsq44";
+    version = "1.17.3";
+    sha256 = "05wx20rxd210f0d1za93fpxpg9prpxfms9sndc822q0s409nxzxy";
   }
   {
     name = "cpptools-extension-pack";
