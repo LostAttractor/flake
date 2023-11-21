@@ -107,11 +107,11 @@
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1699621711,
-        "narHash": "sha256-GUvBQbagF/7W1AriPVvJYA1cmk9Y/iWXghj3cIFYQzU=",
+        "lastModified": 1700583343,
+        "narHash": "sha256-oB9hT2BS21S7XeMA3i7YXQj7jpFcaKsr4KGqbaRHL4o=",
         "owner": "rafaelmardojai",
         "repo": "firefox-gnome-theme",
-        "rev": "1c32013cdbe17406de496cdf5f6899b84c4bbfed",
+        "rev": "ab83079a035ac6f5cebb7575071dac515a1c209b",
         "type": "github"
       },
       "original": {
@@ -425,11 +425,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1700577856,
-        "narHash": "sha256-O3u80WyOm1HJmJN5fdhxIP6B701Okk0HCI6t5OwAgV8=",
+        "lastModified": 1700578383,
+        "narHash": "sha256-ij/q6/GJc/z7hML30aAVHw+bTKSV+Qfx4iGLimrZ0lw=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "c336f06e2f781380741ab00483fbb448a45e96f4",
+        "rev": "ddbb03620f56d5e27fdb494a712f3735a97da448",
         "type": "github"
       },
       "original": {
