@@ -10,11 +10,8 @@
     epiphany # web browser
   ]);
 
-  # Enable Wayland for QT and Chromium Apps
-  environment.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
-    QT_QPA_PLATFORM = "wayland";
-  };
+  # Enable Wayland for Chromium (CEF) Apps
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fix that some apps cannot open links
   xdg.portal.xdgOpenUsePortal = true; 
