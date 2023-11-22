@@ -24,7 +24,7 @@
       ./modules/features/system/ssh.nix
       # features
       ./modules/features/flatpak.nix
-      ./modules/features/xone.nix
+      ./modules/features/gamepad.nix
       ./modules/features/virtualisation.nix
       ./modules/features/docker.nix
       # secrets
