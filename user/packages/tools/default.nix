@@ -34,6 +34,7 @@
     bat
     lsd
     localsend
+    sshx
   ] ++ [
     nur.repos.rewine.landrop
   ];
