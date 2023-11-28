@@ -3,5 +3,5 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
-./flake.sh
-./deploy.sh $*
+./scripts/update-flake.sh
+./scripts/deploy-flake.sh $*
