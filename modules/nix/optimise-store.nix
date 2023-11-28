@@ -1,7 +1,9 @@
 _:
 {
-  nix.settings.auto-optimise-store = true; # 使用硬链接优化store
+  # Optimize nix store by using hard-link
+  nix.settings.auto-optimise-store = true; 
   
+  # Automatic GC
   nix.gc = {
     automatic = true;
     dates = "daily";

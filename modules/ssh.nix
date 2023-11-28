@@ -3,7 +3,7 @@ _:
   services.openssh = {
     enable = true;
     settings = {
-      # require public key authentication for better security
+      # Require public key authentication
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;
     };
