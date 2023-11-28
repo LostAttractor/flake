@@ -7,26 +7,20 @@
 {
   imports =
     [ # desktop platform
-      ./platform/desktop.nix
-      ./desktop/gnome
-      # modules
-      # basic
+      ./platform/desktop/gnome
+      # modules/basic
       ./modules/time.nix
       ./modules/network.nix
-      ./modules/fonts.nix
-      ./modules/filesystems.nix
+      ./modules/ssh.nix
       ./modules/shell.nix
-      # nix
+      # modules/nix
       ./modules/nix/optimise-store.nix
       ./modules/nix/substituters.nix
-      # features/system
-      ./modules/features/system/mobiledevice.nix
-      ./modules/features/system/ssh.nix
-      # features
+      # modules/features
       ./modules/features/flatpak.nix
-      ./modules/features/gamepad.nix
       ./modules/features/virtualisation.nix
       ./modules/features/docker.nix
+      ./modules/features/filesystems.nix
       # secrets
       ./secrets
       # package
