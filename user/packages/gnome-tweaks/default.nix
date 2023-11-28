@@ -10,7 +10,6 @@
   ]) ++ (with pkgs.gnomeExtensions; [
     appindicator
     gsconnect
-    # clipboard-history
     blur-my-shell
     dock-from-dash
     openweather
