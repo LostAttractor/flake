@@ -35,7 +35,7 @@
         sansSerif = [
           # Main Sans-Serif Font 
           "Cantarell"
-          #  CJK Non-VF Fallback
+          # CJK Non-VF Fallback
           "Source Han Sans SC"
           "Source Han Sans TC"
           "Source Han Sans JP"
