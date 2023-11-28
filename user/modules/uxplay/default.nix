@@ -1,4 +1,4 @@
-{ ... }:
+_:
 
 {
   # Open network ports
