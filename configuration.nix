@@ -31,7 +31,6 @@
       ./secrets
       # package
       ./packages
-      ./tests
       # user config
       ./user
     ];
