@@ -8,14 +8,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.11.2304";
-    sha256 = "11igzy05qxfpyww7nnpmlyakjsdmn4ng4b52q8syzzmmry64fcp8";
+    version = "2023.11.2804";
+    sha256 = "098j1c65r3k26wnjcz1q8mxgfjg3khhjvd8whq62w6bgn4hd6dvg";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.77.2023112309";
-    sha256 = "0hygcd8dm9wihp9jyahgyvwknj5r9a0gilr9lx69v95fflqrvqhj";
+    version = "0.77.2023112809";
+    sha256 = "1c735zn6rl32d9p7fds38wkakfbxlzcca6dpmxipn2crf2k3vmsv";
   }
   {
     name = "go";
