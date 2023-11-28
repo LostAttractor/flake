@@ -10,7 +10,7 @@
 
   services.spotifyd = {
     enable = true;
-    package = (pkgs.spotifyd.override { withKeyring = true; });
+    package = pkgs.spotifyd.override { withKeyring = true; };
     settings =
       {
         global = {
