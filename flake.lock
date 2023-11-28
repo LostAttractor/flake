@@ -393,11 +393,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1701100620,
-        "narHash": "sha256-kKpWaDn1ICMl2NZxy8ZNYb4MgVS2+BHJKiHmivuGqRY=",
+        "lastModified": 1701127912,
+        "narHash": "sha256-x/UtyZX/ep6YVENzwcLn+71rwhl70vnUZTuZq7/XFYg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4fc20754d8798adfb6570a0b33af022b7d2360da",
+        "rev": "c76b72caa421e31d998e4a05387ebd3b40454327",
         "type": "github"
       },
       "original": {
@@ -425,11 +425,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1701097684,
-        "narHash": "sha256-P1JeCesUfwzWvorQMgwpRedXzYTQtLbBJ0IGP0cfCMg=",
+        "lastModified": 1701163463,
+        "narHash": "sha256-lDsJkgxKBzUR5+mzv9s19rbGHSxXiBOfGX0lkEdoeZw=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "d87b3b5503d53f16cc20957aa69ff7ad8ba52d57",
+        "rev": "a2f8ce2e744f7d1197118be992caf36f7c39c63f",
         "type": "github"
       },
       "original": {
@@ -472,11 +472,11 @@
     "rime-ice": {
       "flake": false,
       "locked": {
-        "lastModified": 1700911172,
-        "narHash": "sha256-DtmKrwutrJ5WojJu4t8gnnvSZyTietwdTtnCmprFQ1o=",
+        "lastModified": 1701164697,
+        "narHash": "sha256-xxXxiOfYmsf1puRL7o0RLmk5BLzgg3ukeMFbMJTaPHA=",
         "owner": "iDvel",
         "repo": "rime-ice",
-        "rev": "b56953bd884c63d5edf0ef017dec64c4192318ef",
+        "rev": "fdd5fbce0e5b0b5b436d8f7115b4bb1cfb372af3",
         "type": "github"
       },
       "original": {
