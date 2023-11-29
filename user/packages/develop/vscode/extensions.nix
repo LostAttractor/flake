@@ -8,14 +8,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.11.2804";
-    sha256 = "098j1c65r3k26wnjcz1q8mxgfjg3khhjvd8whq62w6bgn4hd6dvg";
+    version = "2023.11.2904";
+    sha256 = "1chnfdb83cswib35whdyrbw72dg2pnmhn53paj3zh3y6h0k4xmq7";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.77.2023112809";
-    sha256 = "1c735zn6rl32d9p7fds38wkakfbxlzcca6dpmxipn2crf2k3vmsv";
+    version = "0.77.2023112911";
+    sha256 = "04gmnywwfjsfhd34dpmdc57xvnncvj8dmp2pqas1nqgs2sp36d3a";
   }
   {
     name = "go";
@@ -32,8 +32,8 @@
   {
     name = "vscode-language-pack-zh-hans";
     publisher = "MS-CEINTL";
-    version = "1.85.2023112209";
-    sha256 = "17q58xah65fciqqsdvil85jsqzkk1djdyrp0i3hxrpz79kc3hrzy";
+    version = "1.85.2023112909";
+    sha256 = "07cx5y8f06dbpxdyaw68zxkyfn9kkr24z64w5d09g0yp3l8r8mm0";
   }
   {
     name = "cmake-tools";
@@ -68,8 +68,8 @@
   {
     name = "vsliveshare";
     publisher = "ms-vsliveshare";
-    version = "1.0.5892";
-    sha256 = "0c4xvs96ccih47l76r6l5bkjfhgiair90yy8syibdq3zshw0kxvv";
+    version = "1.0.5896";
+    sha256 = "1c1rq77hk8wryj5ihbm0j4g97gjal5cl1p67jiwaaqk10vlaai3g";
   }
   {
     name = "material-icon-theme";
