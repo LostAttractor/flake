@@ -7,6 +7,5 @@
     ./develop/android.nix
     ./develop/python.nix
     ./gaming.nix
-    ./theme.nix
   ];
 }
