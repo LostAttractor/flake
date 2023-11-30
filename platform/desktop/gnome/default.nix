@@ -15,17 +15,4 @@
 
   # Enable Firewall for Gnome Remote Display
   networking.firewall.allowedTCPPorts = [ 3389 ];
-
-  imports = [
-    # platform/modules/basic
-    ../../modules/fonts.nix
-    # platform/modules/hardware
-    ../../modules/hardware/bluetooth.nix
-    ../../modules/hardware/gamepad.nix
-    ../../modules/hardware/mobiledevice.nix
-    # platform/modules/features
-    ../../modules/features/pipewire.nix
-    ../../modules/features/printing.nix
-    ../../modules/features/flatpak.nix
-  ];
 }
