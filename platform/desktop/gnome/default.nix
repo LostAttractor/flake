@@ -10,9 +10,6 @@
     epiphany # web browser
   ]);
 
-  # Fix that some apps cannot open links
-  xdg.portal.xdgOpenUsePortal = true; 
-
   # Enable Firewall for Gnome Remote Display
   networking.firewall.allowedTCPPorts = [ 3389 ];
 }
