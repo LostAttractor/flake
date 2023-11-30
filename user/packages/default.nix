@@ -8,6 +8,5 @@
     ./develop
     ./gaming
     ./media
-    ./gnome-tweaks
   ];
 }
