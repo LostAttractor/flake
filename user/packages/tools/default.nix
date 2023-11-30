@@ -31,6 +31,7 @@
     eyedropper
     ranger
     bottom
+    btop
     bat
     lsd
     localsend
