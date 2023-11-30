@@ -29,5 +29,6 @@
     # platform/modules/features
     ../../modules/features/pipewire.nix
     ../../modules/features/printing.nix
+    ../../modules/features/flatpak.nix
   ];
 }

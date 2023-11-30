@@ -17,7 +17,6 @@
       ./modules/nix/optimise-store.nix
       ./modules/nix/substituters.nix
       # modules/features
-      ./modules/features/flatpak.nix
       ./modules/features/virtualisation.nix
       ./modules/features/docker.nix
       ./modules/features/filesystems.nix
