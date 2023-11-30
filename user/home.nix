@@ -3,6 +3,7 @@
   programs.home-manager.enable = true;
   
   imports = [
+    ./desktop
     ./settings/shell
     ./settings/i18n
     ./settings/fonts
