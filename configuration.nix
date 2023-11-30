@@ -7,7 +7,7 @@
 {
   imports =
     [ # desktop platform
-      ./platform/desktop/gnome
+      ./platform/desktop
       # modules/basic
       ./modules/time.nix
       ./modules/network.nix
