@@ -10,7 +10,6 @@
     signal-desktop
     element-desktop
     cinny-desktop
-    fluffychat
     fractal-next
     qq
     (discord.override { nss = nss_latest; })
