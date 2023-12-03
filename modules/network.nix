@@ -1,24 +1,7 @@
-{ pkgs, ... }:
+_:
 {
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
-
-  # Firewall Ports
-  # 3389  RDP        TCP
-  # 15234 Landrop    TCP
-  # 51820 Wireguard  UDP (Configure via NetworkManager)
-
-  # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 15234 ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  # Open Kde Connect Port
-  programs.kdeconnect = {
-	  enable = true;
-    package = pkgs.gnomeExtensions.gsconnect;
-  };
 
   # Network Proxy
   # networking.proxy.default = "http://user:password@proxy:port/";
