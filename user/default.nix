@@ -10,7 +10,6 @@
 
   imports = [
     ./modules/looking-glass/kvmfr
-    ./modules/uxplay
     ./modules/waydroid
   ];
 }
