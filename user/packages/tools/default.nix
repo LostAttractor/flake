@@ -41,7 +41,7 @@
   ];
 
   imports = [
-    ./alacritty
+    ./kitty
     ./fzf
   ];
 }
