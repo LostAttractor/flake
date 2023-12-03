@@ -29,7 +29,6 @@
     collision
     dialect
     eyedropper
-    ranger
     bottom
     btop
     bat
@@ -44,5 +43,6 @@
   imports = [
     ./kitty
     ./fzf
+    ./ranger
   ];
 }
