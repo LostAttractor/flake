@@ -36,6 +36,7 @@
     lsd
     localsend
     sshx
+    lolcat
   ] ++ [
     nur.repos.rewine.landrop
   ];
