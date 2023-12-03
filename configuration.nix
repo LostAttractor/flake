@@ -45,6 +45,9 @@
 
   nix.settings.trusted-users = [ "root" "@wheel" ];
 
+  # Don't allow mutation of users outside of the config.
+  users.mutableUsers = false;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # environment.systemPackages = with pkgs; [
