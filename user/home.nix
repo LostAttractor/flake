@@ -1,7 +1,12 @@
-{ config, ... }:
+_:
 {
   programs.home-manager.enable = true;
-  
+
+  nixpkgs.config.allowUnfree = true;
+
+  # https://github.com/NixOS/nixpkgs/issues/258048
+  nixpkgs.config.permittedInsecurePackages = [ "electron-22.3.27" ];
+
   imports = [
     ./desktop
     ./settings/shell
@@ -15,6 +20,4 @@
   ];
 
   home.stateVersion = "23.05";
-
-  nixpkgs.config.allowUnfree = true;
 }

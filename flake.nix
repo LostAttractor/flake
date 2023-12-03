@@ -70,6 +70,7 @@
           home-manager.nixosModules.home-manager
           agenix.nixosModules.default
           aagl.nixosModules.default
+          { nixpkgs.config.allowUnfree = true; }
         ];
       };
       # CAAppleSilicon
