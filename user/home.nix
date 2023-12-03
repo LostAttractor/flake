@@ -16,7 +16,12 @@ _:
     ./settings/firefox
     ./settings/flatpak
     ./settings/hidpi
-    ./packages
+    ./packages/apps
+    ./packages/tools
+    ./packages/work
+    ./packages/develop
+    ./packages/gaming
+    ./packages/media
   ];
 
   home.stateVersion = "23.05";
