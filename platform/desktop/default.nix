@@ -11,6 +11,7 @@ _:
     ../modules/hardware/mobiledevice.nix
     # platform/modules/features
     ../modules/features/pipewire.nix
+    ../modules/features/avahi.nix
     ../modules/features/printing.nix
     ../modules/features/flatpak.nix
   ];
