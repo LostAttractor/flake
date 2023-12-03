@@ -9,7 +9,6 @@
   services.btrfs.autoScrub = {
     enable = true;
     interval = "monthly";
-    fileSystems = [ "/" ];
   };
 
   # Vamillo Kerborad
@@ -33,6 +32,8 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    # Persistent
+    ./persistent.nix
     # Featrues
     ./modules/features/rathole
   ];

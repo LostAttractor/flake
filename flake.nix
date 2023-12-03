@@ -6,6 +6,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
     # Nix Hardware
     nixos-hardware.url = "github:nixos/nixos-hardware";
+    # Impermanence
+    impermanence.url = "github:nix-community/impermanence";
     # lanzaboote (Secure boot)
     lanzaboote.url = "github:nix-community/lanzaboote";
     # User Packages
@@ -28,7 +30,7 @@
     rime-ice = { url = "github:iDvel/rime-ice"; flake = false; };
   };
 
-  outputs = inputs @ { self, nixpkgs, nixos-hardware, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl, spicetify-nix, firefox-gnome-theme, rime-ice, ... }:
+  outputs = inputs @ { self, nixpkgs, nixos-hardware, impermanence, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl, spicetify-nix, firefox-gnome-theme, rime-ice, ... }:
   let
     user = "lostattractor";
   in
@@ -65,6 +67,7 @@
           ./lanzaboote.nix
           ./home-manager.nix
           nixos-hardware.nixosModules.asus-zephyrus-ga401
+          impermanence.nixosModules.impermanence
           lanzaboote.nixosModules.lanzaboote
           nur.nixosModules.nur
           home-manager.nixosModules.home-manager
