@@ -34,7 +34,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 180;
   boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen;
-  # boot.tmp.cleanOnBoot = false;
+
+  # Using Tmpfs for /tmp to speed up the system
+  # If you have less memory, this can cause Nix builds to fail
+  boot.tmp.useTmpfs = true;
+  # You can choose whether to clean /tmp on boot, but this is not necessary for Tmpfs
+  # boot.tmp.cleanOnBoot = true;
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-24.8.6"
