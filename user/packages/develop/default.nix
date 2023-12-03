@@ -4,7 +4,6 @@
     # Tools
     gh
     # IDE
-    # vscode
     lapce
     github-desktop
     jetbrains.idea-ultimate
@@ -16,8 +15,6 @@
     devbox
     # Language Server
     nil
-    # zulu8
-    # conda
   ];
 
   imports = [

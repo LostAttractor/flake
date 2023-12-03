@@ -14,7 +14,6 @@
     qq
     (discord.override { nss = nss_latest; })
     # Password Manager
-    (keeweb.override { nss = nss_latest; })
     bitwarden
   ];
 }
