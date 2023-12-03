@@ -26,6 +26,12 @@
   boot.initrd.luks.devices."lvm-encrypted".device = "/dev/disk/by-uuid/468b2786-745a-4937-9123-4f4e5ba58d12";
 
   fileSystems."/" =
+    { device = "tmpfs";
+      fsType = "tmpfs";
+      options = [ "mode=755" ];
+    };
+
+  fileSystems."/root" =
     { device = "/dev/disk/by-uuid/fe8d27b3-11bf-4939-a414-d1d359c26083";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
@@ -37,12 +43,19 @@
       options = [ "subvol=home" "compress=zstd" ];
     };
 
+  fileSystems."/persistent" =
+    { device = "/dev/disk/by-uuid/fe8d27b3-11bf-4939-a414-d1d359c26083";
+      fsType = "btrfs";
+      options = [ "subvol=persistent" "compress=zstd" ];
+      neededForBoot = true;
+    };
+
   fileSystems."/nix" =
     { device = "/dev/disk/by-uuid/fe8d27b3-11bf-4939-a414-d1d359c26083";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
-    
+
   fileSystems."/swap" =
     { device = "/dev/disk/by-uuid/fe8d27b3-11bf-4939-a414-d1d359c26083";
       fsType = "btrfs";
