@@ -14,11 +14,6 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  # Clamp MSS to PMTU
-  networking.firewall.extraCommands = ''
-    iptables -t mangle -A POSTROUTING -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
-  '';
-
   # Open Kde Connect Port
   programs.kdeconnect = {
 	  enable = true;
