@@ -5,7 +5,6 @@ let
     pkgs = inputs.nixpkgs.legacyPackages."${system}";
   };
 in {
-  home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.extraSpecialArgs = { inherit inputs user nur; };
   home-manager.users.${user} = import ./user/home.nix;
