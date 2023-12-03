@@ -7,9 +7,4 @@
     shell = pkgs.fish;
     initialHashedPassword = "$6$ER3vW7b0o74VUb5S$MhA3IXzTJpJMkfLXZiPjVHQdmHRQX9Axfi2G5nLJIS/Hm98rw7.Pd39JeVDgPrvWUUJZAH8BfSdHLMyJI2zLu/";
   };
-
-  imports = [
-    ./modules/looking-glass/kvmfr
-    ./modules/waydroid
-  ];
 }
