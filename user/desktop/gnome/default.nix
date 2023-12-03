@@ -1,9 +1,6 @@
 { pkgs, ... }:
 {
-  home.packages = (with pkgs; [
-    papirus-icon-theme
-    adw-gtk3
-  ])++ (with pkgs.gnome; [
+  home.packages = (with pkgs.gnome; [
     gnome-tweaks
     dconf-editor
     gnome-todo
@@ -23,4 +20,8 @@
     vitals
     kimpanel
   ]);
+
+  imports = [
+    ./theme.nix
+  ];
 }
