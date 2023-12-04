@@ -37,7 +37,7 @@
   {
     nixosConfigurations = {
       # Lneovo Legion R9000P
-      "CALaptopR9000P" = nixpkgs.lib.nixosSystem rec {
+      CALaptopR9000P = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit inputs user system; };
         modules = [
@@ -56,7 +56,7 @@
         ];
       };
       # Zephyrus G14
-      "CALaptopG14" = nixpkgs.lib.nixosSystem rec {
+      CALaptopG14 = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit inputs user system; };
         modules = [
@@ -77,7 +77,7 @@
         ];
       };
       # CAAppleSilicon
-      "CAAppleSilicon" = nixpkgs.lib.nixosSystem rec {
+      CAAppleSilicon = nixpkgs.lib.nixosSystem rec {
         system = "aarch64-linux";
         specialArgs = { inherit inputs user system; };
         modules = [
