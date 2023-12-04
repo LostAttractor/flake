@@ -2,9 +2,8 @@
 {
   home.packages = with pkgs; [
     # Web Browser
-    firefox-wayland # firefox for wayland
+    firefox
     chromium
-    # microsoft-edge
     # Social Apps
     tdesktop
     signal-desktop
