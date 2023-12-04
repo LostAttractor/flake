@@ -4,4 +4,6 @@ _:
     enable = true;
     enableNvidiaPatches = true;
   };
+
+  services.gnome.gnome-keyring.enable = true;
 }
