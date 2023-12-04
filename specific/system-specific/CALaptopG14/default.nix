@@ -29,6 +29,8 @@
   # Enable ZRAM
   zramSwap.enable = true;
 
+  virtualisation.docker.storageDriver = "btrfs";
+
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
