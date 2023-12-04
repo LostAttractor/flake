@@ -21,5 +21,4 @@
 	  enable = true;
     package = pkgs.gnomeExtensions.gsconnect;
   };
-
 }
