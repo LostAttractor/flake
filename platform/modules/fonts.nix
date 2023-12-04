@@ -1,34 +1,40 @@
-{ pkgs, config, ... }:
+{ pkgs, ... }:
 {
   fonts = {
 	  packages = with pkgs; [
-      # Inter
-      inter
+      # Cantarell
+      cantarell-fonts
       # Noto Fonts
       noto-fonts
+      noto-fonts-color-emoji
+      # 思源宋体/思源黑体 (CJK Fonts)
+      # Variable-fonts may cause some apps to not render CJK correctly
       # noto-fonts-cjk-sans
       # noto-fonts-cjk-serif
-      noto-fonts-color-emoji
-      # Source Fonts
-      source-sans-pro
-      source-serif-pro
-      source-code-pro
-      # 思源宋体/思源黑体 (Non Variable CJK Fonts)
+      # So currectly using non-variable version
       source-han-sans
       source-han-serif
       source-han-mono
-      # 文泉驿
-      wqy_microhei
-      wqy_zenhei
-      # 更纱黑体
-      sarasa-gothic
-      # Monospace
+      # Monospace fonts
       fira-code
       fira-code-symbols
       jetbrains-mono
-      hack-font
       # NerdFonts
       (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "DroidSansMono" ]; })
+      # Some unused fonts
+      # Inter font
+      # inter
+      # Source fonts
+      # source-sans-pro
+      # source-serif-pro
+      # source-code-pro
+      # 文泉驿
+      # wqy_microhei
+      # wqy_zenhei
+      # 更纱黑体
+      # sarasa-gothic
+      # hack fonts (monospace)
+      # hack-font
 	  ];
     fontconfig = {
       defaultFonts = {
