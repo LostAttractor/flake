@@ -33,6 +33,7 @@
     btop
     bat
     lsd
+    gdu
     localsend
     sshx
     lolcat
