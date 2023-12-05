@@ -12,7 +12,6 @@ _:
     ./settings/shell
     ./settings/i18n
     ./settings/fonts
-    ./settings/gnome-tweaks
     ./settings/firefox
     ./settings/flatpak
     ./settings/hidpi
