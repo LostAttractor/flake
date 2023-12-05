@@ -6,7 +6,6 @@
     protonup-ng
     lutris
     yuzu-early-access
-    gwe
   ];
 
   programs.mangohud.enable = true;
