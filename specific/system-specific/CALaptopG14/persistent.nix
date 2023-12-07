@@ -6,6 +6,7 @@ _:
     directories = [
       "/etc/secureboot"
       "/etc/NetworkManager/system-connections"
+      "/etc/v2raya"
       "/var/lib"
       "/var/log"
     ];
