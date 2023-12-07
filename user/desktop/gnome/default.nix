@@ -12,13 +12,14 @@
     gsconnect
     blur-my-shell
     dock-from-dash
-    openweather
     caffeine
-    tiling-assistant
     pano
-    burn-my-windows
     vitals
     kimpanel
+    # Extensions that no longer in use
+    # openweather
+    # tiling-assistant
+    # burn-my-windows
   ]);
 
   imports = [
