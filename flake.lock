@@ -407,11 +407,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1701930091,
-        "narHash": "sha256-cBCyh3Q4ZQ+2IaNo6FTSR/FicmaFMEylRr7qrecpKP0=",
+        "lastModified": 1701966428,
+        "narHash": "sha256-+yoVbZL9+m9n8XCn6NQTV1qPOmZKIpJ5YzopS4bGtok=",
         "owner": "LostAttractor",
         "repo": "nixpkgs",
-        "rev": "500716e43e74bb1154e2b6ae159f074ca3c23948",
+        "rev": "9aa50ed41b1a497ad6ad391b6c79ba1f7ecfa555",
         "type": "github"
       },
       "original": {
