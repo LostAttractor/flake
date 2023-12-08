@@ -10,7 +10,7 @@ in
   programs.spicetify =
     {
       # Spotify Adblocked
-      spotifyPackage = pkgs.callPackage ../../../../userrepo/spotify { spotify-adblock = pkgs.callPackage ../../../../userrepo/spotify-adblock { }; };
+      spotifyPackage = pkgs.callPackage ../../userrepo/spotify { spotify-adblock = pkgs.callPackage ../../userrepo/spotify-adblock { }; };
       windowManagerPatch = false;
 
       enable = true;
