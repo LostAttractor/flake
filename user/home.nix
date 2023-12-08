@@ -1,4 +1,4 @@
-_:
+{ inputs, ... }:
 {
   programs.home-manager.enable = true;
 
@@ -9,6 +9,8 @@ _:
     "electron-22.3.27"
     "electron-25.9.0"
   ];
+
+  nixpkgs.overlays = [ inputs.nur.overlay ];
 
   imports = [
     ./desktop
