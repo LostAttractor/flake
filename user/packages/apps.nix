@@ -1,4 +1,4 @@
-{ pkgs, nur, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     # Web Browser
@@ -52,7 +52,7 @@
     mediainfo
     # File Sharing
     localsend
-    nur.repos.rewine.landrop
+    pkgs.nur.repos.rewine.landrop
     # Remote Desktop
     rustdesk
     parsec-bin

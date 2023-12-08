@@ -49,7 +49,6 @@
           ./home-manager.nix
           nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
           lanzaboote.nixosModules.lanzaboote
-          nur.nixosModules.nur
           home-manager.nixosModules.home-manager
           agenix.nixosModules.default
           aagl.nixosModules.default
@@ -69,7 +68,6 @@
           nixos-hardware.nixosModules.asus-zephyrus-ga401
           impermanence.nixosModules.impermanence
           lanzaboote.nixosModules.lanzaboote
-          nur.nixosModules.nur
           home-manager.nixosModules.home-manager
           agenix.nixosModules.default
           aagl.nixosModules.default
@@ -86,7 +84,6 @@
           ./specific/hardware-specific/apple-silicon
           ./specific/user-specific
           apple-silicon-support.nixosModules.apple-silicon-support
-          nur.nixosModules.nur
           home-manager.nixosModules.home-manager
           agenix.nixosModules.default
         ];
@@ -100,7 +97,6 @@
         "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
         ./livecd.nix
         ./home-manager.nix
-        nur.nixosModules.nur
         home-manager.nixosModules.home-manager
         aagl.nixosModules.default
         { nixpkgs.config.allowUnfree = true; }
