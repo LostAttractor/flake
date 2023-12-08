@@ -12,18 +12,22 @@ _:
 
   imports = [
     ./desktop
-    ./settings/shell
-    ./settings/i18n
-    ./settings/fonts
-    ./settings/firefox
-    ./settings/flatpak
-    ./settings/hidpi
-    ./packages/apps
-    ./packages/tools
-    ./packages/work
-    ./packages/develop
-    ./packages/gaming
-    ./packages/media
+    ./settings/shell.nix
+    ./settings/i18n.nix
+    ./settings/fonts.nix
+    ./settings/flatpak.nix
+    ./packages/apps.nix
+    ./packages/utils.nix
+    ./packages/runtimes.nix
+    ./programs/firefox.nix
+    ./programs/vscode
+    ./programs/jetbrains.nix
+    ./programs/obs-studio.nix
+    ./programs/spicetify.nix
+    ./programs/kitty.nix
+    ./programs/fzf.nix
+    ./programs/ranger.nix
+    ./programs/mangohud.nix
     ./services/mpd.nix
     ./services/spotifyd.nix
   ];

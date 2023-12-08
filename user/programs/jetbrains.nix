@@ -15,6 +15,12 @@ let
   '';
 in
 {
+  home.packages = with pkgs; [
+    jetbrains.idea-ultimate
+    jetbrains.clion
+    jetbrains.pycharm-professional
+  ];
+
   xdg.configFile."JetBrains/IntelliJIdea${pkgs.jetbrains.idea-ultimate.version}/idea64.vmoptions".text = vmoptions;
   xdg.configFile."JetBrains/PyCharm${pkgs.jetbrains.pycharm-professional.version}/pycharm64.vmoptions".text = vmoptions;
   xdg.configFile."JetBrains/CLion${pkgs.jetbrains.clion.version}/clion64.vmoptions".text = vmoptions;
