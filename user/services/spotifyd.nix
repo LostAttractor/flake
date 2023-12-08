@@ -1,13 +1,5 @@
 { pkgs, ... }:
 {
-  imports = [
-    ./spicetify.nix
-  ];
-
-  home.packages = with pkgs; [
-    spotify-tui
-  ];
-
   services.spotifyd = {
     enable = true;
     package = pkgs.spotifyd.override { withKeyring = true; };

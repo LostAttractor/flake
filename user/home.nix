@@ -24,6 +24,7 @@ _:
     ./packages/develop
     ./packages/gaming
     ./packages/media
+    ./services/spotifyd.nix
   ];
 
   home.stateVersion = "23.05";

@@ -1,9 +1,10 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     # Music
     g4music
     yesplaymusic
+    spotify-tui
     # RSS
     newsflash
     # Media
@@ -12,6 +13,6 @@
   ];
 
   imports = [ 
-    ./spotify 
+    ./spicetify.nix
   ];
 }
