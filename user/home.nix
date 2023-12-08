@@ -24,6 +24,7 @@ _:
     ./packages/develop
     ./packages/gaming
     ./packages/media
+    ./services/mpd.nix
     ./services/spotifyd.nix
   ];
 
