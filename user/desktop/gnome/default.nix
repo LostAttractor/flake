@@ -25,5 +25,6 @@
   imports = [
     ./dconf.nix
     ./theme.nix
+    ./hidpi.nix
   ];
 }
