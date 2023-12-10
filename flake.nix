@@ -33,8 +33,7 @@
   outputs = inputs @ { self, nixpkgs, nixos-hardware, impermanence, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl, spicetify-nix, firefox-gnome-theme, rime-ice, ... }:
   let
     user = "lostattractor";
-  in
-  {
+  in rec {
     nixosConfigurations = {
       # Lneovo Legion R9000P
       CALaptopR9000P = nixpkgs.lib.nixosSystem rec {
@@ -105,8 +104,8 @@
     hydraJobs = {
       nixosConfigurations = nixpkgs.lib.mapAttrs' (name: config:
         nixpkgs.lib.nameValuePair name config.config.system.build.toplevel)
-        self.nixosConfigurations;
-      iso = self.livecd.config.system.build.isoImage;
+        nixosConfigurations;
+      iso = livecd.config.system.build.isoImage;
     };
   };
 }
