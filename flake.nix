@@ -43,6 +43,7 @@
           ./configuration.nix
           ./specific/system-specific/CALaptopR9000P
           ./specific/hardware-specific/lenovo-legion-16ach6h
+          ./specific/architecture-specific/x86-64
           ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
@@ -61,6 +62,7 @@
           ./configuration.nix
           ./specific/system-specific/CALaptopG14
           ./specific/hardware-specific/asus-zephyrus-ga401
+          ./specific/architecture-specific/x86-64
           ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
