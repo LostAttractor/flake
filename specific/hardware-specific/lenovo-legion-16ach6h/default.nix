@@ -1,7 +1,8 @@
 { ... }:
 {
   imports = [
-    ./modules/features/virtualisation
+    ../../general/amd/virtualisation.nix
+    # ../../general/nvidia/specialisation.nix
     ./modules/features/gpu-paththrough
   ];
 }

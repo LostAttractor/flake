@@ -5,16 +5,6 @@
   programs.rog-control-center.enable = true;
   programs.rog-control-center.autoStart = true;
 
-  # Btrfs stub
-  services.btrfs.autoScrub = {
-    enable = true;
-    interval = "monthly";
-  };
-
-  # Vamillo Kerborad
-  boot.extraModprobeConfig = ''
-    options hid_apple fnmode=0
-  '';
 
   # Torchpad is so slow
   home-manager.users.${user}.dconf.settings = {
@@ -26,12 +16,11 @@
    # Reserve one core to prevent the system from freezing
   nix.settings.cores = 15;
 
-  # Enable ZRAM
-  zramSwap.enable = true;
-
-  virtualisation.docker.storageDriver = "btrfs";
-
   imports = [
+    ../../general/linux/zram.nix
+    ../../general/btrfs/autoscrub.nix
+    ../../general/btrfs/docker.nix
+    ../../general/keyboard/vamillo.nix
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     # Persistent
