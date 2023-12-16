@@ -1,0 +1,35 @@
+name: Update flake.lock on `iso` flake
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: cachix/install-nix-action@v22
+      - name: Config
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - name: Update
+        run: |
+          git checkout $(git rev-parse master)
+          cd iso
+          nix flake update
+          git add flake.lock
+          git commit -m "Update flake.lock"
+          HEAD=$(git rev-parse HEAD)
+          git checkout -B autoupdate-iso
+          git reset --hard ${HEAD}
+      - name: Push
+        run: |
+          git push origin autoupdate-iso -f
