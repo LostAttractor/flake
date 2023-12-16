@@ -17,7 +17,6 @@
   boot.kernelParams = [ "resume_offset=18883840" ];
 
   # Use systemd-cryptenroll to auto unlock luks partition
-  boot.initrd.kernelModules = [ "tpm" "tpm_tis" "tpm_crb" ];
   boot.initrd.systemd.enable = true;
 
   security.tpm2.enable = true;
