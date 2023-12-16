@@ -88,24 +88,8 @@
         ];
       };
     };
-    # CALiveCD
-    livecd = nixpkgs.lib.nixosSystem rec {
-      system = "x86_64-linux";
-      specialArgs = { inherit inputs system; user = "nixos"; };
-      modules = [
-        "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
-        ./livecd.nix
-        ./home-manager.nix
-        home-manager.nixosModules.home-manager
-        aagl.nixosModules.default
-        { nixpkgs.config.allowUnfree = true; }
-      ];
-    };
-    hydraJobs = {
-      nixosConfigurations = nixpkgs.lib.mapAttrs' (name: config:
-        nixpkgs.lib.nameValuePair name config.config.system.build.toplevel)
-        nixosConfigurations;
-      iso = livecd.config.system.build.isoImage;
-    };
+    hydraJobs.nixosConfigurations = nixpkgs.lib.mapAttrs' (name: config:
+      nixpkgs.lib.nameValuePair name config.config.system.build.toplevel)
+      nixosConfigurations;
   };
 }
