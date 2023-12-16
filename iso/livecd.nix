@@ -17,5 +17,7 @@ _: {
     ../packages/gaming.nix
   ];
 
+  nixpkgs.config.contentAddressedByDefault = true;
+
   isoImage.squashfsCompression = "zstd";
 }

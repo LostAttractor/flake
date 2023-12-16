@@ -42,6 +42,8 @@
   # You can choose whether to clean /tmp on boot, but this is not necessary for Tmpfs
   # boot.tmp.cleanOnBoot = true;
 
+  nixpkgs.config.contentAddressedByDefault = true;
+
   # Don't allow mutation of users outside of the config.
   users.mutableUsers = false;
 
