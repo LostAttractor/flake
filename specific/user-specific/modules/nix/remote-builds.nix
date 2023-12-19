@@ -14,16 +14,16 @@ _:
       hostName = "nixbuilder2.home.lostattractor.net";
       systems = ["x86_64-linux" "i686-linux"];
       maxJobs = 3;
-      speedFactor = 2;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
+      speedFactor = 4;
       mandatoryFeatures = [ ];
     }
     {
       hostName = "nixbuilder.home.net.men.ci";
       systems = ["x86_64-linux" "i686-linux"];
       maxJobs = 2;
-      speedFactor = 2;
       supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
+      speedFactor = 1;
       mandatoryFeatures = [ ];
     }
   ];
