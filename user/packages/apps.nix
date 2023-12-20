@@ -8,7 +8,7 @@
     signal-desktop
     element-desktop
     cinny-desktop
-    fractal-next
+    fractal
     qq
     discord
     # Password Manager
