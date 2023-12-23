@@ -2,5 +2,6 @@ _:
 {
   # Set your time zone.
   time.timeZone = "Asia/Shanghai";
-  time.hardwareClockInLocalTime = true;
+  # May cause problems with systemd timer
+  # time.hardwareClockInLocalTime = true;
 }
