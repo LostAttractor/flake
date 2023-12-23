@@ -5,7 +5,6 @@
   programs.rog-control-center.enable = true;
   programs.rog-control-center.autoStart = true;
 
-
   # Torchpad is so slow
   home-manager.users.${user}.dconf.settings = {
     "org/gnome/desktop/peripherals/touchpad" = {
@@ -13,7 +12,7 @@
     };
   };
 
-   # Reserve one core to prevent the system from freezing
+  # Reserve one core to prevent the system from freezing
   nix.settings.cores = 15;
 
   imports = [

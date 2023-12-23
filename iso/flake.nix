@@ -20,7 +20,7 @@
     firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, nur, apple-silicon-support, aagl, spicetify-nix, firefox-gnome-theme, ... }: rec {
+  outputs = inputs @ { nixpkgs, home-manager, aagl, ... }: rec {
     # CALiveCD
     livecd = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";

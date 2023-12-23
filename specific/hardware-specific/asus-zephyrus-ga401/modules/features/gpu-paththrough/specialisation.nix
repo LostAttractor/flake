@@ -12,9 +12,7 @@ in
 { lib, ... }:
 {
   specialisation."GPUPaththrough".configuration = {
-    system.nixos.tags = [ 
-      "Nvidia-GPU-VFIO"
-      ];
+    system.nixos.tags = [ "Nvidia-GPU-VFIO" ];
 
     # The vfio modules before the nvidia modules is very intentional because it lets vfio claim my GPU before nvidia does.
     boot.initrd.kernelModules = [
