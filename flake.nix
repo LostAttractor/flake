@@ -28,7 +28,7 @@
     firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
   };
 
-  outputs = inputs @ { self, nixpkgs, nixos-hardware, impermanence, lanzaboote, home-manager, nur, apple-silicon-support, agenix, aagl, spicetify-nix, firefox-gnome-theme, ... }:
+  outputs = inputs @ { nixpkgs, nixos-hardware, impermanence, lanzaboote, home-manager, apple-silicon-support, agenix, aagl, ... }:
   let
     user = "lostattractor";
   in rec {
