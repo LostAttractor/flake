@@ -29,9 +29,6 @@ window#waybar {
 }
 
 window>box {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
     background-color: rgba(30, 30, 46, 0.95);
 }
 
