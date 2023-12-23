@@ -8,20 +8,20 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.12.704";
-    sha256 = "1zkqqlk04p2b0mqp14060rix8a2f3qwbja66wqj9wsn17gsy4vb3";
+    version = "2023.12.2104";
+    sha256 = "0kwfnshyj118wyl9p0rqn0imckkm23w5wrfjmqknby1qgisx2akp";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "GitHub";
-    version = "0.79.2023120711";
-    sha256 = "0ny4cc5akgrwgizjdk7ygrqw23hilznsh00mbfvsqqmyfv30h51s";
+    version = "0.79.2023122012";
+    sha256 = "0xai6yk4chr76v5xwbw5p1jcr2wl9cjw0sy6sg57q7xamm8ypy73";
   }
   {
     name = "go";
     publisher = "golang";
-    version = "0.40.0";
-    sha256 = "1k2zv49pam436cgvb970dc9n4xpdkd07lp8jllrsx5vnx7m2ml52";
+    version = "0.40.1";
+    sha256 = "0844kxbi7qi79wal0cqcd4wiygc42fyhamn33lsx2ms4yj5jxri9";
   }
   {
     name = "vscode-docker";
@@ -32,14 +32,14 @@
   {
     name = "vscode-language-pack-zh-hans";
     publisher = "MS-CEINTL";
-    version = "1.85.2023120618";
-    sha256 = "1xwm8553whrmnak5x7ja9shf5bcxc9y26mg2yjj9injnnskfjgaj";
+    version = "1.85.2023121309";
+    sha256 = "1632ps2y88w4d2k5rzr3ck2fsykhijna846xkcqz53gw1igs8b8m";
   }
   {
     name = "cmake-tools";
     publisher = "ms-vscode";
-    version = "1.17.6";
-    sha256 = "095cvmysy5s2nmj7f8qbrfjj15had7chnhqys3z9pkx71myddajv";
+    version = "1.17.7";
+    sha256 = "0fvq1vkfb8p91y73kykb41ngwxfvak9g3x8nkffrb7gdfi59m9yn";
   }
   {
     name = "cpptools-extension-pack";
@@ -62,14 +62,14 @@
   {
     name = "remote-explorer";
     publisher = "ms-vscode";
-    version = "0.5.2023110609";
-    sha256 = "0aqx3r7k3ik4cyxn5fad8c6a0rm68gncr7g08pygsfmmmnbwm3jp";
+    version = "0.5.2023121309";
+    sha256 = "1n6ni7b1x2vzjqwb59ss0r6xdk8hagcfmkxm0c2iqw7ifsq4y962";
   }
   {
     name = "vsliveshare";
     publisher = "ms-vsliveshare";
-    version = "1.0.5897";
-    sha256 = "1mk9h1wz8pfi7r8nf5x5mj3rlzf7s12369vr66vlf814y90si1d9";
+    version = "1.0.5900";
+    sha256 = "1nwpqda60b5wlsxvrc3y7drybk8qyglnk6c3hdir59mnlkymc9dk";
   }
   {
     name = "material-icon-theme";
