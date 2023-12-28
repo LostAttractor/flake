@@ -8,8 +8,6 @@
     networkmanagerapplet
   ];
 
-  services.gnome-keyring.enable = true;
-
   imports = [
     ./config.nix
     ./waybar
