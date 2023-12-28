@@ -35,5 +35,11 @@
     ./services/spotifyd.nix
   ];
 
+  xdg.configFile."autostart/gnome-keyring-ssh.desktop".text = ''
+    [Desktop Entry]
+    Type=Application
+    Hidden=true
+  '';
+
   home.stateVersion = "24.05";
 }
