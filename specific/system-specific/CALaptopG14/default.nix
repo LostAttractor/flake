@@ -18,6 +18,7 @@
   imports = [
     ../../general/linux/zram.nix
     ../../general/btrfs/autoscrub.nix
+    ../../general/btrfs/snapper.nix
     ../../general/btrfs/docker.nix
     ../../general/keyboard/vamillo.nix
     # Include the results of the hardware scan.
