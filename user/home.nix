@@ -16,8 +16,9 @@
     ./desktop
     ./settings/shell.nix
     ./settings/i18n.nix
-    ./settings/fonts.nix
     ./settings/flatpak.nix
+    ./settings/dconf/gnome.nix
+    ./settings/dconf/fonts.nix
     ./packages/apps.nix
     ./packages/utils.nix
     ./packages/runtimes.nix
