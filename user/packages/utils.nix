@@ -15,6 +15,8 @@
     # Alternative to ls/cat
     bat
     lsd
+    # File manager
+    yazi
     # Web video downloader
     you-get
     # Viedo tool
