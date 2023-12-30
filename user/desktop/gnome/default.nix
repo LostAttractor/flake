@@ -3,7 +3,6 @@
   home.packages = (with pkgs.gnome; [
     gnome-tweaks
     dconf-editor
-    gnome-todo
     gnome-sound-recorder
     gnome-power-manager
     polari
