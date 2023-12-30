@@ -15,6 +15,8 @@
     # Alternative to ls/cat
     bat
     lsd
+    # Git utils
+    lazygit
     # File Manager
     yazi
     # Web video downloader
