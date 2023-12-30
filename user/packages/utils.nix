@@ -19,6 +19,10 @@
     lazygit
     # File manager
     yazi
+    # Screenshot
+    grim
+    slurp
+    wl-clipboard
     # Web video downloader
     you-get
     # Viedo tool
