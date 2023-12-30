@@ -329,11 +329,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1703879120,
-        "narHash": "sha256-oMJ5xtDswlBWxs0DT/aYKEUIhjEpGZJ9GbIxOclYP8I=",
-        "owner": "nixos",
+        "lastModified": 1703921951,
+        "narHash": "sha256-sCIJ3HFEcXseTw4OnDeAv711FKKFojFM5twWw4afu/Y=",
+        "owner": "LostAttractor",
         "repo": "nixos-hardware",
-        "rev": "22ae59fec26591ef72ce4ccb5538c42c5f090fe3",
+        "rev": "562798dd73ecacb23a61ba49541101d88c98353b",
         "type": "github"
       },
       "original": {
@@ -440,11 +440,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1703918352,
-        "narHash": "sha256-4wh83t+1u4rV4xgNIzXv8CL5/UiApa1fB668ccdoKrU=",
+        "lastModified": 1703920560,
+        "narHash": "sha256-ojUj0CYy0vFy7X+LjmpoMSSqxeCa+hIIJTbfBa88eyU=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "bc4e5a2c2894cf2cf7369cb34ed47c72409eb3a7",
+        "rev": "023410bcd1995f6f27b0dcd36a456d20f9299aa4",
         "type": "github"
       },
       "original": {
