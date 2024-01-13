@@ -1,11 +1,5 @@
 _:
 {
-  specialisation."NvidiaOpen".configuration = {
-    system.nixos.tags = [ "Nvidia-Open-Driver" ];
-
-    hardware.nvidia.open = true;
-  };
-
   specialisation."NvidiaSync".configuration = {
     system.nixos.tags = [ "Nvidia-Sync-Mode" ];
 
