@@ -32,6 +32,9 @@
         "XCURSOR_SIZE,24"
       ];
 
+      # No Scaling For XWayland
+      xwayland.force_zero_scaling = true;
+
       # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 
       input = {
