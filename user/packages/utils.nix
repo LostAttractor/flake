@@ -23,6 +23,9 @@
     grim
     slurp
     wl-clipboard
+    # Network utils
+    trippy
+    tcping-go
     # Web video downloader
     you-get
     # Viedo tool
