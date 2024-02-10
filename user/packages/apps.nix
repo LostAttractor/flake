@@ -68,8 +68,9 @@
     gnome-decoder
     video-trimmer
     raider
-    collision
     dialect
     eyedropper
+    # Broken Apps
+    # collision
   ];
 }
