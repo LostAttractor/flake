@@ -17,7 +17,6 @@
     g4music
     yesplaymusic
     ncmpcpp
-    spotify-tui
     ncspot
     # RSS
     newsflash
