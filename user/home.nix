@@ -31,7 +31,6 @@
     ./programs/fzf.nix
     ./programs/mangohud.nix
     ./services/mpd.nix
-    ./services/spotifyd.nix
   ];
 
   xdg.configFile."autostart/gnome-keyring-ssh.desktop".text = ''
