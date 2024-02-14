@@ -26,6 +26,7 @@
     # Network utils
     trippy
     tcping-go
+    gping
     # Web video downloader
     you-get
     # Viedo tool
