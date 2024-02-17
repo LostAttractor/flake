@@ -19,6 +19,7 @@
     ./settings/flatpak.nix
     ./settings/dconf/gnome.nix
     ./settings/dconf/fonts.nix
+    ./settings/dconf/blackbox.nix
     ./packages/apps.nix
     ./packages/utils.nix
     ./packages/runtimes.nix
