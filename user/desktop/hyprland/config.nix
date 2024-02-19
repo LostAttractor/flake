@@ -56,6 +56,21 @@
         allow_tearing = false;
       };
 
+      binds = {
+        workspace_back_and_forth = true;
+      };
+
+      group = {
+        "col.border_active" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+        "col.border_inactive" = "rgba(595959aa)";
+
+        groupbar = {
+          render_titles = false;
+          "col.active" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+          "col.inactive" = "rgba(595959aa)";
+        };
+      };
+
       decoration = {
         rounding = 8;
 
@@ -136,11 +151,19 @@
         "$mainMod, P, pin,"
         "$mainMod, P, pseudo," # dwindle
         "$mainMod, J, togglesplit," # dwindle
-        "$mainMod, G, togglegroup,"
+        
+        # Toggle Group with mainMod + Z
+        "$mainMod, Z, togglegroup,"
+        "$mainMod SHIFT, Z, moveoutofgroup,"
 
-        "$mainMod, Tab, changegroupactive, f"
-        "$mainMod SHIFT, Tab, changegroupactive, b"
+        # Lock Group with mainMod + X
+        "$mainMod, X, lockactivegroup, toggle"
 
+        # Cycle through groupped windows with mainMod + TAB
+        "$mainMod, Grave, changegroupactive, f"
+        "$mainMod SHIFT, Grave, changegroupactive, b"
+
+        # Cycle currect foucus with mainMod + TAB
         "$mainMod, Tab, cyclenext,"
         "$mainMod, Tab, bringactivetotop,"
         "$mainMod SHIFT, Tab, cyclenext, prev"
@@ -180,13 +203,33 @@
         "$mainMod, S, togglespecialworkspace, magic"
         "$mainMod SHIFT, S, movetoworkspace, special:magic"
 
+        # Move active window to a workspace silently with mainMod + CTRL + [0-9]
+        "$mainMod CTRL, 1, movetoworkspacesilent, 1"
+        "$mainMod CTRL, 2, movetoworkspacesilent, 2"
+        "$mainMod CTRL, 3, movetoworkspacesilent, 3"
+        "$mainMod CTRL, 4, movetoworkspacesilent, 4"
+        "$mainMod CTRL, 5, movetoworkspacesilent, 5"
+        "$mainMod CTRL, 6, movetoworkspacesilent, 6"
+        "$mainMod CTRL, 7, movetoworkspacesilent, 7"
+        "$mainMod CTRL, 8, movetoworkspacesilent, 8"
+        "$mainMod CTRL, 9, movetoworkspacesilent, 9"
+        "$mainMod CTRL, 0, movetoworkspacesilent, 10"
+
         # Scroll through existing workspaces with mainMod + [page up/down]
         "$mainMod, page_up, workspace, e-1"
         "$mainMod, page_down, workspace, e+1"
+        "$mainMod SHIFT, page_up, movetoworkspace, e-1"
+        "$mainMod SHIFT, page_down, movetoworkspace, e+1"
+        "$mainMod CTRL, page_up, movetoworkspacesilent, e-1"
+        "$mainMod CTRL, page_down, movetoworkspacesilent, e+1"
 
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_up, workspace, e+1"
         "$mainMod, mouse_down, workspace, e-1"
+        "$mainMod SHIFT, mouse_up, movetoworkspace, e+1"
+        "$mainMod SHIFT, mouse_down, movetoworkspace, e-1"
+        "$mainMod CTRL, mouse_up, movetoworkspacesilent, e+1"
+        "$mainMod CTRL, mouse_down, movetoworkspacesilent, e-1"
       ];
       bindm = [
         # Move/resize windows with mainMod + LMB/RMB and dragging
