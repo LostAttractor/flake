@@ -81,7 +81,7 @@ printf '{ extensions = [\n'
 # Note that we are only looking to update extensions that are already installed.
 for i in $($CODE --list-extensions)
 do
-if [[ "$i" != @("bbenoist.Nix"|"jnoortheen.nix-ide"|"ms-python.python"|"ms-vscode-remote.remote-ssh"|"ms-vscode.cpptools"|"rust-lang.rust-analyzer") ]]; then
+if [[ "$i" != @("jnoortheen.nix-ide"|"ms-python.python"|"ms-python.debugpy"|"ms-vscode-remote.remote-ssh"|"ms-vscode.cpptools"|"ms-vscode.cmake-tools"|"rust-lang.rust-analyzer") ]]; then
     OWNER=$(echo "$i" | cut -d. -f1)
     EXT=$(echo "$i" | cut -d. -f2)
 
