@@ -8,38 +8,32 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2024.2.704";
-    sha256 = "08ghll2bspzyh8wz27a06vjvz9wmn03136bjxhj04y56xm2chkcm";
+    version = "2024.2.1804";
+    sha256 = "09rhh6mahav8250y0v3w7nwn3nnkbh46xlsgimd0hs7smzqif6yn";
   }
   {
     name = "vscode-pull-request-github";
-    publisher = "GitHub";
-    version = "0.81.2024020709";
-    sha256 = "1d346nnz5653fli8zwg4an38p3dwpdngspxpp0pvk5irmlds2vsc";
+    publisher = "github";
+    version = "0.81.2024021909";
+    sha256 = "17fl7la0gsnlf57cfv5jnjn838srbwnn2pw23j2vx5vr3js4b42l";
   }
   {
     name = "go";
     publisher = "golang";
-    version = "0.40.3";
-    sha256 = "15kicpv9xpn7l3w9mbmsjdzjmavh88p3skkim0a9prg9p40bsq0m";
+    version = "0.41.0";
+    sha256 = "0b1f0y4326jshhn2yq50wqvhf4bxcjri4i73myhv57pipbcxd2lk";
   }
   {
     name = "vscode-docker";
     publisher = "ms-azuretools";
-    version = "1.28.0";
-    sha256 = "0nmc3pdgxpmr6k2ksdczkv9bbwszncfczik0xjympqnd2k0ra9h0";
+    version = "1.29.0";
+    sha256 = "0rz32qwdf7a5hn3nnhxviaf8spwsszfrxmhnbbskspi5r9b6qm4r";
   }
   {
     name = "vscode-language-pack-zh-hans";
-    publisher = "MS-CEINTL";
-    version = "1.85.2024020709";
-    sha256 = "0zr5mzmqs0c58h90kfq4nj3zm53hblmjv0j56r9ln27agvai0bfy";
-  }
-  {
-    name = "cmake-tools";
-    publisher = "ms-vscode";
-    version = "1.17.14";
-    sha256 = "1h1q3shh9jrwyhwjszbn820zi36vyp6rj4zx27n3p1y7rliad7yi";
+    publisher = "ms-ceintl";
+    version = "1.85.2024021409";
+    sha256 = "0f2iqlp4s5nnsjw3vh2sq6r5ypf20jppw6qmn48rb763rv9psi5q";
   }
   {
     name = "cpptools-extension-pack";
@@ -62,8 +56,8 @@
   {
     name = "remote-explorer";
     publisher = "ms-vscode";
-    version = "0.5.2024011009";
-    sha256 = "066x0gfbchvxaxh53zb3v5r9fgsz43z9k595bqvn27klq1rab3m2";
+    version = "0.5.2024021909";
+    sha256 = "04k0w31jm7azvfq508ldcn7kaigy2y9gn73nksa4pnsg84xnyvwy";
   }
   {
     name = "vsliveshare";
@@ -73,9 +67,9 @@
   }
   {
     name = "material-icon-theme";
-    publisher = "PKief";
-    version = "4.33.0";
-    sha256 = "1yg48sfpmq8mc110d5hikw177v4iw2w5lmmd34fjlff5kvk5q2j7";
+    publisher = "pkief";
+    version = "4.34.0";
+    sha256 = "1ahshxw66436mc9jpiyfac0hinnqm3s0g3akybjrda13yd9884y7";
   }
   {
     name = "cmake";
