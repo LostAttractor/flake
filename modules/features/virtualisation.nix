@@ -5,8 +5,7 @@
     libvirtd = {
       enable = true;
       qemu = {
-        # CSM Support will BREAK PCIe Passthrough
-        ovmf.packages = [ (pkgs.OVMFFull.override { csmSupport = false; }).fd ];
+        ovmf.packages = [ pkgs.OVMFFull.fd ];
         swtpm.enable = true;
       };
     };
