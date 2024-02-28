@@ -40,6 +40,7 @@
     wgcf
     # Disk analayzer
     gdu
+    duf
     # Develop Tools
     gh
     hugo
