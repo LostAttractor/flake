@@ -15,7 +15,6 @@
   imports = [
     ./desktop
     ./settings/shell.nix
-    ./settings/i18n.nix
     ./settings/dconf/gnome.nix
     ./settings/dconf/fonts.nix
     ./settings/dconf/blackbox.nix
