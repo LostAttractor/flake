@@ -76,7 +76,5 @@
 
       subpixel.rgba = "rgb";
     };
-
-    fontDir.enable = true;
   };
 }
