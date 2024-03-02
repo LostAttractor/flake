@@ -69,10 +69,10 @@
     metadata-cleaner
     gnome-decoder
     video-trimmer
-    raider
     dialect
-    eyedropper
     # Broken Apps
     # collision
+    # raider
+    # eyedropper
   ];
 }
