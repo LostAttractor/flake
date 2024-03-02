@@ -20,7 +20,7 @@
     firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
   };
 
-  outputs = inputs @ { nixpkgs, home-manager, aagl, ... }: rec {
+  outputs = { nixpkgs, ... } @ inputs : rec {
     # CALiveCD
     livecd = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
@@ -29,8 +29,8 @@
         "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
         ./livecd.nix
         ../home-manager.nix
-        home-manager.nixosModules.home-manager
-        aagl.nixosModules.default
+        inputs.home-manager.nixosModules.home-manager
+        inputs.aagl.nixosModules.default
         { nixpkgs.config.allowUnfree = true; }
       ];
     };
