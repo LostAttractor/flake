@@ -28,7 +28,7 @@
     firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
   };
 
-  outputs = inputs @ { nixpkgs, nixos-hardware, impermanence, lanzaboote, home-manager, apple-silicon-support, agenix, aagl, ... }:
+  outputs = { nixpkgs, ... } @ inputs :
   let
     user = "lostattractor";
   in rec {
@@ -45,11 +45,11 @@
           ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
-          nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
-          lanzaboote.nixosModules.lanzaboote
-          home-manager.nixosModules.home-manager
-          agenix.nixosModules.default
-          aagl.nixosModules.default
+          inputs.nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
+          inputs.lanzaboote.nixosModules.lanzaboote
+          inputs.home-manager.nixosModules.home-manager
+          inputs.agenix.nixosModules.default
+          inputs.aagl.nixosModules.default
         ];
       };
       # Zephyrus G14
@@ -64,12 +64,12 @@
           ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
-          nixos-hardware.nixosModules.asus-zephyrus-ga401
-          impermanence.nixosModules.impermanence
-          lanzaboote.nixosModules.lanzaboote
-          home-manager.nixosModules.home-manager
-          agenix.nixosModules.default
-          aagl.nixosModules.default
+          inputs.nixos-hardware.nixosModules.asus-zephyrus-ga401
+          inputs.impermanence.nixosModules.impermanence
+          inputs.lanzaboote.nixosModules.lanzaboote
+          inputs.home-manager.nixosModules.home-manager
+          inputs.agenix.nixosModules.default
+          inputs.aagl.nixosModules.default
           { nixpkgs.config.allowUnfree = true; }
         ];
       };
@@ -82,9 +82,9 @@
           ./specific/system-specific/CAAppleSilicon
           ./specific/hardware-specific/apple-silicon
           ./specific/user-specific
-          apple-silicon-support.nixosModules.apple-silicon-support
-          home-manager.nixosModules.home-manager
-          agenix.nixosModules.default
+          inputs.apple-silicon-support.nixosModules.apple-silicon-support
+          inputs.home-manager.nixosModules.home-manager
+          inputs.agenix.nixosModules.default
         ];
       };
     };
