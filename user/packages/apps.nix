@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    # Terminal
+    (blackbox-terminal.override { sixelSupport = true; })
     # Web Browser
     chromium
     # Social Apps
