@@ -28,6 +28,7 @@
     ./programs/spicetify.nix
     ./programs/kitty.nix
     ./programs/fzf.nix
+    ./programs/zoxide.nix
     ./programs/mangohud.nix
     ./services/mpd.nix
   ];
