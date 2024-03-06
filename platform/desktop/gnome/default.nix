@@ -10,10 +10,6 @@
     epiphany # web browser
   ]);
 
-  environment.systemPackages = with pkgs; [
-    (blackbox-terminal.override { sixelSupport = true; })
-  ];
-
   # Enable Firewall for Gnome Remote Display
   networking.firewall.allowedTCPPorts = [ 3389 ];
 }
