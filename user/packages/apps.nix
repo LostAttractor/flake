@@ -40,6 +40,7 @@
     logseq
     obsidian
     marktext
+    rnote
     # Office Toolkits
     wpsoffice-cn
     libreoffice
