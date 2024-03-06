@@ -30,7 +30,6 @@
     lunar-client
     protonup-ng
     lutris
-    yuzu-early-access
     # IDE
     lapce
     github-desktop
