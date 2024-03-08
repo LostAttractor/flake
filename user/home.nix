@@ -7,6 +7,7 @@
   # https://github.com/NixOS/nixpkgs/issues/258048
   nixpkgs.config.permittedInsecurePackages = [ 
     "electron-22.3.27" # kuro
+    "openssl-1.1.1w" # wechat-uos
   ];
 
   nixpkgs.overlays = [ inputs.nur.overlay ];
