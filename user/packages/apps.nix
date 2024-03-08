@@ -12,6 +12,7 @@
     cinny-desktop
     fractal
     qq
+    wechat-uos
     discord
     # Password Manager
     bitwarden
