@@ -6,9 +6,7 @@
 
 {
   imports =
-    [ # desktop platform
-      ./platform/desktop
-      # modules/basic
+    [ # modules/basic
       ./modules/time.nix
       ./modules/network.nix
       ./modules/ssh.nix
