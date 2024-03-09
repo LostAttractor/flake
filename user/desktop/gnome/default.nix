@@ -23,6 +23,7 @@
 
   imports = [
     ./dconf/display/hidpi.nix
+    ./dconf/display/vrr.nix
     ./theme.nix
   ];
 }
