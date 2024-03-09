@@ -39,6 +39,7 @@
         specialArgs = { inherit inputs user system; };
         modules = [
           ./configuration.nix
+          ./platform/desktop
           ./specific/system-specific/CALaptopR9000P
           ./specific/hardware-specific/lenovo-legion-16ach6h
           ./specific/architecture-specific/x86-64
@@ -58,6 +59,7 @@
         specialArgs = { inherit inputs user system; };
         modules = [
           ./configuration.nix
+          ./platform/desktop
           ./specific/system-specific/CALaptopG14
           ./specific/hardware-specific/asus-zephyrus-ga401
           ./specific/architecture-specific/x86-64
@@ -79,6 +81,7 @@
         specialArgs = { inherit inputs user system; };
         modules = [
           ./configuration.nix
+          ./platform/desktop
           ./specific/system-specific/CAAppleSilicon
           ./specific/hardware-specific/apple-silicon
           ./specific/user-specific
