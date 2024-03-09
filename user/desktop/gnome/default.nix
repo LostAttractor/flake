@@ -22,7 +22,7 @@
   ]);
 
   imports = [
+    ./dconf/display/hidpi.nix
     ./theme.nix
-    ./hidpi.nix
   ];
 }
