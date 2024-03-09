@@ -20,22 +20,25 @@
     firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
   };
 
-  outputs = { nixpkgs, ... } @ inputs : rec {
-    # CALiveCD
-    livecd = nixpkgs.lib.nixosSystem rec {
-      system = "x86_64-linux";
-      specialArgs = { inherit inputs system; user = "nixos"; };
-      modules = [
-        "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
-        ./livecd.nix
-        ../platform/desktop/gnome/modules.nix
-        ../home-manager.nix
-        ../platform/desktop/gnome/home-manager.nix
-        inputs.home-manager.nixosModules.home-manager
-        inputs.aagl.nixosModules.default
-        { nixpkgs.config.allowUnfree = true; }
-      ];
+  outputs = { nixpkgs, ... } @ inputs: rec {
+    nixosConfigurations = {
+      gnome = nixpkgs.lib.nixosSystem rec {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs system; user = "nixos"; };
+        modules = [
+          "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
+          ./livecd.nix
+          ../platform/desktop/gnome/modules.nix
+          ../home-manager.nix
+          ../platform/desktop/gnome/home-manager.nix
+          inputs.home-manager.nixosModules.home-manager
+          inputs.aagl.nixosModules.default
+          { nixpkgs.config.allowUnfree = true; }
+        ];
+      };
     };
-    hydraJobs.iso = livecd.config.system.build.isoImage;
+    hydraJobs.iso = nixpkgs.lib.mapAttrs' (name: config:
+      nixpkgs.lib.nameValuePair name config.config.system.build.isoImage)
+      nixosConfigurations;
   };
 }
