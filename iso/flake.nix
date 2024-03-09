@@ -30,6 +30,7 @@
         ./livecd.nix
         ../platform/desktop/gnome/modules.nix
         ../home-manager.nix
+        ../platform/desktop/gnome/home-manager.nix
         inputs.home-manager.nixosModules.home-manager
         inputs.aagl.nixosModules.default
         { nixpkgs.config.allowUnfree = true; }

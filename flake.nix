@@ -46,6 +46,7 @@
           ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
+          ./platform/desktop/home-manager.nix
           inputs.nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
           inputs.lanzaboote.nixosModules.lanzaboote
           inputs.home-manager.nixosModules.home-manager
@@ -66,6 +67,7 @@
           ./specific/user-specific
           ./lanzaboote.nix
           ./home-manager.nix
+          ./platform/desktop/home-manager.nix
           inputs.nixos-hardware.nixosModules.asus-zephyrus-ga401
           inputs.impermanence.nixosModules.impermanence
           inputs.lanzaboote.nixosModules.lanzaboote
