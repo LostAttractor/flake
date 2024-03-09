@@ -16,10 +16,4 @@
   networking.firewall.allowedUDPPorts = [ 6000 6001 7011 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-
-  # Open Kde Connect Port
-  programs.kdeconnect = {
-	  enable = true;
-    package = pkgs.gnomeExtensions.gsconnect;
-  };
 }
