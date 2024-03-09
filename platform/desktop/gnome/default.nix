@@ -10,6 +10,5 @@
     epiphany # web browser
   ]);
 
-  # Enable Firewall for Gnome Remote Display
-  networking.firewall.allowedTCPPorts = [ 3389 ];
+  imports = [ ./modules.nix ];
 }

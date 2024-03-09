@@ -28,6 +28,7 @@
       modules = [
         "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
         ./livecd.nix
+        ../platform/desktop/gnome/modules.nix
         ../home-manager.nix
         inputs.home-manager.nixosModules.home-manager
         inputs.aagl.nixosModules.default
