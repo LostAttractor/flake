@@ -12,4 +12,10 @@ _:
     imports = [ ./hyprland ];
     disabledModules = [ ./gnome ];
   };
+
+  specialisation."Plasma".configuration = {
+    system.nixos.tags = [ "Plasma" ];
+    imports = [ ./plasma ];
+    disabledModules = [ ./gnome ];
+  };
 }
