@@ -31,14 +31,9 @@
     ./programs/fzf.nix
     ./programs/zoxide.nix
     ./programs/mangohud.nix
+    ./services/gpg-agent.nix
     ./services/mpd.nix
   ];
-
-  xdg.configFile."autostart/gnome-keyring-ssh.desktop".text = ''
-    [Desktop Entry]
-    Type=Application
-    Hidden=true
-  '';
 
   home.stateVersion = "24.05";
 }
