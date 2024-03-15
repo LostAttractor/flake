@@ -48,6 +48,8 @@
     devbox
     # Language Server
     nil
+    # Nix Utils
+    nix-output-monitor
     # Other utils
     sshx
   ];

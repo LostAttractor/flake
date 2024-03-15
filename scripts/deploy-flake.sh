@@ -4,4 +4,4 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 rsync -rt --delete --exclude={'scripts','.git'} ./* /etc/nixos/ # -v
-nixos-rebuild switch $*
+nixos-rebuild switch $* --log-format internal-json -v |& nom --json
