@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     openjdk8
-    adoptopenjdk-icedtea-web
+    # Deprecated
+    # adoptopenjdk-icedtea-web
   ];
 }
