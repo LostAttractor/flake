@@ -34,6 +34,8 @@
     # IDE
     lapce
     github-desktop
+    # Network
+    wireshark-qt
     # Todo
     kuro
     # Writing Tools
