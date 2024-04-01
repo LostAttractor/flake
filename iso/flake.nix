@@ -36,6 +36,18 @@
           { nixpkgs.config.allowUnfree = true; }
         ];
       };
+      plasma6 = nixpkgs.lib.nixosSystem rec {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs system; user = "nixos"; };
+        modules = [
+          "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-plasma6.nix"
+          ./livecd.nix
+          ../home-manager.nix
+          inputs.home-manager.nixosModules.home-manager
+          inputs.aagl.nixosModules.default
+          { nixpkgs.config.allowUnfree = true; }
+        ];
+      };
     };
     hydraJobs.iso = nixpkgs.lib.mapAttrs' (name: config:
       nixpkgs.lib.nameValuePair name config.config.system.build.isoImage)
