@@ -28,6 +28,9 @@
     trippy
     tcping-go
     gping
+    # Wireless utils
+    iw
+    wirelesstools
     # Web video downloader
     you-get
     # Viedo tool
