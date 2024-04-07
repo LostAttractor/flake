@@ -1,5 +1,7 @@
-{ pkgs, ... }:
+_:
 {
+  networking.nftables.enable = true;
+
   # Firewall Ports
   # 3389  RDP            TCP
   # 15234 Landrop        TCP
