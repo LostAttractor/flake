@@ -1,7 +1,6 @@
 _:
 {
-  imports = [
-    ./agenix
-    ./cert
-  ];
+  imports = [ ./cert ];
+
+  sops.defaultSopsFile = ./secrets.yaml;
 }
