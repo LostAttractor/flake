@@ -53,6 +53,7 @@
     nil
     # Nix Utils
     nix-output-monitor
+    sops
     # Other utils
     sshx
   ];
