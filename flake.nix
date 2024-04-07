@@ -17,8 +17,8 @@
     nur.url = "github:nix-community/NUR";
     # Apple Silicon Support
     apple-silicon-support.url = "github:tpwrules/nixos-apple-silicon";
-    # Agenix
-    agenix.url = "github:ryantm/agenix";
+    # sops-nix
+    sops-nix.url = "github:Mic92/sops-nix";
     # AAGL
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
@@ -50,7 +50,7 @@
           inputs.nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
           inputs.lanzaboote.nixosModules.lanzaboote
           inputs.home-manager.nixosModules.home-manager
-          inputs.agenix.nixosModules.default
+          inputs.sops-nix.nixosModules.sops
           inputs.aagl.nixosModules.default
         ];
       };
@@ -72,7 +72,7 @@
           inputs.impermanence.nixosModules.impermanence
           inputs.lanzaboote.nixosModules.lanzaboote
           inputs.home-manager.nixosModules.home-manager
-          inputs.agenix.nixosModules.default
+          inputs.sops-nix.nixosModules.sops
           inputs.aagl.nixosModules.default
           { nixpkgs.config.allowUnfree = true; }
         ];
@@ -89,7 +89,7 @@
           ./specific/user-specific
           inputs.apple-silicon-support.nixosModules.apple-silicon-support
           inputs.home-manager.nixosModules.home-manager
-          inputs.agenix.nixosModules.default
+          inputs.sops-nix.nixosModules.sops
         ];
       };
     };
