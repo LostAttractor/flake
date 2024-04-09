@@ -13,7 +13,9 @@
     dock-from-dash
     caffeine
     pano
-    vitals
+    astra-monitor
+    miniview
+    wiggle
     kimpanel
     # Extensions that no longer in use
     # openweather
