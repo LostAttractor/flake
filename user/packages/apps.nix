@@ -29,7 +29,6 @@
     # Games
     osu-lazer-bin
     lunar-client
-    protonup-ng
     lutris
     # IDE
     lapce
