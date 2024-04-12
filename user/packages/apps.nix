@@ -14,6 +14,7 @@
     qq
     wechat-uos
     discord
+    dissent
     # Password Manager
     bitwarden
     # Music
