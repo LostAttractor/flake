@@ -33,6 +33,7 @@
     lutris
     # IDE
     lapce
+    zed-editor
     github-desktop
     # Network
     wireshark-qt
