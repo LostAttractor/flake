@@ -24,6 +24,7 @@
   ]);
 
   imports = [
+    ./dconf/fonts.nix
     ./dconf/display/hidpi.nix
     ./dconf/display/vrr.nix
     ./theme.nix
