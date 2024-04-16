@@ -2,8 +2,6 @@
 {
   fonts = {
     packages = with pkgs; [
-      # Cantarell
-      cantarell-fonts
       # Noto Fonts
       noto-fonts
       noto-fonts-color-emoji
@@ -18,6 +16,8 @@
       # NerdFonts
       (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "DroidSansMono" ]; })
       # Some unused fonts
+      # Cantarell font
+      # cantarell-fonts
       # Inter font
       # inter
       # Source fonts
@@ -40,7 +40,7 @@
       defaultFonts = {
         sansSerif = [
           # Main Sans-Serif Font 
-          "Cantarell"
+          "Noto Sans"
           # CJK Fallback
           "Noto Sans SC"
           "Noto Sans TC"
