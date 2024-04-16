@@ -9,9 +9,9 @@
       noto-fonts-color-emoji
       # 思源宋体/思源黑体 (CJK Fonts)
       # Variable-fonts may cause some apps to not render CJK correctly
-      # noto-fonts-cjk-sans
-      # noto-fonts-cjk-serif
-      # So currectly using non-variable version
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      # So also install non-variable version
       source-han-sans
       source-han-serif
       source-han-mono
@@ -41,33 +41,33 @@
         sansSerif = [
           # Main Sans-Serif Font 
           "Cantarell"
-          # CJK Non-VF Fallback
-          "Source Han Sans SC"
-          "Source Han Sans TC"
-          "Source Han Sans JP"
-          "Source Han Sans KR"
+          # CJK Fallback
+          "Noto Sans SC"
+          "Noto Sans TC"
+          "Noto Sans JP"
+          "Noto Sans KR"
           # Unicode Fallback
           "DejaVu Sans"
         ];
         serif = [ 
           # Main Serif Font
           "Noto Serif"
-          # CJK Non-VF Fallback
-          "Source Han Serif SC"
-          "Source Han Serif TC"
-          "Source Han Serif JP"
-          "Source Han Serif KR"
+          # CJK Fallback
+          "Noto Serif SC"
+          "Noto Serif TC"
+          "Noto Serif JP"
+          "Noto Serif KR"
           # Unicode Fallback
           "DejaVu Serif"
         ];
         monospace = [
           # Main Mono Font
           "JetBrainsMono"
-          # CJK Non-VF Fallback
-          "Source Han Mono SC"
-          "Source Han Mono TC"
-          "Source Han Mono JP"
-          "Source Han Mono KR"
+          # CJK Fallback
+          "Noto Mono SC"
+          "Noto Mono TC"
+          "Noto Mono JP"
+          "Noto Mono KR"
           # Unicode Fallback
           "DejaVu Sans Mono"
         ];
