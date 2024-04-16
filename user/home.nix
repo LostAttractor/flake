@@ -16,7 +16,6 @@
     ./desktop
     ./settings/shell.nix
     ./settings/dconf/gnome.nix
-    ./settings/dconf/fonts.nix
     ./settings/gtk.nix
     ./settings/dconf/blackbox.nix
     ./packages/apps.nix
