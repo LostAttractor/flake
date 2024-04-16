@@ -49,6 +49,7 @@
     gh
     hugo
     devbox
+    charm-freeze
     # Language Server
     nil
     # Nix Utils
