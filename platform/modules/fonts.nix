@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   fonts = {
-	  packages = with pkgs; [
+    packages = with pkgs; [
       # Cantarell
       cantarell-fonts
       # Noto Fonts
