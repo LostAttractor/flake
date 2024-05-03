@@ -8,32 +8,32 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2024.4.1305";
-    sha256 = "03bjakv8zcnpxgmiv8wkbx7spz9in786cr8m9isi836zy28v3wla";
+    version = "2024.6.105";
+    sha256 = "1dlvkvhlsh8jmd3852l2kccanyc2w9mfjkv233lms9c7fcca44wi";
   }
   {
     name = "vscode-pull-request-github";
     publisher = "github";
-    version = "0.87.2024041104";
-    sha256 = "1zlls474fcdfn36nbpa1s0942qwp8lap24kaxbs54splr9r07sp4";
+    version = "0.89.2024053108";
+    sha256 = "1r6d37qc2lc962363pfgf2v83v16a39gm847dcwi0xr62m8jjiq3";
   }
   {
     name = "go";
     publisher = "golang";
-    version = "0.41.2";
-    sha256 = "13fdnwgci87x1rdz1hwq52ling81c3l67cqvmckcjzri2r8gsgvq";
+    version = "0.41.4";
+    sha256 = "03gxgcvjk5plzkk7gjsrrck1kszzbzswkbcr33m3qlkyz4iw9nly";
   }
   {
     name = "vscode-docker";
     publisher = "ms-azuretools";
-    version = "1.29.0";
-    sha256 = "0rz32qwdf7a5hn3nnhxviaf8spwsszfrxmhnbbskspi5r9b6qm4r";
+    version = "1.29.1";
+    sha256 = "0zba6g0cw2h42gfvrlx0x2axlj61hkrfjfg5kyd14fqzi4n9jmxs";
   }
   {
     name = "vscode-language-pack-zh-hans";
     publisher = "ms-ceintl";
-    version = "1.88.2024041009";
-    sha256 = "1i6ndmrll0y7zlkh6a789g2b4xzkqpa8c4r27lhlx2jws958jk3m";
+    version = "1.89.2024050109";
+    sha256 = "0imh0mfw5klc0amc760kngravbbrksnsckdrx1a1rpl5mwplwmfr";
   }
   {
     name = "cpptools-extension-pack";
@@ -50,14 +50,14 @@
   {
     name = "hexeditor";
     publisher = "ms-vscode";
-    version = "1.9.14";
-    sha256 = "0fncakv8v8p1rhka5dvh87kc0vsfaxg1s48blwhv7r6fyw70b9jm";
+    version = "1.10.0";
+    sha256 = "0mlibryaxfilsl61asm9yxz3jz1jpvp8q3r9w0mg4mpa1ajjqd8h";
   }
   {
     name = "remote-explorer";
     publisher = "ms-vscode";
-    version = "0.5.2024031109";
-    sha256 = "1r8wdlz7p0k4kzfcmqiizns043lhghf5v34sf0gays02x8x9xh5p";
+    version = "0.5.2024052909";
+    sha256 = "13zinnciggwap3jkwqd3riw5126sb64jbbd8bg6jbhrfh1cvlzk6";
   }
   {
     name = "vsliveshare";
@@ -68,8 +68,8 @@
   {
     name = "material-icon-theme";
     publisher = "pkief";
-    version = "4.34.0";
-    sha256 = "1ahshxw66436mc9jpiyfac0hinnqm3s0g3akybjrda13yd9884y7";
+    version = "5.3.0";
+    sha256 = "1gpbnwmqw0mxa6ald73ir44diyvlz4r8dar3jb5f9jqlmak92a28";
   }
   {
     name = "cmake";
@@ -80,8 +80,8 @@
   {
     name = "material-theme";
     publisher = "zhuangtongfa";
-    version = "3.17.0";
-    sha256 = "1gyf4fbam5wqd6swx6mr83ksa3sklhz7ripgp6yq39z7cijvi4ji";
+    version = "3.17.2";
+    sha256 = "1myqi6fffaq7szwz70bb0b2q9npgsk1s5fpakjkzdajlablcikg2";
   }
 ];
 }
