@@ -33,27 +33,6 @@
     user = "lostattractor";
   in rec {
     nixosConfigurations = {
-      # Lneovo Legion R9000P
-      CALaptopR9000P = nixpkgs.lib.nixosSystem rec {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs user system; };
-        modules = [
-          ./configuration.nix
-          ./platform/desktop
-          ./specific/system-specific/CALaptopR9000P
-          ./specific/hardware-specific/lenovo-legion-16ach6h
-          ./specific/architecture-specific/x86-64
-          ./specific/user-specific
-          ./lanzaboote.nix
-          ./home-manager.nix
-          ./platform/desktop/home-manager.nix
-          inputs.nixos-hardware.nixosModules.lenovo-legion-16ach6h  # hardware.nvidia.prime.offload.enable may cause xorg crash
-          inputs.lanzaboote.nixosModules.lanzaboote
-          inputs.home-manager.nixosModules.home-manager
-          inputs.sops-nix.nixosModules.sops
-          inputs.aagl.nixosModules.default
-        ];
-      };
       # Zephyrus G14
       CALaptopG14 = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
