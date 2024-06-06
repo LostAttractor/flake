@@ -9,7 +9,7 @@
     powertop
     bottom
     btop
-    nvtop
+    nvtopPackages.full
     # Terminal utils
     lolcat
     cmatrix
