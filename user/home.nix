@@ -19,7 +19,6 @@
     ./settings/dconf/blackbox.nix
     ./packages/apps.nix
     ./packages/utils.nix
-    ./packages/runtimes.nix
     ./programs/firefox.nix
     ./programs/vscode
     ./programs/jetbrains.nix
@@ -29,6 +28,7 @@
     ./programs/fzf.nix
     ./programs/zoxide.nix
     ./programs/mangohud.nix
+    ./programs/java.nix
     ./services/gpg-agent.nix
     ./services/mpd.nix
   ];
