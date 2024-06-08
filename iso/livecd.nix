@@ -7,8 +7,7 @@ _:
       ../modules/time.nix
       ../modules/network.nix
       ../modules/shell.nix
-      # modules/nix
-      ../modules/nix/substituters.nix
+      ../modules/nix.nix
       # modules/features
       ../modules/features/virtualisation.nix
       ../modules/features/docker.nix
