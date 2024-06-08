@@ -11,9 +11,7 @@
       ./modules/network.nix
       ./modules/ssh.nix
       ./modules/shell.nix
-      # modules/nix
-      ./modules/nix/optimise-store.nix
-      ./modules/nix/substituters.nix
+      ./modules/nix.nix
       # modules/features
       ./modules/features/virtualisation.nix
       ./modules/features/docker.nix
