@@ -6,6 +6,7 @@
     ./modules/nix/remote-builds.nix
     ./modules/network/firewall.nix
     ./modules/network/proxy.nix
+    ./modules/network/tailscale.nix
     ./modules/features/gnupg.nix
     ./modules/features/waydroid.nix
     ./modules/features/looking-glass/kvmfr.nix
