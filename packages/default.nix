@@ -3,7 +3,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wget axel # Download Tools
+    wget axel curlHTTP3 # Download Tools
     git vim micro nano # Editor & VCS
     htop tmux # Basic Tools
     pciutils usbutils bridge-utils # Utils
