@@ -3,7 +3,8 @@ let
   profile = "default";
 in
 {
-  home.file.".mozilla/firefox/${profile}/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
+  home.file.".mozilla/firefox/${profile}/chrome/firefox-gnome-theme".source =
+    inputs.firefox-gnome-theme;
 
   programs.firefox = {
     enable = true;

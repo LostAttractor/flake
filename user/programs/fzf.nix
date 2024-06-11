@@ -1,4 +1,1 @@
-_:
-{
-  programs.fzf.enable = true;
-}
+_: { programs.fzf.enable = true; }

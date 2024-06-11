@@ -1,4 +1,4 @@
-{ config, ...}:
+{ config, ... }:
 {
   nix.extraOptions = ''
     !include ${config.sops.templates."nix-access-tokens".path}
@@ -12,5 +12,5 @@
     mode = "0440";
   };
 
-  sops.secrets."nix/access-tokens/github" = {};
+  sops.secrets."nix/access-tokens/github" = { };
 }

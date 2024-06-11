@@ -1,4 +1,9 @@
-{ rustPlatform, fetchFromGitHub, rust, stdenv }:
+{
+  rustPlatform,
+  fetchFromGitHub,
+  rust,
+  stdenv,
+}:
 
 rustPlatform.buildRustPackage rec {
   pname = "spotify-adblock";
@@ -20,7 +25,7 @@ rustPlatform.buildRustPackage rec {
 
   installPhase = ''
     runHook preInstall
-    
+
     mkdir -p $out/etc/spotify-adblock $out/lib
     install -Dm644 config.toml $out/etc/spotify-adblock
     install -Dm644 target/${rust.toRustTargetSpec stdenv.hostPlatform}/release/libspotifyadblock.so $out/lib

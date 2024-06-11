@@ -1,4 +1,1 @@
-_:
-{
-  hardware.nvidia.open = true;
-}
+_: { hardware.nvidia.open = true; }

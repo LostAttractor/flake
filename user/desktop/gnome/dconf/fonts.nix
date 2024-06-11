@@ -1,5 +1,4 @@
-_:
-{
+_: {
   # Let Gnome use font in fontconfig
   dconf.settings = {
     "org/gnome/desktop/interface" = {

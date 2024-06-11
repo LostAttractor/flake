@@ -1,5 +1,4 @@
-_:
-{
+_: {
   imports = [
     # Using Gnome by default
     ./gnome
