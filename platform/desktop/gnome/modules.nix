@@ -5,7 +5,7 @@
 
   # Open Firewall for gsconnect
   programs.kdeconnect = {
-	  enable = true;
+    enable = true;
     package = pkgs.gnomeExtensions.gsconnect;
   };
 }

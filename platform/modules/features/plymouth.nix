@@ -1,5 +1,4 @@
-_:
-{
+_: {
   # Quiet boot with plymouth - supports LUKS passphrase entry if needed
   boot.kernelParams = [
     "quiet"

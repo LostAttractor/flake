@@ -1,8 +1,6 @@
 { ... }:
-{ 
+{
   networking.hostName = "CAAppleSilicon"; # Define hostname.
 
-  imports = [
-    ./hardware-configuration.nix
-  ];
+  imports = [ ./hardware-configuration.nix ];
 }

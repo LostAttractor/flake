@@ -1,4 +1,1 @@
-_:
-{
-  virtualisation.waydroid.enable = true;
-}
+_: { virtualisation.waydroid.enable = true; }

@@ -1,4 +1,1 @@
-_:
-{
-  virtualisation.docker.storageDriver = "btrfs";
-}
+_: { virtualisation.docker.storageDriver = "btrfs"; }

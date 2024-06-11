@@ -29,55 +29,64 @@
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
     # firefox-gnome-theme
-    firefox-gnome-theme = { url = "github:rafaelmardojai/firefox-gnome-theme"; flake = false; };
+    firefox-gnome-theme = {
+      url = "github:rafaelmardojai/firefox-gnome-theme";
+      flake = false;
+    };
   };
 
-  outputs = { nixpkgs, ... } @ inputs :
-  let
-    user = "lostattractor";
-  in rec {
-    nixosConfigurations = {
-      # Zephyrus G14
-      CALaptopG14 = nixpkgs.lib.nixosSystem rec {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs user system; };
-        modules = [
-          ./configuration.nix
-          ./platform/desktop
-          ./specific/system-specific/CALaptopG14
-          ./specific/hardware-specific/asus-zephyrus-ga401
-          ./specific/architecture-specific/x86-64
-          ./specific/user-specific
-          ./lanzaboote.nix
-          ./home-manager.nix
-          ./platform/desktop/home-manager.nix
-          inputs.nixos-hardware.nixosModules.asus-zephyrus-ga401
-          inputs.impermanence.nixosModules.impermanence
-          inputs.lanzaboote.nixosModules.lanzaboote
-          inputs.home-manager.nixosModules.home-manager
-          inputs.sops-nix.nixosModules.sops
-          inputs.aagl.nixosModules.default
-          { nixpkgs.config.allowUnfree = true; }
-        ];
+  outputs =
+    { nixpkgs, ... }@inputs:
+    let
+      user = "lostattractor";
+    in
+    rec {
+      nixosConfigurations = {
+        # Zephyrus G14
+        CALaptopG14 = nixpkgs.lib.nixosSystem rec {
+          system = "x86_64-linux";
+          specialArgs = {
+            inherit inputs user system;
+          };
+          modules = [
+            ./configuration.nix
+            ./platform/desktop
+            ./specific/system-specific/CALaptopG14
+            ./specific/hardware-specific/asus-zephyrus-ga401
+            ./specific/architecture-specific/x86-64
+            ./specific/user-specific
+            ./lanzaboote.nix
+            ./home-manager.nix
+            ./platform/desktop/home-manager.nix
+            inputs.nixos-hardware.nixosModules.asus-zephyrus-ga401
+            inputs.impermanence.nixosModules.impermanence
+            inputs.lanzaboote.nixosModules.lanzaboote
+            inputs.home-manager.nixosModules.home-manager
+            inputs.sops-nix.nixosModules.sops
+            inputs.aagl.nixosModules.default
+            { nixpkgs.config.allowUnfree = true; }
+          ];
+        };
+        # CAAppleSilicon
+        CAAppleSilicon = nixpkgs.lib.nixosSystem rec {
+          system = "aarch64-linux";
+          specialArgs = {
+            inherit inputs user system;
+          };
+          modules = [
+            ./configuration.nix
+            ./platform/desktop
+            ./specific/system-specific/CAAppleSilicon
+            ./specific/hardware-specific/apple-silicon
+            ./specific/user-specific
+            inputs.apple-silicon-support.nixosModules.apple-silicon-support
+            inputs.home-manager.nixosModules.home-manager
+            inputs.sops-nix.nixosModules.sops
+          ];
+        };
       };
-      # CAAppleSilicon
-      CAAppleSilicon = nixpkgs.lib.nixosSystem rec {
-        system = "aarch64-linux";
-        specialArgs = { inherit inputs user system; };
-        modules = [
-          ./configuration.nix
-          ./platform/desktop
-          ./specific/system-specific/CAAppleSilicon
-          ./specific/hardware-specific/apple-silicon
-          ./specific/user-specific
-          inputs.apple-silicon-support.nixosModules.apple-silicon-support
-          inputs.home-manager.nixosModules.home-manager
-          inputs.sops-nix.nixosModules.sops
-        ];
-      };
+      hydraJobs.nixosConfigurations = nixpkgs.lib.mapAttrs' (
+        name: config: nixpkgs.lib.nameValuePair name config.config.system.build.toplevel
+      ) nixosConfigurations;
     };
-    hydraJobs.nixosConfigurations = nixpkgs.lib.mapAttrs' (name: config:
-      nixpkgs.lib.nameValuePair name config.config.system.build.toplevel)
-      nixosConfigurations;
-  };
 }
