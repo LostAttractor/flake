@@ -8,7 +8,7 @@ let
     "10de:2520" # Graphics
     "10de:228e" # Audio
   ];
-in 
+in
 { lib, ... }:
 {
   specialisation."GPUPaththrough".configuration = {
@@ -28,7 +28,7 @@ in
       # "nvidia_uvm"
       # "nvidia_drm"
     ];
-    boot.kernelParams = [ 
+    boot.kernelParams = [
       ("vfio-pci.ids=" + lib.concatStringsSep "," gpuIDs) # vfio devices
     ];
   };

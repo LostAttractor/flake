@@ -4,18 +4,36 @@ _:
   nix.buildMachines = [
     {
       hostName = "nixremote@nixbuilder1.home.lostattractor.net";
-      systems = [ "x86_64-linux" "i686-linux" ];
+      systems = [
+        "x86_64-linux"
+        "i686-linux"
+      ];
       maxJobs = 2;
       speedFactor = 2;
-      supportedFeatures = [ "kvm" "nixos-test" "ca-derivations" "benchmark" "big-parallel" ];
+      supportedFeatures = [
+        "kvm"
+        "nixos-test"
+        "ca-derivations"
+        "benchmark"
+        "big-parallel"
+      ];
       mandatoryFeatures = [ ];
     }
     {
       hostName = "nixremote@nixbuilder2.home.lostattractor.net";
-      systems = [ "x86_64-linux" "i686-linux" ];
+      systems = [
+        "x86_64-linux"
+        "i686-linux"
+      ];
       maxJobs = 3;
       speedFactor = 4;
-      supportedFeatures = [ "kvm" "nixos-test" "ca-derivations" "benchmark" "big-parallel" ];
+      supportedFeatures = [
+        "kvm"
+        "nixos-test"
+        "ca-derivations"
+        "benchmark"
+        "big-parallel"
+      ];
       mandatoryFeatures = [ ];
     }
   ];

@@ -1,4 +1,1 @@
-_:
-{
-  security.pki.certificateFiles = [ ./ca.pem ];
-}
+_: { security.pki.certificateFiles = [ ./ca.pem ]; }

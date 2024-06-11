@@ -14,7 +14,13 @@
       fira-code-symbols
       jetbrains-mono
       # NerdFonts
-      (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "DroidSansMono" ]; })
+      (nerdfonts.override {
+        fonts = [
+          "FiraCode"
+          "JetBrainsMono"
+          "DroidSansMono"
+        ];
+      })
       # Some unused fonts
       # Cantarell font
       # cantarell-fonts
@@ -35,7 +41,7 @@
       # sarasa-gothic
       # hack fonts (monospace)
       # hack-font
-	  ];
+    ];
     fontconfig = {
       defaultFonts = {
         sansSerif = [
@@ -49,7 +55,7 @@
           # Unicode Fallback
           "DejaVu Sans"
         ];
-        serif = [ 
+        serif = [
           # Main Serif Font
           "Noto Serif"
           # CJK Fallback

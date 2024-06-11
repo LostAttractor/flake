@@ -1,5 +1,4 @@
-_:
-{
+_: {
   imports = [ ./cert ];
 
   sops.defaultSopsFile = ./secrets.yaml;

@@ -5,27 +5,27 @@
 { lib, pkgs, ... }:
 
 {
-  imports =
-    [ # modules/basic
-      ./modules/time.nix
-      ./modules/network.nix
-      ./modules/ssh.nix
-      ./modules/shell.nix
-      ./modules/nix.nix
-      # modules/features
-      ./modules/features/virtualisation.nix
-      ./modules/features/docker.nix
-      ./modules/features/filesystems.nix
-      ./modules/features/fwupd.nix
-      ./modules/features/pcscd.nix
-      # secrets
-      ./secrets
-      # package
-      ./packages
-      ./packages/gaming.nix
-      # user config
-      ./user
-    ];
+  imports = [
+    # modules/basic
+    ./modules/time.nix
+    ./modules/network.nix
+    ./modules/ssh.nix
+    ./modules/shell.nix
+    ./modules/nix.nix
+    # modules/features
+    ./modules/features/virtualisation.nix
+    ./modules/features/docker.nix
+    ./modules/features/filesystems.nix
+    ./modules/features/fwupd.nix
+    ./modules/features/pcscd.nix
+    # secrets
+    ./secrets
+    # package
+    ./packages
+    ./packages/gaming.nix
+    # user config
+    ./user
+  ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -39,10 +39,17 @@
   boot.tmp.useTmpfs = true;
   # You can choose whether to clean /tmp on boot, but this is not necessary for Tmpfs
   # boot.tmp.cleanOnBoot = true;
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" "ca-derivations" ];
 
-  nix.settings.trusted-users = [ "root" "@wheel" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+    "ca-derivations"
+  ];
+
+  nix.settings.trusted-users = [
+    "root"
+    "@wheel"
+  ];
 
   # Don't allow mutation of users outside of the config.
   users.mutableUsers = false;
@@ -71,4 +78,3 @@
   system.stateVersion = "24.05"; # Did you read the comment?
 
 }
-

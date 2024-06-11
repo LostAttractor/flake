@@ -14,7 +14,7 @@ with pkgs;
         sha256 = "sha256-TEU/c3IfNL53vvEbA/ZSfq6ZKuo1g3alBIF1957ZVec=";
       };
 
-      buildInputs = oldAttrs.buildInputs or [] ++ [ openssl ];
+      buildInputs = oldAttrs.buildInputs or [ ] ++ [ openssl ];
     });
   };
 }

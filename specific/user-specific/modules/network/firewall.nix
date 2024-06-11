@@ -1,5 +1,4 @@
-_:
-{
+_: {
   networking.nftables.enable = true;
 
   # Firewall Ports
@@ -14,8 +13,17 @@ _:
   # 51820 Wireguard      UDP (Configured via NetworkManager)
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 15234 7000 7100 4455 ];
-  networking.firewall.allowedUDPPorts = [ 6000 6001 7011 ];
+  networking.firewall.allowedTCPPorts = [
+    15234
+    7000
+    7100
+    4455
+  ];
+  networking.firewall.allowedUDPPorts = [
+    6000
+    6001
+    7011
+  ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 }

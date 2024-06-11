@@ -1,4 +1,1 @@
-_:
-{
-  services.fwupd.enable = true;
-}
+_: { services.fwupd.enable = true; }

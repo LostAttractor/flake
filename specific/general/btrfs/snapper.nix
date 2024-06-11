@@ -1,5 +1,4 @@
-_:
-{
+_: {
   services.snapper = {
     configs."home" = {
       SUBVOLUME = "/home";

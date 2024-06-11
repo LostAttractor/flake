@@ -1,5 +1,4 @@
-_:
-{
+_: {
   # https://wiki.archlinux.org/title/GnuPG
   services.gpg-agent = {
     enable = true;

@@ -1,4 +1,1 @@
-_:
-{
-  programs.zoxide.enable = true;
-}
+_: { programs.zoxide.enable = true; }

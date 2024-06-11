@@ -25,9 +25,7 @@
       # source = ~/.config/hypr/myColors.conf
 
       # Some default env vars.
-      env = [
-        "XCURSOR_SIZE,24"
-      ];
+      env = [ "XCURSOR_SIZE,24" ];
 
       # No Scaling For XWayland
       xwayland.force_zero_scaling = true;
@@ -35,7 +33,9 @@
       # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 
       input = {
-        touchpad = { natural_scroll = true; };
+        touchpad = {
+          natural_scroll = true;
+        };
         sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
         follow_mouse = 2;
       };
@@ -148,7 +148,7 @@
         "$mainMod, P, pin,"
         "$mainMod, P, pseudo," # dwindle
         "$mainMod, J, togglesplit," # dwindle
-        
+
         # Toggle Group with mainMod + Z
         "$mainMod, Z, togglegroup,"
         "$mainMod SHIFT, Z, moveoutofgroup,"

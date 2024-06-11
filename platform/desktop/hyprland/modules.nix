@@ -1,4 +1,1 @@
-_:
-{
-  services.gnome.gnome-keyring.enable = true;
-}
+_: { services.gnome.gnome-keyring.enable = true; }

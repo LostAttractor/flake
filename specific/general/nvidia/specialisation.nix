@@ -1,5 +1,4 @@
-_:
-{
+_: {
   specialisation."NvidiaSync".configuration = {
     system.nixos.tags = [ "Nvidia-Sync-Mode" ];
 

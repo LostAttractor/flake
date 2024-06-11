@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
     hyprpaper
     rofi-wayland
     mako

@@ -1,5 +1,4 @@
-_:
-{
+_: {
   imports = [
     # platform/modules/basic
     ../modules/fonts.nix

@@ -1,5 +1,5 @@
-{ lib , ... }:
-{ 
+{ lib, ... }:
+{
   hardware.asahi.useExperimentalGPUDriver = true;
   # hardware.asahi.experimentalGPUInstallMode = "overlay";
 

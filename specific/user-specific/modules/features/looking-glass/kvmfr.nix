@@ -16,7 +16,7 @@ let
 in
 {
   boot = {
-    kernelModules = ["kvmfr"];
+    kernelModules = [ "kvmfr" ];
     extraModulePackages = with config.boot.kernelPackages; [ kvmfr ];
     extraModprobeConfig = ''
       options kvmfr static_size_mb=64

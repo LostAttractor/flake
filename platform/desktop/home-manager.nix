@@ -1,5 +1,4 @@
-_:
-{
+_: {
   imports = [ ./gnome/home-manager.nix ];
 
   specialisation."Hyprland".configuration = {

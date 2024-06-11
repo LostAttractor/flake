@@ -1,5 +1,4 @@
-_:
-{
+_: {
   programs.java.enable = true;
 
   # Deprecated
