@@ -1,26 +1,20 @@
 { pkgs, ... }:
+with pkgs;
 {
   services.fprintd.enable = true;
-  services.fprintd.package = pkgs.fprintd.override { 
-    libfprint = pkgs.libfprint.overrideAttrs (oldAttrs: rec {
+  services.fprintd.package = fprintd.override {
+    libfprint = pkgs.libfprint.overrideAttrs (oldAttrs: {
       pname = "libfprint-goodix-521d";
       version = "unstable";
 
       src = pkgs.fetchFromGitHub {
-        owner = "infinytum";
+        owner = "lostattractor";
         repo = "libfprint";
-        rev = "5e14af7f136265383ca27756455f00954eef5db1";
-        sha256 = "sha256-MFhPsTF0oLUMJ9BIRZnSHj9VRwtHJxvWv0WT5zz7vDY=";
+        rev = "abf8dffabfcc7373d4562c151d41a6c7e087ee41";
+        sha256 = "sha256-TEU/c3IfNL53vvEbA/ZSfq6ZKuo1g3alBIF1957ZVec=";
       };
 
-      installCheckPhase = ''
-        runHook preInstallCheck
-        runHook postInstallCheck
-      '';
-      
-      buildInputs = oldAttrs.buildInputs or [] ++ [
-        pkgs.openssl
-      ];
+      buildInputs = oldAttrs.buildInputs or [] ++ [ openssl ];
     });
   };
 }
