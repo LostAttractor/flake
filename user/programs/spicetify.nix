@@ -1,4 +1,9 @@
-{ pkgs, inputs, config, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
 let
   spicePkgs = inputs.spicetify-nix.packages.${pkgs.system}.default;
   spotify-adblock = pkgs.callPackage ../../userrepo/spotify-adblock { };
@@ -25,10 +30,12 @@ in
 
   home.packages = [
     (config.programs.spicetify.spicedSpotify.overrideAttrs (oldAttrs: {
-      postInstall = oldAttrs.postInstall or "" + ''
-        wrapProgram $out/bin/${oldAttrs.meta.mainProgram} \
-          --set LD_PRELOAD "${spotify-adblock}/lib/libspotifyadblock.so"
-      '';
+      postInstall =
+        oldAttrs.postInstall or ""
+        + ''
+          wrapProgram $out/bin/${oldAttrs.meta.mainProgram} \
+            --set LD_PRELOAD "${spotify-adblock}/lib/libspotifyadblock.so"
+        '';
     }))
   ];
 }

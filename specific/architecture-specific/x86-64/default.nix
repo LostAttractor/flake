@@ -1,6 +1,1 @@
-_:
-{
-  imports = [
-    ./modules/features/binfmt.nix
-  ];
-}
+_: { imports = [ ./modules/features/binfmt.nix ]; }

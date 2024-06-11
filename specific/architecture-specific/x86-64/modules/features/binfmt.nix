@@ -1,4 +1,1 @@
-_:
-{
-  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
-}
+_: { boot.binfmt.emulatedSystems = [ "aarch64-linux" ]; }

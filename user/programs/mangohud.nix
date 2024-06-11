@@ -1,5 +1,4 @@
-_:
-{
+_: {
   programs.mangohud.enable = true;
 
   # MANGOHUD=1 gamemoderun DXVK_ASYNC=1 %command% -novid -high +fps_max 144
