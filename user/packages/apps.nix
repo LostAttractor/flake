@@ -75,7 +75,6 @@
     raider
     dialect
     eyedropper
-    # Broken Apps
-    # collision
+    collision
   ];
 }
