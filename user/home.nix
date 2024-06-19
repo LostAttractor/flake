@@ -6,6 +6,8 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "openssl-1.1.1w" # wechat-uos
+    "electron-27.3.11"
+    "electron-unwrapped-27.3.11"
   ];
 
   nixpkgs.overlays = [ inputs.nur.overlay ];
