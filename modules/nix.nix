@@ -1,6 +1,18 @@
-_: {
-  # Substituters
+{ pkgs, ... }:
+{
+  nix.package = pkgs.nixVersions.latest;
+
   nix.settings = {
+    experimental-features = [
+      "nix-command"
+      "flakes"
+      "ca-derivations"
+    ];
+    trusted-users = [
+      "root"
+      "@wheel"
+    ];
+    # Substituters
     substituters = [
       "https://binarycache.home.lostattractor.net"
       "https://mirrors.ustc.edu.cn/nix-channels/store"

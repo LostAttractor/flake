@@ -40,17 +40,6 @@
   # You can choose whether to clean /tmp on boot, but this is not necessary for Tmpfs
   # boot.tmp.cleanOnBoot = true;
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-    "ca-derivations"
-  ];
-
-  nix.settings.trusted-users = [
-    "root"
-    "@wheel"
-  ];
-
   # Don't allow mutation of users outside of the config.
   users.mutableUsers = false;
 
