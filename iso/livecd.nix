@@ -15,11 +15,5 @@ _: {
     ../packages/gaming.nix
   ];
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-    "ca-derivations"
-  ];
-
   isoImage.squashfsCompression = "zstd";
 }
