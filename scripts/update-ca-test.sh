@@ -1,4 +1,4 @@
-git stash
+git stash --all
 
 git checkout $(git rev-parse master)
 git cherry-pick origin/ca-test
