@@ -29,6 +29,7 @@
     ./programs/java.nix
     ./services/gpg-agent.nix
     ./services/mpd.nix
+    ./services/lorri.nix
   ];
 
   home.stateVersion = "24.05";
