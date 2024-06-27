@@ -3,34 +3,42 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # Download Tools
     wget
     axel
-    curlHTTP3 # Download Tools
+    curlHTTP3
+    # Editor & VCS
     git
     vim
-    micro
-    nano # Editor & VCS
+    nano
+    # Basic Tools
     htop
-    tmux # Basic Tools
+    tmux
+    # Utils
     pciutils
     usbutils
-    bridge-utils # Utils
+    bridge-utils
     dnsutils
+    # Network Tools
     ethtool
-    iperf3 # Network Tools
-    ipmitool # IPMI
-    v2ray
-    xray
-    sing-box # Proxy
-    appimage-run # Run Appimage
-    rsync # Rsync
+    # Graphics
+    vulkan-tools
+    mesa-demos
+    # Video Codec
+    libva-utils
+    # Sensors
+    lm_sensors
+    # Rsync
+    rsync
+    # Compiler
     clang
     go
     rustup
-    gcc # Compiler
+    gcc
+    # Runtime
     nodejs
-    yarn # NodeJS
-    python3 # Python
+    yarn
+    python3
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
