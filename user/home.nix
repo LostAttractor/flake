@@ -27,7 +27,7 @@
     ./programs/zoxide.nix
     ./programs/mangohud.nix
     ./programs/java.nix
-    ./services/gpg-agent.nix
+    ./programs/gpg.nix
     ./services/mpd.nix
     ./services/lorri.nix
   ];

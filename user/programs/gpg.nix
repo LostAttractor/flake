@@ -1,8 +1,12 @@
-_: {
+{ pinentry, ... }:
+{
+  programs.gpg.enable = true;
+
   # https://wiki.archlinux.org/title/GnuPG
   services.gpg-agent = {
     enable = true;
     enableSshSupport = true;
+    pinentryPackage = pinentry;
   };
 
   # Disable gnome-keyring-ssh
