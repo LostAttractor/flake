@@ -16,8 +16,6 @@
     # Alternative to ls/cat
     bat
     lsd
-    # Git utils
-    lazygit
     # File manager
     yazi
     # Screenshot
