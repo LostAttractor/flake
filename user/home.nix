@@ -24,6 +24,8 @@
     ./programs/obs-studio.nix
     ./programs/spicetify.nix
     ./programs/kitty.nix
+    ./programs/git.nix
+    ./programs/lazygit.nix
     ./programs/fzf.nix
     ./programs/zoxide.nix
     ./programs/mangohud.nix
