@@ -4,7 +4,7 @@
     hyprpaper
     rofi-wayland
     mako
-    gnome.nautilus
+    nautilus
     networkmanagerapplet
   ];
 
