@@ -9,20 +9,20 @@
     {
       name = "gitlens";
       publisher = "eamodio";
-      version = "2024.6.2117";
-      sha256 = "0zqh3h8x24lfjwyvk3izq2m5p1dfpis1y51hz1dn3l2acs4dwl1s";
+      version = "2024.7.3005";
+      sha256 = "0pgshgfidr4xpig791pnr4fs0b0ckpb1b5cdvrdmxndv7rqm32x3";
     }
     {
       name = "vscode-pull-request-github";
       publisher = "github";
-      version = "0.91.2024062004";
-      sha256 = "1na7xw0bc0v5q2vvxv6an6s2rz0dk2vq5hjc50mj38kr8svk56c4";
+      version = "0.93.2024072609";
+      sha256 = "1zzrwkx2ijrvj44khd9ijhg9ylgbik7y064apva4kdrwmn393i00";
     }
     {
       name = "go";
       publisher = "golang";
-      version = "0.41.4";
-      sha256 = "03gxgcvjk5plzkk7gjsrrck1kszzbzswkbcr33m3qlkyz4iw9nly";
+      version = "0.42.0";
+      sha256 = "1ma14642lczgrigibv03yva4jcyy4zpf73bibzy83cfb9kj9wz7l";
     }
     {
       name = "vscode-docker";
@@ -33,8 +33,8 @@
     {
       name = "vscode-language-pack-zh-hans";
       publisher = "ms-ceintl";
-      version = "1.91.2024061909";
-      sha256 = "08n2628y489cn7fskzp53cyhl4cjca6drk9k920m289pbi7lj0sh";
+      version = "1.92.2024073109";
+      sha256 = "17c59r00s9cqkbn4wk7swldnki347nvrj19ly8igl6y4zjl84qcs";
     }
     {
       name = "cpptools-extension-pack";
@@ -57,20 +57,20 @@
     {
       name = "remote-explorer";
       publisher = "ms-vscode";
-      version = "0.5.2024061309";
-      sha256 = "1hscgwzdwyd3pv6p24451y3rgi8wqf02arf6n502mb1v3sagiprg";
+      version = "0.5.2024070409";
+      sha256 = "1ifncgg2hwlkspias8m6yizh9syfkslqnl43jrhz0kmw51kaq2b3";
     }
     {
       name = "vsliveshare";
       publisher = "ms-vsliveshare";
-      version = "1.0.5932";
-      sha256 = "0vhxq4lz5w08ba258nvgcbk7lwwnac3p8sljcvz16864dcc5985s";
+      version = "1.0.5936";
+      sha256 = "0l5r93zx6q1srfjz7y29xcsgjfx8z4hsd1bwa02ysgdxk2iwldpf";
     }
     {
       name = "material-icon-theme";
       publisher = "pkief";
-      version = "5.4.2";
-      sha256 = "1abw6cvc13lqjvbqr07qzpjar52xqiw7iiams30zxcsbwcjzqih2";
+      version = "5.8.0";
+      sha256 = "1s8jwic4cgbnv7lqmwz02v65lx05lygb2f4i4glsxk76lp29spig";
     }
     {
       name = "cmake";
