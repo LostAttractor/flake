@@ -13,6 +13,7 @@
   imports = [
     ./desktop
     ./settings/shell.nix
+    ./settings/flatpak.nix
     ./settings/gtk.nix
     ./settings/dconf/blackbox.nix
     ./packages/apps.nix
