@@ -34,7 +34,8 @@ in
         oldAttrs.postInstall or ""
         + ''
           wrapProgram $out/bin/${oldAttrs.meta.mainProgram} \
-            --set LD_PRELOAD "${spotify-adblock}/lib/libspotifyadblock.so"
+            --set LD_PRELOAD "${spotify-adblock}/lib/libspotifyadblock.so" \
+            --add-flags "--enable-wayland-ime"
         '';
     }))
   ];
