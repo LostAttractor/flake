@@ -4,6 +4,7 @@
     # System information tool
     neofetch
     hyfetch
+    fastfetch
     screenfetch
     cpufetch
     powertop
@@ -16,6 +17,10 @@
     # Alternative to ls/cat
     bat
     lsd
+    # JSON filter
+    jnv
+    # Diff
+    difftastic
     # File manager
     yazi
     # Screenshot

@@ -5,6 +5,8 @@
     (blackbox-terminal.override { sixelSupport = true; })
     # Web Browser
     chromium
+    google-chrome
+    brave
     # Social Apps
     tdesktop
     signal-desktop
@@ -15,13 +17,17 @@
     wechat-uos
     discord
     dissent
+    # Email
+    thunderbird
     # Password Manager
     bitwarden
+    bitwarden-cli
     # Music
     g4music
     yesplaymusic
     ncmpcpp
     ncspot
+    go-musicfox
     # RSS
     newsflash
     # Media
@@ -31,6 +37,7 @@
     osu-lazer-bin
     lunar-client
     lutris
+    bottles
     # IDE
     lapce
     zed-editor
@@ -68,6 +75,8 @@
     flameshot
     # Uxplay
     uxplay
+    # Backup
+    pika-backup
     # Gnome Cicle Apps
     metadata-cleaner
     gnome-decoder
