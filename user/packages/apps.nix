@@ -85,5 +85,7 @@
     dialect
     eyedropper
     collision
+    # Dconf
+    dconf-editor
   ];
 }

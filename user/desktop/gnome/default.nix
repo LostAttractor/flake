@@ -1,9 +1,8 @@
 { pkgs, ... }:
 {
   home.packages =
-    (with pkgs.gnome; [
-      gnome-tweaks
-      dconf-editor
+    (with pkgs; [ gnome-tweaks ])
+    ++ (with pkgs.gnome; [
       gnome-sound-recorder
       gnome-power-manager
       polari
