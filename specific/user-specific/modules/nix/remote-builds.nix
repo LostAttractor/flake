@@ -1,40 +1,41 @@
 _:
-
+let
+  systems = [
+    "x86_64-linux"
+    "i686-linux"
+    "aarch64-linux"
+  ];
+  supportedFeatures = [
+    "nixos-test"
+    "benchmark"
+    "big-parallel"
+    "kvm"
+    "nix-command"
+    "flakes"
+    "ca-derivations"
+  ];
+in
 {
   nix.buildMachines = [
     {
-      hostName = "nixremote@nixbuilder1.home.lostattractor.net";
-      systems = [
-        "x86_64-linux"
-        "i686-linux"
-      ];
-      maxJobs = 2;
-      speedFactor = 2;
-      supportedFeatures = [
-        "kvm"
-        "nixos-test"
-        "ca-derivations"
-        "benchmark"
-        "big-parallel"
-      ];
+      hostName = "nixremote@hydra.home.lostattractor.net";
+      # protocol = "ssh-ng";
+      systems = systems;
+      maxJobs = 6;
+      speedFactor = 4;
+      supportedFeatures = supportedFeatures;
       mandatoryFeatures = [ ];
+      publicHostKey = "c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSU9iWjBoTjEwbjBYSUtvS1dEdjg1ZElkVlZPbjNPMlozSUhRdkgxK051Tlogcm9vdEBIeWRyYQo=";
     }
     {
-      hostName = "nixremote@nixbuilder2.home.lostattractor.net";
-      systems = [
-        "x86_64-linux"
-        "i686-linux"
-      ];
-      maxJobs = 3;
-      speedFactor = 4;
-      supportedFeatures = [
-        "kvm"
-        "nixos-test"
-        "ca-derivations"
-        "benchmark"
-        "big-parallel"
-      ];
+      hostName = "nixremote@nixbuilder1.home.lostattractor.net";
+      # protocol = "ssh-ng";
+      systems = systems;
+      maxJobs = 2;
+      speedFactor = 2;
+      supportedFeatures = supportedFeatures;
       mandatoryFeatures = [ ];
+      publicHostKey = "c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUU0Wk8rSitaWnRSazl1QUFTQVVkbGF5d0h2NVhhRHU5SytOT2g1c1Raa3Agcm9vdEBuaXhvcwo=";
     }
   ];
   nix.distributedBuilds = true;
@@ -44,7 +45,7 @@ _:
   programs.ssh.extraConfig = ''
     Host nixbuilder1.home.lostattractor.net
       IdentityFile /root/.ssh/nixremote
-    Host nixbuilder2.home.lostattractor.net
+    Host hydra.home.lostattractor.net
       IdentityFile /root/.ssh/nixremote
   '';
 }
