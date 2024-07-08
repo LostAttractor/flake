@@ -28,12 +28,11 @@
     slurp
     wl-clipboard
     # Network utils
-    trippy
+    nali
     tcping-go
     gping
     # Wireless utils
     iw
-    wirelesstools
     # Web video downloader
     you-get
     # Viedo tool
@@ -42,9 +41,17 @@
     handlr
     xdotool
     # Netowrk tools
+    iperf3
     nmap
     tcpdump
     wgcf
+    # Proxy
+    v2ray
+    xray
+    sing-box
+    tor
+    # IMPI
+    ipmitool
     # Disk analayzer
     gdu
     duf
