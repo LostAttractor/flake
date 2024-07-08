@@ -4,7 +4,7 @@
   systemd.services.libvirtd.preStart =
     let
       qemuHook = pkgs.writeScript "qemu-hook" ''
-        #!${pkgs.stdenv.shell}
+        #!${pkgs.runtimeShell}
 
         GUEST_NAME="$1"
         HOOK_NAME="$2"
