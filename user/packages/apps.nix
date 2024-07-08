@@ -64,7 +64,7 @@
     mediainfo
     # File Sharing
     localsend
-    pkgs.nur.repos.rewine.landrop
+    nur.repos.rewine.landrop
     # Remote Desktop
     rustdesk
     parsec-bin
