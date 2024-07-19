@@ -1,5 +1,4 @@
 _: {
-  # Enable sound.
-  sound.enable = true;
+  # PulseAudio
   hardware.pulseaudio.enable = true;
 }

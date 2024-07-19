@@ -1,8 +1,4 @@
-{ lib, ... }:
-{
-  # Enable sound.
-  sound.enable = true;
-
+_: {
   # rtkit is optional but recommended
   security.rtkit.enable = true;
   # Pipewire
@@ -15,5 +11,5 @@
     # jack.enable = true;
   };
 
-  hardware.pulseaudio.enable = lib.mkForce false;
+  hardware.pulseaudio.enable = false;
 }
