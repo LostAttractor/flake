@@ -5,7 +5,7 @@ _: {
     directories = [
       "/etc/secureboot"
       "/etc/NetworkManager/system-connections"
-      "/etc/v2raya"
+      "/etc/daed"
       "/var/lib"
       "/var/log"
     ];
