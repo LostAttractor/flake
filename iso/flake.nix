@@ -18,6 +18,9 @@
     # Spicetify
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
+    # daeuniverse
+    daeuniverse.url = "github:daeuniverse/flake.nix";
+    daeuniverse.inputs.nixpkgs.follows = "nixpkgs";
     # firefox-gnome-theme
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
@@ -43,6 +46,7 @@
             ../platform/desktop/gnome/home-manager.nix
             inputs.home-manager.nixosModules.home-manager
             inputs.aagl.nixosModules.default
+            inputs.daeuniverse.nixosModules.daed
             { nixpkgs.config.allowUnfree = true; }
           ];
         };
@@ -58,6 +62,7 @@
             ../home-manager.nix
             inputs.home-manager.nixosModules.home-manager
             inputs.aagl.nixosModules.default
+            inputs.daeuniverse.nixosModules.daed
             { nixpkgs.config.allowUnfree = true; }
           ];
         };
