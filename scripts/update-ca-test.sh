@@ -1,3 +1,4 @@
+#!/bin/sh
 git stash --all
 
 git checkout $(git rev-parse master)
