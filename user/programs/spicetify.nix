@@ -5,12 +5,11 @@
   ...
 }:
 let
-  spicePkgs = inputs.spicetify-nix.packages.${pkgs.system}.default;
-  spotify-adblock = pkgs.callPackage ../../userrepo/spotify-adblock { };
+  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
 in
 {
   # import the flake's module for your system
-  imports = [ inputs.spicetify-nix.homeManagerModule ];
+  imports = [ inputs.spicetify-nix.homeManagerModules.default ];
 
   # configure spicetify :)
   programs.spicetify = {
@@ -18,14 +17,14 @@ in
     dontInstall = true;
     windowManagerPatch = true;
 
-    theme = spicePkgs.themes.Sleek;
-    colorScheme = "cherry";
-
     enabledExtensions = with spicePkgs.extensions; [
-      fullAppDisplay
-      shuffle # shuffle+ (special characters are sanitized out of ext names)
+      adblock
       hidePodcasts
+      shuffle # shuffle+ (special characters are sanitized out of extension names)
     ];
+
+    theme = spicePkgs.themes.sleek;
+    colorScheme = "cherry";
   };
 
   home.packages = [
@@ -34,9 +33,8 @@ in
         oldAttrs.postInstall or ""
         + ''
           wrapProgram $out/bin/${oldAttrs.meta.mainProgram} \
-            --set LD_PRELOAD "${spotify-adblock}/lib/libspotifyadblock.so" \
             --add-flags "--enable-wayland-ime"
         '';
     }))
-  ];
+  ] ++ config.programs.spicetify.theme.extraPkgs;
 }
