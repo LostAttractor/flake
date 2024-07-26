@@ -24,8 +24,7 @@ jobs:
         run: |
           git checkout $(git rev-parse master)
           nix flake update --override-input nixpkgs github:NixOS/nixpkgs/nixos-unstable-small
-          git add flake.lock
-          git commit -m "Update flake.lock"
+          git commit -m "Update flake.lock" -i flake.lock
           HEAD=$(git rev-parse HEAD)
           git checkout -B autoupdate-unstable-small
           git reset --hard ${HEAD}
