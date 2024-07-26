@@ -28,6 +28,7 @@
     ./programs/lazygit.nix
     ./programs/fzf.nix
     ./programs/zoxide.nix
+    ./programs/atuin.nix
     ./programs/mangohud.nix
     ./programs/java.nix
     ./programs/gpg.nix
