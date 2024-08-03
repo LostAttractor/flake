@@ -1,6 +1,1 @@
-_: {
-  services.ollama = {
-    enable = true;
-    acceleration = "cuda";
-  };
-}
+_: { services.ollama.enable = true; }
