@@ -7,8 +7,8 @@ _: {
     ../modules/hardware/gamepad.nix
     ../modules/hardware/mobiledevice.nix
     # platform/modules/features
-    ../modules/features/pipewire.nix
-    ../modules/features/fcitx5.nix
+    ../modules/features/audio/pipewire.nix
+    ../modules/features/ime/fcitx5.nix
     ../modules/features/avahi.nix
     ../modules/features/printing.nix
     ../modules/features/flatpak.nix
