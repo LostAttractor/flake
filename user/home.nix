@@ -12,13 +12,13 @@
 
   imports = [
     ./desktop
-    ./settings/shell.nix
     ./settings/flatpak.nix
     ./settings/gtk.nix
     ./settings/dconf/blackbox.nix
     ./packages/apps.nix
     ./packages/utils.nix
     ./programs/firefox.nix
+    ./programs/shell.nix
     ./programs/vscode
     ./programs/jetbrains.nix
     ./programs/obs-studio.nix
@@ -26,9 +26,6 @@
     ./programs/kitty.nix
     ./programs/git.nix
     ./programs/lazygit.nix
-    ./programs/fzf.nix
-    ./programs/zoxide.nix
-    ./programs/atuin.nix
     ./programs/mangohud.nix
     ./programs/java.nix
     ./programs/gpg.nix
