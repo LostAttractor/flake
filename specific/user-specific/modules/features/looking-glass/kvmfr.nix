@@ -1,20 +1,13 @@
 { config, user, ... }:
 let
-  looking-glass-client-config = ''
+  additional = ''
     [app]
     shmFile=/dev/kvmfr0
-
-    [win]
-    fullScreen=yes
-
-    [input]
-    escapeKey=97
-
-    [spice]
-    captureOnStart=yes
   '';
 in
 {
+  imports = [ (import ./config.nix { inherit additional; }) ];
+
   boot = {
     kernelModules = [ "kvmfr" ];
     extraModulePackages = with config.boot.kernelPackages; [ kvmfr ];
@@ -36,6 +29,4 @@ in
       "/dev/kvmfr0"
     ]
   '';
-
-  environment.etc."looking-glass-client.ini".text = looking-glass-client-config;
 }
