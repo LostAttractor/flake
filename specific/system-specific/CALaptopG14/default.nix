@@ -26,6 +26,6 @@
     # Persistent
     ./persistent.nix
     # Featrues
-    ./modules/features/rathole
+    ./modules/features/rathole.nix
   ];
 }
