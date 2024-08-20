@@ -16,12 +16,12 @@
     qq
     wechat-uos
     discord
-    dissent
+    # dissent
     polari
     # Email
     thunderbird
     # Password Manager
-    bitwarden
+    # bitwarden
     bitwarden-cli
     # Music
     g4music
