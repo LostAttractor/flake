@@ -38,15 +38,15 @@
             inherit inputs system;
             user = "nixos";
           };
-          modules = [
+          modules = with inputs; [
             "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
             ./livecd.nix
             ../platform/desktop/gnome/modules.nix
             ../home-manager.nix
             ../platform/desktop/gnome/home-manager.nix
-            inputs.home-manager.nixosModules.home-manager
-            inputs.aagl.nixosModules.default
-            inputs.daeuniverse.nixosModules.daed
+            home-manager.nixosModules.home-manager
+            aagl.nixosModules.default
+            daeuniverse.nixosModules.daed
             { nixpkgs.config.allowUnfree = true; }
           ];
         };
@@ -56,13 +56,13 @@
             inherit inputs system;
             user = "nixos";
           };
-          modules = [
+          modules = with inputs; [
             "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-plasma6.nix"
             ./livecd.nix
             ../home-manager.nix
-            inputs.home-manager.nixosModules.home-manager
-            inputs.aagl.nixosModules.default
-            inputs.daeuniverse.nixosModules.daed
+            home-manager.nixosModules.home-manager
+            aagl.nixosModules.default
+            daeuniverse.nixosModules.daed
             { nixpkgs.config.allowUnfree = true; }
           ];
         };
