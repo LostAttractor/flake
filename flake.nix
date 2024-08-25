@@ -51,7 +51,7 @@
           specialArgs = {
             inherit inputs user system;
           };
-          modules = [
+          modules = with inputs; [
             ./configuration.nix
             ./platform/desktop
             ./specific/system-specific/CALaptopG14
@@ -61,13 +61,13 @@
             ./lanzaboote.nix
             ./home-manager.nix
             ./platform/desktop/home-manager.nix
-            inputs.nixos-hardware.nixosModules.asus-zephyrus-ga401
-            inputs.impermanence.nixosModules.impermanence
-            inputs.lanzaboote.nixosModules.lanzaboote
-            inputs.home-manager.nixosModules.home-manager
-            inputs.sops-nix.nixosModules.sops
-            inputs.aagl.nixosModules.default
-            inputs.daeuniverse.nixosModules.daed
+            nixos-hardware.nixosModules.asus-zephyrus-ga401
+            impermanence.nixosModules.impermanence
+            lanzaboote.nixosModules.lanzaboote
+            home-manager.nixosModules.home-manager
+            sops-nix.nixosModules.sops
+            aagl.nixosModules.default
+            daeuniverse.nixosModules.daed
             { nixpkgs.config.allowUnfree = true; }
           ];
         };
@@ -77,15 +77,15 @@
           specialArgs = {
             inherit inputs user system;
           };
-          modules = [
+          modules = with inputs; [
             ./configuration.nix
             ./platform/desktop
             ./specific/system-specific/CAAppleSilicon
             ./specific/hardware-specific/apple-silicon
             ./specific/user-specific
-            inputs.apple-silicon-support.nixosModules.apple-silicon-support
-            inputs.home-manager.nixosModules.home-manager
-            inputs.sops-nix.nixosModules.sops
+            apple-silicon-support.nixosModules.apple-silicon-support
+            home-manager.nixosModules.home-manager
+            sops-nix.nixosModules.sops
           ];
         };
       };
