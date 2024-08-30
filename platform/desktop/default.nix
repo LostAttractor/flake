@@ -1,4 +1,5 @@
-_: {
+{ lib, ... }:
+{
   imports = [
     # Using Gnome by default
     ./gnome
@@ -6,15 +7,20 @@ _: {
     ./modules.nix
   ];
 
-  specialisation."Hyprland".configuration = {
-    system.nixos.tags = [ "Hyprland" ];
-    imports = [ ./hyprland ];
-    disabledModules = [ ./gnome ];
-  };
-
-  specialisation."Plasma".configuration = {
-    system.nixos.tags = [ "Plasma" ];
-    imports = [ ./plasma ];
-    disabledModules = [ ./gnome ];
-  };
+  specialisation =
+    lib.mapAttrs
+      (name: config: {
+        configuration = {
+          system.nixos.tags = [ name ];
+          disabledModules = [ ./gnome ];
+        } // config;
+      })
+      {
+        "Hyprland" = {
+          imports = [ ./hyprland ];
+        };
+        "Plasma" = {
+          imports = [ ./plasma ];
+        };
+      };
 }
