@@ -60,7 +60,6 @@
             ./specific/user-specific
             ./lanzaboote.nix
             ./home-manager.nix
-            ./platform/desktop/home-manager.nix
             nixos-hardware.nixosModules.asus-zephyrus-ga401
             impermanence.nixosModules.impermanence
             lanzaboote.nixosModules.lanzaboote

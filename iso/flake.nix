@@ -43,7 +43,6 @@
             ./livecd.nix
             ../platform/desktop/gnome/modules.nix
             ../home-manager.nix
-            ../platform/desktop/gnome/home-manager.nix
             home-manager.nixosModules.home-manager
             aagl.nixosModules.default
             daeuniverse.nixosModules.daed
