@@ -17,6 +17,7 @@
     wechat-uos
     discord
     dissent
+    polari
     # Email
     thunderbird
     # Password Manager
