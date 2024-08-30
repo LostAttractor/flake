@@ -4,11 +4,8 @@
     (with pkgs; [
       gnome-tweaks
       dconf-editor
-    ])
-    ++ (with pkgs.gnome; [
       gnome-sound-recorder
       gnome-power-manager
-      polari
     ])
     ++ (with pkgs.gnomeExtensions; [
       appindicator
