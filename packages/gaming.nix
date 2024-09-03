@@ -1,5 +1,17 @@
-{ inputs, pkgs, ... }:
 {
+  inputs,
+  pkgs,
+  config,
+  ...
+}:
+{
+  environment.systemPackages = [
+    (inputs.nixos-xivlauncher-rb.packages.x86_64-linux.default.override {
+      useGameMode = true;
+      nvngxPath = "${config.hardware.nvidia.package}/lib/nvidia/wine";
+    })
+  ];
+
   programs.steam = {
     enable = true;
     gamescopeSession.enable = true;
