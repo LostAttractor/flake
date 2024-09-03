@@ -31,6 +31,9 @@
     # daeuniverse
     daeuniverse.url = "github:daeuniverse/flake.nix";
     daeuniverse.inputs.nixpkgs.follows = "nixpkgs";
+    # xivlauncher-rb
+    nixos-xivlauncher-rb.url = "github:drakon64/nixos-xivlauncher-rb";
+    nixos-xivlauncher-rb.inputs.nixpkgs.follows = "nixpkgs";
     # firefox-gnome-theme
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";

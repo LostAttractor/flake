@@ -423,6 +423,26 @@
         "type": "github"
       }
     },
+    "nixos-xivlauncher-rb": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1726571592,
+        "narHash": "sha256-2E4hjBWv2IYw499qVDEKPBie0DpcJdce5/VdCwHe6a4=",
+        "owner": "drakon64",
+        "repo": "nixos-xivlauncher-rb",
+        "rev": "97ef95bb30896530dc6c5adf1a5d41ad2712f8cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "drakon64",
+        "repo": "nixos-xivlauncher-rb",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1722073938,
@@ -607,6 +627,7 @@
         "impermanence": "impermanence",
         "lanzaboote": "lanzaboote",
         "nixos-hardware": "nixos-hardware",
+        "nixos-xivlauncher-rb": "nixos-xivlauncher-rb",
         "nixpkgs": "nixpkgs_3",
         "nur": "nur",
         "sops-nix": "sops-nix",
