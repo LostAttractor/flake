@@ -27,6 +27,9 @@
     # vscode-extensions
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-vscode-extensions.inputs.nixpkgs.follows = "nixpkgs";
+    # flake-programs-sqlite
+    flake-programs-sqlite.url = "github:wamserma/flake-programs-sqlite";
+    flake-programs-sqlite.inputs.nixpkgs.follows = "nixpkgs";
     # firefox-gnome-theme
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
@@ -52,6 +55,7 @@
             home-manager.nixosModules.home-manager
             aagl.nixosModules.default
             daeuniverse.nixosModules.daed
+            flake-programs-sqlite.nixosModules.programs-sqlite
             { nixpkgs.config.allowUnfree = true; }
           ];
         };
@@ -67,6 +71,7 @@
             ../home-manager.nix
             home-manager.nixosModules.home-manager
             aagl.nixosModules.default
+            flake-programs-sqlite.nixosModules.programs-sqlite
             daeuniverse.nixosModules.daed
             { nixpkgs.config.allowUnfree = true; }
           ];
