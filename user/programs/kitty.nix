@@ -1,7 +1,7 @@
 _: {
   programs.kitty = {
     enable = true;
-    theme = "Adwaita dark";
+    themeFile = "adwaita_dark";
     settings.background_opacity = "0.95";
   };
 }
