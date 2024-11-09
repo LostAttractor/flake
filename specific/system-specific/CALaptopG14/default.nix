@@ -16,7 +16,6 @@
   nix.settings.cores = 15;
 
   imports = [
-    ../../general/linux/zram.nix
     ../../general/btrfs/autoscrub.nix
     ../../general/btrfs/snapper.nix
     ../../general/btrfs/docker.nix

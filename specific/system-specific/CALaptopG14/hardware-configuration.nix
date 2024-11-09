@@ -19,10 +19,10 @@
   ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-  # https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file_on_Btrfs
-  # https://sawyershepherd.org/post/hibernating-to-an-encrypted-swapfile-on-btrfs-with-nixos/
-  boot.resumeDevice = "/dev/disk/by-uuid/fe8d27b3-11bf-4939-a414-d1d359c26083";
-  boot.kernelParams = [ "resume_offset=18883840" ];
+  boot.kernelParams = [
+    "zswap.enabled=1"
+    "zswap.shrinker_enabled=1"
+  ];
 
   # Use systemd-cryptenroll to auto unlock luks partition
   boot.initrd.systemd.enable = true;
@@ -83,21 +83,21 @@
     ];
   };
 
-  fileSystems."/swap" = {
-    device = "/dev/disk/by-uuid/fe8d27b3-11bf-4939-a414-d1d359c26083";
-    fsType = "btrfs";
-    options = [
-      "subvol=swap"
-      "noatime"
-    ];
-  };
-
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/C784-FC44";
     fsType = "vfat";
   };
 
-  swapDevices = [ { device = "/swap/swapfile"; } ];
+  swapDevices = [
+    {
+      device = "/dev/disk/by-partuuid/7f8c2111-4cd4-4e92-8ff4-7d53761ece05";
+      randomEncryption = {
+        enable = true;
+        allowDiscards = true;
+      };
+      discardPolicy = "both";
+    }
+  ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
