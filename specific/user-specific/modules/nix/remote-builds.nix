@@ -35,7 +35,7 @@ in
       speedFactor = 2;
       supportedFeatures = supportedFeatures;
       mandatoryFeatures = [ ];
-      publicHostKey = "c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUU0Wk8rSitaWnRSazl1QUFTQVVkbGF5d0h2NVhhRHU5SytOT2g1c1Raa3Agcm9vdEBuaXhvcwo=";
+      publicHostKey = "c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUVaZXpYbzNXZUk3Rm16SThSSlBoOUUxZHZ5LzAxaXV5bUlzRU5LWkhvUkwgcm9vdEBuaXhidWlsZGVyMQo=";
     }
   ];
   nix.distributedBuilds = true;
