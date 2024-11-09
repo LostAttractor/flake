@@ -6,6 +6,7 @@ _: {
       "/etc/secureboot"
       "/etc/NetworkManager/system-connections"
       "/etc/daed"
+      "/etc/asusd"
       "/var/lib"
       "/var/log"
     ];
