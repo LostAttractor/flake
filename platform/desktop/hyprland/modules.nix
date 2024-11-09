@@ -15,7 +15,7 @@
       services.gnome.gnome-keyring.enable = true;
       programs.gnupg.agent.pinentryPackage = pkgs.pinentry-gnome3; # need gcr
     }
-    // lib.optionalAttrs (builtins.hasAttr "home-manager" options) {
+    // lib.optionalAttrs (options ? home-manager) {
       home-manager.users.${user} = import ../../../user/desktop/hyprland;
     };
 }
