@@ -24,6 +24,8 @@
     dnsutils
     ethtool
     trippy
+    q
+    dogdns
     # Graphics
     vulkan-tools
     mesa-demos
@@ -38,6 +40,7 @@
     go
     rustup
     gcc
+    gdb
     # Runtime
     nodejs
     yarn

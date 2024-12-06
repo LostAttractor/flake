@@ -34,6 +34,10 @@
     # Media
     komikku
     shortwave
+    vlc
+    (mpv-unwrapped.wrapper { mpv = mpv-unwrapped.override { cddaSupport = true; }; })
+    # CD/DVD
+    brasero
     # Games
     osu-lazer-bin
     lunar-client
@@ -52,6 +56,7 @@
     obsidian
     marktext
     rnote
+    papers
     # Office Toolkits
     wpsoffice-cn
     libreoffice
@@ -69,11 +74,15 @@
     # Remote Desktop
     rustdesk
     parsec-bin
+    remmina
+    moonlight-qt
     # Virt Manager
     virt-manager
     looking-glass-client
     # Screenshot
     flameshot
+    # Screenkey
+    showmethekey
     # Uxplay
     uxplay
     # Backup
