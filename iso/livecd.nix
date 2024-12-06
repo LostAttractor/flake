@@ -11,6 +11,7 @@ _: {
     ../modules/features/virtualisation.nix
     ../modules/features/docker.nix
     ../modules/features/appimage.nix
+    ../modules/features/nix-ld.nix
     # package
     ../packages
     ../packages/gaming.nix
