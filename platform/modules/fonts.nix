@@ -18,15 +18,10 @@
       # Monospace fonts
       fira-code
       fira-code-symbols
+      nerd-fonts.fira-code
       jetbrains-mono
-      # NerdFonts
-      (nerdfonts.override {
-        fonts = [
-          "FiraCode"
-          "JetBrainsMono"
-          "DroidSansMono"
-        ];
-      })
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.droid-sans-mono
       # Some unused fonts
       # Inter font
       # inter
