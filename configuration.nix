@@ -18,6 +18,7 @@
     ./modules/features/filesystems.nix
     ./modules/features/fwupd.nix
     ./modules/features/pcscd.nix
+    ./modules/features/appimage.nix
     # secrets
     ./secrets
     # package
