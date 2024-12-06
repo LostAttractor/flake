@@ -10,6 +10,7 @@ _: {
     # modules/features
     ../modules/features/virtualisation.nix
     ../modules/features/docker.nix
+    ../modules/features/appimage.nix
     # package
     ../packages
     ../packages/gaming.nix
