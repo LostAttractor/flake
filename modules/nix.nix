@@ -31,4 +31,9 @@
     dates = "daily";
     options = "--delete-older-than 7d";
   };
+
+  nix.extraOptions = ''
+    min-free = ${toString (10 * 1024 * 1024 * 1024)}
+    max-free = ${toString (20 * 1024 * 1024 * 1024)}
+  '';
 }
