@@ -14,7 +14,7 @@
     "cinny-unwrapped-4.2.3"
   ];
 
-  nixpkgs.overlays = [ inputs.nur.overlay ];
+  nixpkgs.overlays = [ inputs.nur.overlays.default ];
 
   imports = [
     ./desktop
