@@ -1,10 +1,12 @@
 { pkgs, ... }:
 {
-  gtk = {
-    enable = true;
-    theme = {
-      name = "adw-gtk3-dark";
-      package = pkgs.adw-gtk3;
+  home.packages = with pkgs; [
+    adw-gtk3
+  ];
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      gtk-theme = "adw-gtk3-dark";
     };
   };
 }
