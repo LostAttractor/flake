@@ -21,6 +21,7 @@
     ../../general/btrfs/docker.nix
     ../../general/ssd/trim.nix
     ../../general/keyboard/vamillo.nix
+    ../../general/tablet/opentabletdriver.nix
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../general/linux/tpm2.nix
