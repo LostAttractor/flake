@@ -8,6 +8,7 @@
   imports = [
     # modules/basic
     ./modules/time.nix
+    ./modules/i18n.nix
     ./modules/network.nix
     ./modules/ssh.nix
     ./modules/shell.nix

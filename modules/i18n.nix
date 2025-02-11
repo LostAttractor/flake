@@ -1,0 +1,1 @@
+_: { i18n.supportedLocales = [ "all" ]; }
