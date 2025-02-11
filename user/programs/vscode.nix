@@ -18,6 +18,7 @@
       ms-kubernetes-tools.vscode-kubernetes-tools
       ms-vscode-remote.remote-ssh-edit
       ms-vscode.remote-explorer
+      github.copilot
       # Theme
       pkief.material-icon-theme
       zhuangtongfa.material-theme
