@@ -65,6 +65,7 @@
           };
           modules = with inputs; [
             ./configuration.nix
+            ./nixpkgs.nix
             ./platform/desktop
             ./specific/system-specific/CALaptopG14
             ./specific/hardware-specific/asus-zephyrus-ga401
@@ -90,6 +91,7 @@
           };
           modules = with inputs; [
             ./configuration.nix
+            ./nixpkgs.nix
             ./platform/desktop
             ./specific/system-specific/CALaptopR9000P
             ./specific/hardware-specific/lenovo-legion-16ach6h
@@ -117,6 +119,7 @@
           };
           modules = with inputs; [
             ./configuration.nix
+            ./nixpkgs.nix
             ./platform/desktop
             ./specific/system-specific/CAAppleSilicon
             ./specific/hardware-specific/apple-silicon

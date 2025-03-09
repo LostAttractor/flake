@@ -50,6 +50,7 @@
           modules = with inputs; [
             "${nixpkgs}/nixos/modules/installer/cd-dvd/installation-cd-graphical-gnome.nix"
             ./livecd.nix
+            ../nixpkgs.nix
             ../platform/desktop/gnome/modules.nix
             ../home-manager.nix
             home-manager.nixosModules.home-manager

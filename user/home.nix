@@ -1,20 +1,7 @@
-{ inputs, ... }:
+_:
 {
   programs.home-manager.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
-
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.1.1w" # wechat-uos
-    "electron-27.3.11"
-    "electron-unwrapped-27.3.11"
-    "electron-29.4.6"
-    "jitsi-meet-1.0.8043"
-    "cinny-4.2.3"
-    "cinny-unwrapped-4.2.3"
-  ];
-
-  nixpkgs.overlays = [ inputs.nur.overlays.default ];
 
   imports = [
     ./desktop
