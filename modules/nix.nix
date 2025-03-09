@@ -14,10 +14,12 @@
     ];
     # Substituters
     substituters = [
+      "https://attic.home.lostattractor.net/hydra"
       "https://binarycache.home.lostattractor.net"
       "https://mirrors.ustc.edu.cn/nix-channels/store"
     ];
     trusted-public-keys = [
+      "hydra:bCXoAKNbKou4hrnzaH2YB0nvbBPj81PmTklSUSQr5I8="
       "binarycache.home.lostattractor.net:nB258qoytYrdCe2pcI6qJ/M9R0l7Q5l9Bu5ryCbzItc="
     ];
   };
