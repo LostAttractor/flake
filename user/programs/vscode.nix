@@ -1,8 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   programs.vscode = {
     enable = true;
-    extensions = (with inputs.nix-vscode-extensions.extensions.${pkgs.system}.vscode-marketplace; [
+    profiles.default.extensions = (with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
       ms-vscode.makefile-tools
       ms-vscode.cpptools-extension-pack
