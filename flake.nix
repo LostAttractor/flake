@@ -4,6 +4,7 @@
   inputs = {
     # Nix Packages
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     # Nix Hardware
     nixos-hardware.url = "github:nixos/nixos-hardware";
     # Disko

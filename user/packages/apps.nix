@@ -79,6 +79,8 @@
     # Virt Manager
     virt-manager
     looking-glass-client
+    # Radio
+    inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.gqrx
     # Screenshot
     flameshot
     # Screenkey
