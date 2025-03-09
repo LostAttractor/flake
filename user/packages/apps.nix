@@ -65,7 +65,7 @@
     # Bittorrent
     fragments
     # Kdenlive
-    kdenlive
+    kdePackages.kdenlive
     frei0r
     mediainfo
     # File Sharing

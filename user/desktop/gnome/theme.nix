@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.pointerCursor = {
-    package = pkgs.breeze-qt5;
+    package = pkgs.kdePackages.breeze;
     name = "breeze_cursors";
     gtk.enable = true;
   };
