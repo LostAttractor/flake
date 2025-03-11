@@ -11,5 +11,4 @@ _: {
     # jack.enable = true;
   };
 
-  hardware.pulseaudio.enable = false;
 }
