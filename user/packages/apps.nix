@@ -1,4 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
+let
+  inherit (pkgs.stdenv.hostPlatform) system;
+  umu-launcher = inputs.umu.packages.${system}.default;
+in
 {
   home.packages = with pkgs; [
     # Terminal
@@ -41,7 +45,19 @@
     # Games
     osu-lazer-bin
     lunar-client
-    lutris
+    (lutris.override {
+      extraPkgs = pkgs: [
+        # List package dependencies here
+        wineWowPackages.stable
+        wineWowPackages.waylandFull
+        pixman
+        libjpeg
+        zenity
+        winetricks
+        umu-launcher
+      ];
+    })
+    umu-launcher
     bottles
     # IDE
     lapce

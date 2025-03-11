@@ -43,6 +43,9 @@
     # flake-programs-sqlite
     flake-programs-sqlite.url = "github:wamserma/flake-programs-sqlite";
     flake-programs-sqlite.inputs.nixpkgs.follows = "nixpkgs";
+    # UMU Launcher
+    umu.url = "github:Open-Wine-Components/umu-launcher?dir=packaging/nix";
+    umu.inputs.nixpkgs.follows = "nixpkgs";
     # firefox-gnome-theme
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
