@@ -14,6 +14,7 @@
     # Basic Tools
     htop
     tmux
+    lsof
     # Devices
     pciutils
     usbutils
